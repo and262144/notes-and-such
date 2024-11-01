@@ -1,0 +1,96 @@
+:root {
+    --ai-primary: #2a2a72;
+    --ai-secondary: #009ffd;
+    --ai-accent: #5c5c8a;
+    --ai-bg: #f8f9fa;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background: var(--ai-bg);
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--ai-primary);
+    font-family: "JetBrains Mono", monospace;
+}
+
+a {
+    color: var(--ai-secondary);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+a:hover {
+    border-bottom-color: var(--ai-secondary);
+}
+
+code {
+    background: #2a2a72;
+    color: #fff;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+blockquote {
+    border-left: 4px solid var(--ai-accent);
+    margin: 1.5em 0;
+    padding: 1em;
+    background: rgba(42, 42, 114, 0.1);
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Adds a light border */
+    border-radius: 8px; /* Optional: rounded corners */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* Smooth animation */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* List Styles */
+ul,
+ol {
+    padding-left: 1.2em;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    border: 1px solid #ddd; /* Optional: border around table */
+}
+
+table th,
+table td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2; /* Optional: background color for table headers */
+}
+
+table td {
+    transition: background-color 0.2s ease; /* Animation on hover */
+}
+
+table tr:hover td {
+    background-color: #f9f9f9; /* Highlight row on hover */
+}

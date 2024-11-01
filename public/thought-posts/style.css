@@ -1,0 +1,90 @@
+:root {
+    --thought-primary: #37474f;
+    --thought-secondary: #546e7a;
+    --thought-accent: #90a4ae;
+    --thought-bg: #eceff1;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--thought-bg);
+    color: #333;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--thought-primary);
+    font-family: "Libre Baskerville", serif;
+}
+
+a {
+    color: var(--thought-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+a:hover {
+    border-bottom-color: var(--thought-secondary);
+}
+
+blockquote {
+    border-left: 4px solid var(--thought-accent);
+    margin: 1.5em 0;
+    padding: 1.5em;
+    background: rgba(144, 164, 174, 0.1);
+    font-style: italic;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Adds a light border */
+    border-radius: 8px; /* Optional: rounded corners */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* Smooth animation */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* List Styles */
+ul,
+ol {
+    padding-left: 1.2em;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    border: 1px solid #ddd; /* Optional: border around table */
+}
+
+table th,
+table td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2; /* Optional: background color for table headers */
+}
+
+table td {
+    transition: background-color 0.2s ease; /* Animation on hover */
+}
+
+table tr:hover td {
+    background-color: #f9f9f9; /* Highlight row on hover */
+}

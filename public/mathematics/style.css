@@ -1,0 +1,89 @@
+:root {
+    --math-primary: #1565c0;
+    --math-secondary: #0d47a1;
+    --math-accent: #90caf9;
+    --math-bg: #f5f7fa;
+}
+
+body {
+    font-family: "Computer Modern", "Latin Modern", serif;
+    background: var(--math-bg);
+    color: #333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--math-primary);
+    font-family: "Computer Modern", "Latin Modern", serif;
+}
+
+a {
+    color: var(--math-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--math-primary);
+}
+
+code,
+pre {
+    font-family: "Computer Modern", monospace;
+    background: #e3f2fd;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Adds a light border */
+    border-radius: 8px; /* Optional: rounded corners */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* Smooth animation */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* List Styles */
+ul,
+ol {
+    padding-left: 1.2em;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    border: 1px solid #ddd; /* Optional: border around table */
+}
+
+table th,
+table td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2; /* Optional: background color for table headers */
+}
+
+table td {
+    transition: background-color 0.2s ease; /* Animation on hover */
+}
+
+table tr:hover td {
+    background-color: #f9f9f9; /* Highlight row on hover */
+}
