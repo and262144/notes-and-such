@@ -2,7 +2,7 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch (update to 'main' or 'master' as needed)
   push:
     branches: ["master"]
 
@@ -31,13 +31,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      # Optional: Add a build step if necessary
+      # Uncomment this if you need to run a script to generate HTML files
+      # - name: Run build script
+      #   run: |
+      #     chmod +x markdown_to_html.sh
+      #     ./markdown_to_html.sh
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: './public/'
+          # Upload specific directory containing HTML files (e.g., public)
+          path: './public'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
