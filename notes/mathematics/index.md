@@ -1,0 +1,2 @@
+# mathematics
+- [*](*/index.html)

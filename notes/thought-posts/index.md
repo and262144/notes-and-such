@@ -1,0 +1,2 @@
+# thought-posts
+- [*](*/index.html)
