@@ -1,6 +1,5 @@
-# PHYSICS AND MATHEMATICS 
+# PHYSICS AND MATHEMATICS
 
 ---
-
-m
-
+## Question Answers-
+---
