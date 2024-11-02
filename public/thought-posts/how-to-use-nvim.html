@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>how-to-use-nvim</title>
+
+        <!-- Link to KaTeX CSS and scripts for math rendering -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body);"
+        ></script>
+
+        <!-- Link to Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1
+        id="vim-configuration-features-and-snippets-instructions">Vim
+        Configuration Features and Snippets Instructions</h1>
+        <p>This document provides an overview of the features and
+        snippets included in the Vim configuration tailored for
+        scientific writing.</p>
+        <h2 id="installation-instructions">1. Installation
+        Instructions</h2>
+        <h3 id="step-1-install-vim-plug">Step 1: Install Vim-Plug</h3>
+        <ul>
+        <li>Install Vim-Plug to manage Vim plugins.</li>
+        </ul>
+        <h3 id="step-2-create-or-edit-your-vim-configuration-file">Step
+        2: Create or Edit Your Vim Configuration File</h3>
+        <ul>
+        <li>Edit the appropriate configuration file for Vim or
+        Neovim.</li>
+        </ul>
+        <h3 id="step-3-install-the-plugins">Step 3: Install the
+        Plugins</h3>
+        <ul>
+        <li>Run the command to install all specified plugins after
+        adding them to the configuration file.</li>
+        </ul>
+        <h2 id="configuration-overview">2. Configuration Overview</h2>
+        <h3 id="ultisnips-configuration">2.1 UltiSnips
+        Configuration</h3>
+        <ul>
+        <li>Set up the snippet directory and configure the snippet file
+        locations.</li>
+        <li>Define editing configurations and triggers for
+        snippets.</li>
+        <li>Create a shortcut to edit snippets.</li>
+        </ul>
+        <h3 id="vimtex-configuration">2.2 VimTeX Configuration</h3>
+        <ul>
+        <li>Define the LaTeX flavor and set the preferred method for
+        viewing compiled documents.</li>
+        <li>Configure options for the LaTeX compiler and set up key
+        mappings for compiling documents.</li>
+        </ul>
+        <h3 id="markdown-and-spell-check-configuration">2.3 Markdown and
+        Spell Check Configuration</h3>
+        <ul>
+        <li>Enable spell check specifically for Markdown files and
+        create a quickfix for spell suggestions.</li>
+        </ul>
+        <h3 id="file-navigation">2.4 File Navigation</h3>
+        <ul>
+        <li>Configure shortcuts for toggling the file explorer
+        (NERDTree) and using the fuzzy finder (FZF) for quick file
+        access.</li>
+        </ul>
+        <h3 id="additional-markdown-enhancements">2.5 Additional
+        Markdown Enhancements</h3>
+        <ul>
+        <li>Implement custom keybindings for creating links and
+        formatting within Markdown files.</li>
+        </ul>
+        <h2 id="snippet-usage-instructions">3. Snippet Usage
+        Instructions</h2>
+        <h3 id="general-headers-and-sections">3.1 General Headers and
+        Sections</h3>
+        <ul>
+        <li>For creating headers, use the following triggers:
+        <ul>
+        <li><code>h1</code>: Creates a top-level header.</li>
+        <li><code>h2</code>: Creates a second-level header.</li>
+        <li><code>h3</code>: Creates a third-level header.</li>
+        </ul></li>
+        </ul>
+        <h3 id="mathematical-formatting">3.2 Mathematical
+        Formatting</h3>
+        <ul>
+        <li>For mathematical formatting, use:
+        <ul>
+        <li><code>mk</code>: Inserts inline math.</li>
+        <li><code>dm</code>: Creates display math.</li>
+        <li><code>//</code>: Generates a fraction.</li>
+        </ul></li>
+        </ul>
+        <h3 id="chemistry-formatting">3.3 Chemistry Formatting</h3>
+        <ul>
+        <li>For chemistry-related snippets, use:
+        <ul>
+        <li><code>chem</code>: Creates a chemical equation.</li>
+        <li><code>arrow</code>: Inserts a chemical reaction arrow.</li>
+        </ul></li>
+        </ul>
+        <h3 id="physics-formatting">3.4 Physics Formatting</h3>
+        <ul>
+        <li>For physics formatting snippets, use:
+        <ul>
+        <li><code>vec</code>: Formats a vector.</li>
+        <li><code>unit</code>: Inserts units of measurement.</li>
+        </ul></li>
+        </ul>
+        <h3 id="biology-formatting">3.5 Biology Formatting</h3>
+        <ul>
+        <li>For biology formatting, use:
+        <ul>
+        <li><code>species</code>: Formats a species name.</li>
+        <li><code>pathway</code>: Creates a biological pathway
+        representation.</li>
+        </ul></li>
+        </ul>
+        <h3 id="common-scientific-notation">3.6 Common Scientific
+        Notation</h3>
+        <ul>
+        <li>For scientific notation, use:
+        <ul>
+        <li><code>sub</code>: Formats text as subscript.</li>
+        <li><code>sup</code>: Formats text as superscript.</li>
+        </ul></li>
+        </ul>
+        <h3 id="document-structure">3.7 Document Structure</h3>
+        <ul>
+        <li>For structuring documents, use:
+        <ul>
+        <li><code>exp</code>: Creates an experiment section with
+        predefined headings.</li>
+        <li><code>data</code>: Generates a structured data table.</li>
+        </ul></li>
+        </ul>
+        <h3 id="references-and-citations">3.8 References and
+        Citations</h3>
+        <ul>
+        <li>For citations and references, use:
+        <ul>
+        <li><code>cite</code>: Inserts a citation.</li>
+        <li><code>ref</code>: Creates a reference entry.</li>
+        </ul></li>
+        </ul>
+        <h3 id="enhanced-text-formatting">3.9 Enhanced Text
+        Formatting</h3>
+        <ul>
+        <li>For text formatting, use:
+        <ul>
+        <li><code>bold</code>: Formats text in bold.</li>
+        <li><code>ita</code>: Italicizes text.</li>
+        </ul></li>
+        </ul>
+        <h3 id="enhanced-lists-and-tasks">3.10 Enhanced Lists and
+        Tasks</h3>
+        <ul>
+        <li>For task management, use:
+        <ul>
+        <li><code>task</code>: Creates an unchecked task.</li>
+        <li><code>taskd</code>: Denotes a completed task.</li>
+        </ul></li>
+        </ul>
+        <h3 id="code-and-technical">3.11 Code and Technical</h3>
+        <ul>
+        <li>For code snippets, use:
+        <ul>
+        <li><code>code</code>: Inserts a code block with specified
+        language.</li>
+        </ul></li>
+        </ul>
+        <h2 id="additional-features-instructions">4. Additional Features
+        Instructions</h2>
+        <h3 id="time-and-date">4.1 Time and Date</h3>
+        <ul>
+        <li>For inserting the current time and date, use:
+        <ul>
+        <li><code>date</code>: Inserts the current date.</li>
+        <li><code>time</code>: Inserts the current time.</li>
+        <li><code>dtime</code>: Inserts both date and time.</li>
+        </ul></li>
+        </ul>
+        <h3 id="graph-and-diagrams">4.2 Graph and Diagrams</h3>
+        <ul>
+        <li>For creating diagrams using Mermaid syntax, use:
+        <ul>
+        <li><code>mermaid</code>: Inserts a Mermaid diagram.</li>
+        <li><code>flow</code>: Creates a flowchart.</li>
+        <li><code>sequence</code>: Generates a sequence diagram.</li>
+        </ul></li>
+        </ul>
+        <h2 id="key-mappings-instructions">5. Key Mappings
+        Instructions</h2>
+        <ul>
+        <li>Use designated key mappings for:
+        <ul>
+        <li>Toggling Goyo (distraction-free mode) with
+        <code>&lt;leader&gt;g</code>.</li>
+        <li>Previewing Markdown in the browser with
+        <code>&lt;leader&gt;p</code>.</li>
+        <li>Running grammar checks with
+        <code>&lt;leader&gt;gr</code>.</li>
+        </ul></li>
+        </ul>
+    </body>
+</html>
