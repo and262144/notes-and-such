@@ -1,5 +1,3 @@
 # Lepidosaur
 
-## aka reptiles!
-
-/
+## aka reptiles
