@@ -102,6 +102,7 @@ generate_html() {
         --to html5 \
         --template "$TEMPLATE" \
         --mathjax \
+        --highlight-style=pygments \
         --metadata title="$(basename "$input_dir")" \
         -o "$output_dir/index.html"
 
@@ -115,6 +116,7 @@ generate_html() {
                 --to html5 \
                 --template "$TEMPLATE" \
                 --mathjax \
+                --highlight-style=pygments \
                 --metadata title="$name" \
                 --metadata backlink="[Back to index](index.html)" \
                 -o "$output_dir/$name.html"

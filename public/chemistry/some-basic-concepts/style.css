@@ -1,8 +1,8 @@
 :root {
-    --chem-primary: #c41e3a;
-    --chem-secondary: #ff6b6b;
-    --chem-accent: #ffd700;
-    --chem-bg: #fff5f5;
+    --chem-primary: #007bff; /* Primary blue color */
+    --chem-secondary: #66b3ff; /* Lighter blue for accents */
+    --chem-accent: #80cfff; /* Accent color */
+    --chem-bg: #e7f3ff; /* Soft light blue background */
 }
 
 body {
@@ -29,21 +29,13 @@ a:hover {
     color: var(--chem-primary);
 }
 
-code {
-    background: #f8d7da;
-    color: var(--chem-primary);
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
-}
-
 /* Code Block Styles */
 pre {
-    background: #f1f1f1; /* Light background for code blocks */
+    background: #f0f8ff; /* Light blue background for code blocks */
     border-left: 5px solid var(--chem-primary); /* Left border for emphasis */
     padding: 1em; /* Padding inside the code block */
     overflow-x: auto; /* Allows horizontal scrolling for long lines */
     border-radius: 5px; /* Rounded corners */
-    font-family: "Courier New", Courier, monospace; /* Monospace font for code */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -53,8 +45,8 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-    border: 2px solid #ddd; /* Adds a light border */
-    border-radius: 8px; /* Optional: rounded corners */
+    border: 2px solid #b3d7ff; /* Light blue border */
+    border-radius: 8px; /* Rounded corners */
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease; /* Smooth animation */
@@ -76,7 +68,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5em 0;
-    border: 1px solid #ddd; /* Optional: border around table */
+    border: 1px solid #b3d7ff; /* Light blue border around table */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -84,11 +76,11 @@ table th,
 table td {
     padding: 0.75em; /* Increased padding for better spacing */
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #b3d7ff; /* Light blue border for rows */
 }
 
 table th {
-    background-color: #f2f2f2; /* Background color for table headers */
+    background-color: #cce5ff; /* Light blue for table headers */
     font-weight: bold; /* Bold text for headers */
 }
 
@@ -97,5 +89,5 @@ table td {
 }
 
 table tr:hover td {
-    background-color: #f9f9f9; /* Highlight row on hover */
+    background-color: #e0f7ff; /* Highlight row on hover with a lighter blue */
 }
