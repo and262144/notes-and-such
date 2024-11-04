@@ -36,6 +36,17 @@ code {
     border-radius: 3px;
 }
 
+/* Code Block Styles */
+pre {
+    background: #f1f1f1; /* Light background for code blocks */
+    border-left: 5px solid var(--chem-primary); /* Left border for emphasis */
+    padding: 1em; /* Padding inside the code block */
+    overflow-x: auto; /* Allows horizontal scrolling for long lines */
+    border-radius: 5px; /* Rounded corners */
+    font-family: "Courier New", Courier, monospace; /* Monospace font for code */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 /* Image Styles */
 img {
     max-width: 100%;
@@ -66,17 +77,19 @@ table {
     border-collapse: collapse;
     margin: 1.5em 0;
     border: 1px solid #ddd; /* Optional: border around table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 table th,
 table td {
-    padding: 0.5em;
+    padding: 0.75em; /* Increased padding for better spacing */
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
 table th {
-    background-color: #f2f2f2; /* Optional: background color for table headers */
+    background-color: #f2f2f2; /* Background color for table headers */
+    font-weight: bold; /* Bold text for headers */
 }
 
 table td {
