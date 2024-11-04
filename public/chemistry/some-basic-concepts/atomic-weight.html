@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>atomic-weight</title>
+
+        <!-- Link to KaTeX CSS and scripts for math rendering -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body);"
+        ></script>
+
+        <!-- Link to Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="atomic-weight">Atomic Weight</h1>
+        <p>Weighted average of Atomic masses of different isotopes of
+        any element .</p>
+        <p><span class="math inline">\(\text{Atomic Mass} = (
+        \text{Abundance of Isotope 1} \times \text{Atomic Mass of
+        Isotope 1}) + ( \text{Abundance of Isotope 2} \times
+        \text{Atomic Mass of Isotope 2}) + \dots\)</span></p>
+        <p><strong>Eg:</strong></p>
+        <p>Atomic Mass (carbon)</p>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>Isotope</th>
+        <th>% Abundance</th>
+        <th>Atomic mass</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><sup>12</sup>C</td>
+        <td>98.89</td>
+        <td>12.0000 amu</td>
+        </tr>
+        <tr class="even">
+        <td><sup>13</sup>C</td>
+        <td>1.110</td>
+        <td>13.0034 amu</td>
+        </tr>
+        </tbody>
+        </table>
+        <p><span class="math inline">\(0.9889 \times 12 + 0.0111 \times
+        13.0034\)</span></p>
+        <p><span class="math inline">\(≈ 12.01\)</span></p>
+        <h3 id="atomic-mass-calculations-for-various-elements">Atomic
+        Mass Calculations for Various Elements</h3>
+        <table>
+        <thead>
+        <tr class="header">
+        <th>Element</th>
+        <th>Isotope</th>
+        <th>% Abundance</th>
+        <th>Atomic Mass (amu)</th>
+        <th>Calculation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+        <td><strong>Hydrogen (H)</strong></td>
+        <td>¹H</td>
+        <td>99.9885</td>
+        <td>1.0078</td>
+        <td><span class="math inline">\(0.999885 \times 1.0078 +
+        0.000115 \times 2.0141 \approx 1.008\)</span></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>²H (D)</td>
+        <td>0.0115</td>
+        <td>2.0141</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Helium (He)</strong></td>
+        <td>³He</td>
+        <td>0.000137</td>
+        <td>3.0160</td>
+        <td><span class="math inline">\(0.000137 \times 3.0160 +
+        0.999863 \times 4.0026 \approx 4.003\)</span></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁴He</td>
+        <td>99.999863</td>
+        <td>4.0026</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Lithium (Li)</strong></td>
+        <td>⁶Li</td>
+        <td>7.59</td>
+        <td>6.0151</td>
+        <td><span class="math inline">\(0.0759 \times 6.0151 + 0.9241
+        \times 7.0160 \approx 6.941\)</span></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁷Li</td>
+        <td>92.41</td>
+        <td>7.0160</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Boron (B)</strong></td>
+        <td>¹⁰B</td>
+        <td>19.9</td>
+        <td>10.0129</td>
+        <td><span class="math inline">\(0.199 \times 10.0129 + 0.801
+        \times 11.0093 \approx 10.81\)</span></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>¹¹B</td>
+        <td>80.1</td>
+        <td>11.0093</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Nitrogen (N)</strong></td>
+        <td>¹⁴N</td>
+        <td>99.63</td>
+        <td>14.0031</td>
+        <td><span class="math inline">\(0.9963 \times 14.0031 + 0.0037
+        \times 15.0001 \approx 14.007\)</span></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>¹⁵N</td>
+        <td>0.37</td>
+        <td>15.0001</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Oxygen (O)</strong></td>
+        <td>¹⁶O</td>
+        <td>99.757</td>
+        <td>15.9949</td>
+        <td><span class="math inline">\(0.99757 \times 15.9949 + 0.00038
+        \times 17.0003 + 0.00205 \times 18.0004 \approx
+        15.999\)</span></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>¹⁷O</td>
+        <td>0.038</td>
+        <td>17.0003</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>¹⁸O</td>
+        <td>0.205</td>
+        <td>18.0004</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><strong>Neon (Ne)</strong></td>
+        <td>²⁰Ne</td>
+        <td>90.48</td>
+        <td>19.9924</td>
+        <td>(0.9048 \times 19.9924 + 0.0027 \times 20.9938 + 0.0925
+        \times 21.9914 \approx 20.18)</td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>²¹Ne</td>
+        <td>0.27</td>
+        <td>20.9938</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>²²Ne</td>
+        <td>9.25</td>
+        <td>21.9914</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Magnesium (Mg)</strong></td>
+        <td>²⁴Mg</td>
+        <td>78.99</td>
+        <td>23.9850</td>
+        <td>(0.7899 \times 23.9850 + 0.1000 \times 24.9858 + 0.1101
+        \times 25.9826 \approx 24.31)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>²⁵Mg</td>
+        <td>10.00</td>
+        <td>24.9858</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>²⁶Mg</td>
+        <td>11.01</td>
+        <td>25.9826</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><strong>Silicon (Si)</strong></td>
+        <td>²⁸Si</td>
+        <td>92.23</td>
+        <td>27.9769</td>
+        <td>(0.9223 \times 27.9769 + 0.0467 \times 28.9765 + 0.0310
+        \times 29.9738 \approx 28.09)</td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>²⁹Si</td>
+        <td>4.67</td>
+        <td>28.9765</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>³⁰Si</td>
+        <td>3.10</td>
+        <td>29.9738</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Sulfur (S)</strong></td>
+        <td>³²S</td>
+        <td>94.93</td>
+        <td>31.9721</td>
+        <td>(0.9493 \times 31.9721 + 0.0076 \times 32.9715 + 0.0429
+        \times 33.9679 + 0.0002 \times 35.9671 \approx 32.07)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>³³S</td>
+        <td>0.76</td>
+        <td>32.9715</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>³⁴S</td>
+        <td>4.29</td>
+        <td>33.9679</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>³⁶S</td>
+        <td>0.02</td>
+        <td>35.9671</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Chlorine (Cl)</strong></td>
+        <td>³⁵Cl</td>
+        <td>75.78</td>
+        <td>34.9689</td>
+        <td>(0.7578 \times 34.9689 + 0.2422 \times 36.9659 \approx
+        35.45)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>³⁷Cl</td>
+        <td>24.22</td>
+        <td>36.9659</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Potassium (K)</strong></td>
+        <td>³⁹K</td>
+        <td>93.26</td>
+        <td>38.9637</td>
+        <td>(0.9326 \times 38.9637 + 0.0001 \times 39.9640 + 0.0673
+        \times 40.9618 \approx 39.10)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁴⁰K</td>
+        <td>0.01</td>
+        <td>39.9640</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>⁴¹K</td>
+        <td>6.73</td>
+        <td>40.9618</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><strong>Calcium (Ca)</strong></td>
+        <td>⁴⁰Ca</td>
+        <td>96.941</td>
+        <td>39.9626</td>
+        <td>(0.96941 \times 39.9626 + 0.00647 \times 41.9586 + 0.00135
+        \times 42.9588 + \dots \approx 40.08)</td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>⁴²Ca</td>
+        <td>0.647</td>
+        <td>41.9586</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁴⁴Ca</td>
+        <td>2.086</td>
+        <td>43.9555</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Iron (Fe)</strong></td>
+        <td>⁵⁴Fe</td>
+        <td>5.845</td>
+        <td>53.9396</td>
+        <td>(0.05845 \times 53.9396 + 0.91754 \times 55.9349 + 0.02119
+        \times 56.9354 + 0.00282 \times 57.9333 \approx 55.85)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁵⁶Fe</td>
+        <td>91.754</td>
+        <td>55.9349</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>⁵⁷Fe</td>
+        <td>2.119</td>
+        <td>56.9354</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁵⁸Fe</td>
+        <td>0.282</td>
+        <td>57.9333</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Copper (Cu)</strong></td>
+        <td>⁶³Cu</td>
+        <td>69.17</td>
+        <td>62.9296</td>
+        <td>(0.6917 \times 62.9296 + 0.3083 \times 64.9278 \approx
+        63.55)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁶⁵Cu</td>
+        <td>30.83</td>
+        <td>64.9278</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Zinc (Zn)</strong></td>
+        <td>⁶⁴Zn</td>
+        <td>48.63</td>
+        <td>63.9291</td>
+        <td>(0.4863 \times 63.9291 + 0.2790 \times 65.9260 + 0.1870
+        \times 66.9271 + \dots \approx 65.38)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>⁶⁶Zn</td>
+        <td>27.90</td>
+        <td>65.9260</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Silver (Ag)</strong></td>
+        <td>¹⁰⁷Ag</td>
+        <td>51.839</td>
+        <td>106.9051</td>
+        <td>(0.51839 \times 106.9051 + 0.48161 \times 108.9048 \approx
+        107.87)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>¹⁰⁹Ag</td>
+        <td>48.161</td>
+        <td>108.9048</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td><strong>Tin (Sn)</strong></td>
+        <td>¹¹²Sn</td>
+        <td>0.97</td>
+        <td>111.9048</td>
+        <td>(0.0097 \times 111.9048 + 0.0065 \times 113.9028 + \dots
+        \approx 118.71)</td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>¹¹⁴Sn</td>
+        <td>0.65</td>
+        <td>113.9028</td>
+        <td></td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>¹¹⁶Sn</td>
+        <td>14.54</td>
+        <td>115.9017</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td><strong>Lead (Pb)</strong></td>
+        <td>²⁰⁶Pb</td>
+        <td>24.1</td>
+        <td>205.9745</td>
+        <td>(0.241 \times 205.9745 + 0.221 \times 207.9766 + \dots
+        \approx 207.2)</td>
+        </tr>
+        <tr class="odd">
+        <td></td>
+        <td>²⁰⁷Pb</td>
+        <td>22.1</td>
+        <td>206.9759</td>
+        <td></td>
+        </tr>
+        <tr class="even">
+        <td></td>
+        <td>²⁰⁸Pb</td>
+        <td>52.4</td>
+        <td>207.9766</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">using</span> <span class="bu">Printf</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to calculate the atomic mass based on isotope data</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">calculate_atomic_mass</span>(isotope_data)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    total_mass <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    total_abundance <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (abundance, mass) <span class="kw">in</span> isotope_data</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        total_mass <span class="op">+=</span> abundance <span class="op">*</span> mass</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        total_abundance <span class="op">+=</span> abundance</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Normalize the total mass based on total abundance</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    atomic_mass <span class="op">=</span> total_mass <span class="op">/</span> total_abundance</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> atomic_mass</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Main function to collect user input and perform calculations</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">main</span>()</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(<span class="st">&quot;Enter the name of the element:&quot;</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    element <span class="op">=</span> <span class="fu">readline</span>()</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    isotope_data <span class="op">=</span> []</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="cn">true</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        <span class="fu">println</span>(<span class="st">&quot;Enter isotope abundance (in %) or type &#39;done&#39; to finish:&quot;</span>)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        input_abundance <span class="op">=</span> <span class="fu">readline</span>()</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> input_abundance <span class="op">==</span> <span class="st">&quot;done&quot;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>            <span class="cf">break</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">end</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        <span class="fu">println</span>(<span class="st">&quot;Enter atomic mass (in amu):&quot;</span>)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        input_mass <span class="op">=</span> <span class="fu">readline</span>()</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Convert input strings to appropriate types</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        abundance <span class="op">=</span> <span class="fu">parse</span>(<span class="dt">Float64</span>, input_abundance) <span class="op">/</span> <span class="fl">100.0</span>  <span class="co"># Convert percentage to fraction</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        mass <span class="op">=</span> <span class="fu">parse</span>(<span class="dt">Float64</span>, input_mass)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Store isotope data</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        <span class="fu">push!</span>(isotope_data, (abundance, mass))</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">end</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Calculate and display the atomic mass</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    atomic_mass <span class="op">=</span> <span class="fu">calculate_atomic_mass</span>(isotope_data)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">println</span>(<span class="st">&quot;The atomic mass of </span><span class="sc">$</span>element<span class="st"> is approximately: </span><span class="sc">$</span>atomic_mass<span class="st"> amu&quot;</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the main function</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">main</span>()</span></code></pre></div>
+        <div class="sourceCode" id="cb2"><pre
+        class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="dt">Control.Monad</span> (when)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="dt">Text.Printf</span> (printf)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">-- Function to calculate the atomic mass based on isotope data</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ot">calculateAtomicMass ::</span> [(<span class="dt">Double</span>, <span class="dt">Double</span>)] <span class="ot">-&gt;</span> <span class="dt">Double</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>calculateAtomicMass isotopeData <span class="ot">=</span> totalMass <span class="op">/</span> totalAbundance</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">where</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    (totalMass, totalAbundance) <span class="ot">=</span> <span class="fu">foldr</span> addIsotope (<span class="dv">0</span>, <span class="dv">0</span>) isotopeData</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    addIsotope (abundance, mass) (tm, ta) <span class="ot">=</span> (tm <span class="op">+</span> abundance <span class="op">*</span> mass, ta <span class="op">+</span> abundance)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">-- Main function to collect user input and perform calculations</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="ot">main ::</span> <span class="dt">IO</span> ()</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>main <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">putStrLn</span> <span class="st">&quot;Enter the name of the element:&quot;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    element <span class="ot">&lt;-</span> <span class="fu">getLine</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> collectIsotopes <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>            <span class="fu">putStrLn</span> <span class="st">&quot;Enter isotope abundance (in %) or type &#39;done&#39; to finish:&quot;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            inputAbundance <span class="ot">&lt;-</span> <span class="fu">getLine</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>            <span class="kw">if</span> inputAbundance <span class="op">==</span> <span class="st">&quot;done&quot;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>                <span class="kw">then</span> <span class="fu">return</span> []</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>                <span class="kw">else</span> <span class="kw">do</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">putStrLn</span> <span class="st">&quot;Enter atomic mass (in amu):&quot;</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>                    inputMass <span class="ot">&lt;-</span> <span class="fu">getLine</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>                    <span class="kw">let</span> abundance <span class="ot">=</span> <span class="fu">read</span> inputAbundance <span class="op">/</span> <span class="fl">100.0</span>  <span class="co">-- Convert percentage to fraction</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>                        mass <span class="ot">=</span> <span class="fu">read</span> inputMass</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>                    restIsotopes <span class="ot">&lt;-</span> collectIsotopes</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">return</span> ((abundance, mass) <span class="op">:</span> restIsotopes)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    isotopeData <span class="ot">&lt;-</span> collectIsotopes</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="co">-- Calculate and display the atomic mass</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> atomicMass <span class="ot">=</span> calculateAtomicMass isotopeData</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    printf <span class="st">&quot;The atomic mass of %s is approximately: %.5f amu\n&quot;</span> element atomicMass</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+        <p>Install the [mendeleev](<a
+        href="https://pypi.org/project/mendeleev/">mendeleev · PyPI</a>)
+        package using <code>pip install mendeleev</code> to use the
+        following code to calculate the Atomic weight automatically</p>
+        <div class="sourceCode" id="cb3"><pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mendeleev <span class="im">import</span> element</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fetch_isotope_data_with_mendeleev(atomic_number):</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        elem <span class="op">=</span> element(atomic_number)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ValueError</span>:</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;Element with atomic number </span><span class="sc">{</span>atomic_number<span class="sc">}</span><span class="ss"> not found.&quot;</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">None</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    isotopes <span class="op">=</span> []</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> iso <span class="kw">in</span> elem.isotopes:</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> iso.abundance <span class="kw">and</span> iso.abundance <span class="op">&gt;</span> <span class="dv">0</span>:  <span class="co"># Filter out isotopes with zero or undefined abundance</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>            isotope_mass <span class="op">=</span> iso.mass</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>            isotope_abundance <span class="op">=</span> iso.abundance</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            isotope_name <span class="op">=</span> <span class="ss">f&quot;</span><span class="sc">{</span>elem<span class="sc">.</span>symbol<span class="sc">}</span><span class="ss">-</span><span class="sc">{</span>iso<span class="sc">.</span>mass<span class="sc">:.6f}</span><span class="ss">&quot;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>            isotopes.append((isotope_name, isotope_abundance, isotope_mass))</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> isotopes</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_atomic_mass(isotopes):</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    total_mass <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    total_abundance <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> _, abundance, mass <span class="kw">in</span> isotopes:</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> abundance <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            total_mass <span class="op">+=</span> (abundance <span class="op">/</span> <span class="dv">100</span>) <span class="op">*</span> mass</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>            total_abundance <span class="op">+=</span> (abundance <span class="op">/</span> <span class="dv">100</span>)</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> total_mass <span class="op">/</span> total_abundance <span class="cf">if</span> total_abundance <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    atomic_number <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the atomic number of the element: &quot;</span>))</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    isotopes <span class="op">=</span> fetch_isotope_data_with_mendeleev(atomic_number)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> isotopes:</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;No data available for the given atomic number.&quot;</span>)</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    atomic_mass <span class="op">=</span> calculate_atomic_mass(isotopes)</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.DataFrame(isotopes, columns<span class="op">=</span>[<span class="st">&quot;Isotope&quot;</span>, <span class="st">&quot;% Abundance&quot;</span>, <span class="st">&quot;Atomic Mass (amu)&quot;</span>])</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Isotopes and Abundances:&quot;</span>)</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df)</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">Calculated Atomic Mass: </span><span class="sc">{</span>atomic_mass<span class="sc">:.4f}</span><span class="ss"> amu&quot;</span>)</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    main()</span></code></pre></div>
+    </body>
+</html>
