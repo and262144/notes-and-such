@@ -98,7 +98,7 @@ generate_html() {
     # Convert index.md to HTML
     echo "Converting $index_md to HTML"
     pandoc "$index_md" \
-        --from markdown \
+        --from gfm \
         --to html5 \
         --template "$TEMPLATE" \
         --mathjax \
@@ -111,7 +111,7 @@ generate_html() {
             local name=$(basename "$md_file" .md)
             echo "Converting $md_file to HTML"
             pandoc "$md_file" \
-                --from markdown \
+                --from gfm \
                 --to html5 \
                 --template "$TEMPLATE" \
                 --mathjax \
@@ -139,3 +139,23 @@ echo "Generating HTML files..."
 generate_html "$SOURCE_DIR" "$OUTPUT_DIR"
 
 echo "Site generation complete!"
+
+#!/bin/bash
+
+# Ask the user for confirmation
+echo "Do you want to run the script? (yes/no)"
+read answer
+
+# Check the user's answer
+if [ "$answer" == "yes" ]; then
+    # Run the other script if the answer is "yes"
+    /home/satvik64/Apps/notes-and-such/update-notes.sh
+elif [ "$answer" == "no" ]; then
+    # Exit if the answer is "no"
+    echo "Exiting."
+    exit 0
+else
+    # Handle invalid input
+    echo "Invalid input. Please enter 'yes' or 'no'."
+    exit 1
+fi

@@ -1,2 +1,2 @@
 # artificial-intelligence
-- [introduction ](introduction /index.html)
+- [introduction](introduction/index.html)
