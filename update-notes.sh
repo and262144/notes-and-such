@@ -9,4 +9,4 @@ diff_output=$(git diff --staged)
 git commit -m "$diff_output"
 
 
-git push origin main
+git push origin master
