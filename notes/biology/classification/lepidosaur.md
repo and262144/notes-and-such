@@ -1,5 +1,6 @@
 # Lepidosaur
 
+<<<<<<< HEAD
 ## aka reptiles!
 
 
@@ -27,3 +28,6 @@
 <img title="Brookesia nana- The nano chameleon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Brookesia_nana_Fig4A.jpg/220px-Brookesia_nana_Fig4A.jpg" alt="nano-chameleon" width="902">
 
 
+=======
+## aka reptiles
+>>>>>>> b21afe8373282e9805b9f2ae187f106135b1a28b
