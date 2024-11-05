@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>testing-some-features</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Syntax Highlighting -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/school-book.css"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"
+        ></script>
+
+        <!-- KaTeX for Math -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
+        ></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Initialize Scripts -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Initialize syntax highlighting
+                hljs.highlightAll();
+
+                // Add random coffee stains
+                function addCoffeeStains() {
+                    const container = document.querySelector(".container");
+                    const numStains = 2 + Math.floor(Math.random() * 3);
+
+                    for (let i = 0; i < numStains; i++) {
+                        const stain = document.createElement("div");
+                        stain.className = "coffee-stain";
+                        stain.style.left = Math.random() * 80 + 10 + "%";
+                        stain.style.top = Math.random() * 80 + 10 + "%";
+                        stain.style.opacity = 0.1 + Math.random() * 0.1;
+                        container.appendChild(stain);
+                    }
+                }
+
+                // Add random doodles
+                function addDoodles() {
+                    const container = document.querySelector(".container");
+                    const doodle = document.createElement("div");
+                    doodle.className = "doodle";
+                    container.appendChild(doodle);
+                }
+
+                // Initialize page effects
+                setTimeout(() => {
+                    addCoffeeStains();
+                    addDoodles();
+                }, 100);
+            });
+
+            // Add smooth scroll for footnotes
+            document.addEventListener("click", (e) => {
+                if (e.target.matches('a[href^="#fn"]')) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        e.target.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Paper clip decoration -->
+            <div class="paper-clip"></div>
+
+            <!-- Grid background -->
+            <div class="grid-paper"></div>
+
+            <!-- Main content -->
+            <main>
+                                <h1 class="handwritten">testing-some-features</h1>
+                                 <div class="date-stamp">2024-11-05</div>
+                 <h1 id="my-study-notes-handwritten">My Study Notes
+{.handwritten}</h1>
+<p>::: {.sticky-note} <strong>Remember:</strong></p>
+<ul>
+<li>Submit assignment by Friday</li>
+<li>Review chapter 3</li>
+<li>Email professor :::</li>
+</ul>
+<h2 id="topics-covered-handwritten">Topics Covered {.handwritten}</h2>
+<p>[Important concept #1]{.highlight} - This is a key idea we learned
+today.</p>
+<p>::: {.todo-list}</p>
+<ul class="task-list">
+<li><label><input type="checkbox" />Review chapter 1</label></li>
+<li><label><input type="checkbox" />Complete exercises</label></li>
+<li><label><input type="checkbox" />Submit homework :::</label></li>
+</ul>
+<h3 id="code-example">Code Example</h3>
+<pre class="{.code-block}"><code>function helloWorld() {
+    console.log(&quot;Hello, World!&quot;);
+}</code></pre>
+<p>::: {.grid-paper} Here's my detailed notes with grid background...
+:::</p>
+<blockquote>
+<p>This is an important quote that will have the torn paper effect
+{.torn-quote}</p>
+</blockquote>
+<p>[Tag 1]{.tag} [Tag 2]{.tag} [Tag 3]{.tag}</p>
+<p>::: {.doodle-section} Some rough work and sketches go here... :::</p>
+<h2 id="images">Images</h2>
+<p><img src="image.jpg" alt="An example image" />{.notebook-image}</p>
+<h2 id="-pencil-line">::: {.pencil-line}</h2>
+<p>:::</p>
+<p><em>Note: Don't forget to review this before
+exam!</em>{.handwritten}</p>
+            </main>
+
+            <!-- Page corner fold -->
+            <div class="page-fold"></div>
+        </div>
+    </body>
+</html>

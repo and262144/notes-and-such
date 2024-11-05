@@ -4,11 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>lepidosaur</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Syntax Highlighting -->
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/atom-one-dark.min.css"
+            href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/school-book.css"
         />
-        <!-- Link to KaTeX CSS and scripts for math rendering -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"
+        ></script>
+
+        <!-- KaTeX for Math -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
@@ -20,60 +33,123 @@
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
-            onload="renderMathInElement(document.body);"
         ></script>
 
-        <!-- Link to Custom CSS -->
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
+
+        <!-- Initialize Scripts -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Initialize syntax highlighting
+                hljs.highlightAll();
+
+                // Add random coffee stains
+                function addCoffeeStains() {
+                    const container = document.querySelector(".container");
+                    const numStains = 2 + Math.floor(Math.random() * 3);
+
+                    for (let i = 0; i < numStains; i++) {
+                        const stain = document.createElement("div");
+                        stain.className = "coffee-stain";
+                        stain.style.left = Math.random() * 80 + 10 + "%";
+                        stain.style.top = Math.random() * 80 + 10 + "%";
+                        stain.style.opacity = 0.1 + Math.random() * 0.1;
+                        container.appendChild(stain);
+                    }
+                }
+
+                // Add random doodles
+                function addDoodles() {
+                    const container = document.querySelector(".container");
+                    const doodle = document.createElement("div");
+                    doodle.className = "doodle";
+                    container.appendChild(doodle);
+                }
+
+                // Initialize page effects
+                setTimeout(() => {
+                    addCoffeeStains();
+                    addDoodles();
+                }, 100);
+            });
+
+            // Add smooth scroll for footnotes
+            document.addEventListener("click", (e) => {
+                if (e.target.matches('a[href^="#fn"]')) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        e.target.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+            });
+        </script>
     </head>
     <body>
-        <h1 id="lepidosaur">Lepidosaur</h1>
-        <h2 id="aka-reptiles">aka reptiles!</h2>
-        <table>
-        <thead>
-        <tr class="header">
-        <th>Kingdom:</th>
-        <th><a href="https://simple.wikipedia.org/wiki/Animal"
-        title="Animal">Animalia</a></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Phylum:</td>
-        <td><a href="https://simple.wikipedia.org/wiki/Chordate"
-        title="Chordate">Chordata</a></td>
-        </tr>
-        <tr class="even">
-        <td>Class:</td>
-        <td><a href="https://simple.wikipedia.org/wiki/Reptile"
-        title="Reptile">Sauropsida</a></td>
-        </tr>
-        <tr class="odd">
-        <td>Subclass:</td>
-        <td><a href="https://simple.wikipedia.org/wiki/Diapsida"
-        title="Diapsida">Diapsida</a></td>
-        </tr>
-        <tr class="even">
-        <td>Infraclass:</td>
-        <td><a
-        href="https://simple.wikipedia.org/wiki/Lepidosauromorpha"
-        title="Lepidosauromorpha">Lepidosauromorpha</a></td>
-        </tr>
-        <tr class="odd">
-        <td>Superorder:</td>
-        <td><strong>Lepidosauria</strong></td>
-        </tr>
-        </tbody>
-        </table>
-        <ul>
-        <li><p>Lepidosauria are tetrapod vertebrate</p></li>
-        <li><p>12,000 known species</p></li>
-        <li><p>Found in every continent except Antartica</p></li>
-        </ul>
-        <p><img
-        src="https://cdn.britannica.com/58/152558-050-FADD52A1/Komodo-dragon.jpg"
-        title="Kmomodo Dragon - The largest Lizard"
-        alt="komodo-dragon" />"Komodo Dragon - the largest lizard"</p>
-        <img title="Brookesia micra" src="https://www.crittersquad.com/wp-content/uploads/2018/08/Brookesia_micra_on_a_match_head.jpg" alt="nano-chameleon" width="902">
+        <div class="container">
+            <!-- Paper clip decoration -->
+            <div class="paper-clip"></div>
+
+            <!-- Grid background -->
+            <div class="grid-paper"></div>
+
+            <!-- Main content -->
+            <main>
+                                <h1 class="handwritten">lepidosaur</h1>
+                  <h1 id="lepidosaur">Lepidosaur</h1>
+<h2 id="aka-reptiles">aka reptiles!</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Kingdom:</th>
+<th><a href="https://simple.wikipedia.org/wiki/Animal"
+title="Animal">Animalia</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Phylum:</td>
+<td><a href="https://simple.wikipedia.org/wiki/Chordate"
+title="Chordate">Chordata</a></td>
+</tr>
+<tr class="even">
+<td>Class:</td>
+<td><a href="https://simple.wikipedia.org/wiki/Reptile"
+title="Reptile">Sauropsida</a></td>
+</tr>
+<tr class="odd">
+<td>Subclass:</td>
+<td><a href="https://simple.wikipedia.org/wiki/Diapsida"
+title="Diapsida">Diapsida</a></td>
+</tr>
+<tr class="even">
+<td>Infraclass:</td>
+<td><a href="https://simple.wikipedia.org/wiki/Lepidosauromorpha"
+title="Lepidosauromorpha">Lepidosauromorpha</a></td>
+</tr>
+<tr class="odd">
+<td>Superorder:</td>
+<td><strong>Lepidosauria</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Lepidosauria are tetrapod vertebrate</p></li>
+<li><p>12,000 known species</p></li>
+<li><p>Found in every continent except Antartica</p></li>
+</ul>
+<p><img
+src="https://cdn.britannica.com/58/152558-050-FADD52A1/Komodo-dragon.jpg"
+title="Kmomodo Dragon - The largest Lizard"
+alt="komodo-dragon" />"Komodo Dragon - the largest lizard"</p>
+<img title="Brookesia micra" src="https://www.crittersquad.com/wp-content/uploads/2018/08/Brookesia_micra_on_a_match_head.jpg" alt="nano-chameleon" width="902">
+            </main>
+
+            <!-- Page corner fold -->
+            <div class="page-fold"></div>
+        </div>
     </body>
 </html>

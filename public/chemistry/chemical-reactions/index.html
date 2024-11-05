@@ -4,11 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>chemical-reactions</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Syntax Highlighting -->
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/atom-one-dark.min.css"
+            href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/school-book.css"
         />
-        <!-- Link to KaTeX CSS and scripts for math rendering -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"
+        ></script>
+
+        <!-- KaTeX for Math -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
@@ -20,16 +33,80 @@
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"
-            onload="renderMathInElement(document.body);"
         ></script>
 
-        <!-- Link to Custom CSS -->
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
+
+        <!-- Initialize Scripts -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // Initialize syntax highlighting
+                hljs.highlightAll();
+
+                // Add random coffee stains
+                function addCoffeeStains() {
+                    const container = document.querySelector(".container");
+                    const numStains = 2 + Math.floor(Math.random() * 3);
+
+                    for (let i = 0; i < numStains; i++) {
+                        const stain = document.createElement("div");
+                        stain.className = "coffee-stain";
+                        stain.style.left = Math.random() * 80 + 10 + "%";
+                        stain.style.top = Math.random() * 80 + 10 + "%";
+                        stain.style.opacity = 0.1 + Math.random() * 0.1;
+                        container.appendChild(stain);
+                    }
+                }
+
+                // Add random doodles
+                function addDoodles() {
+                    const container = document.querySelector(".container");
+                    const doodle = document.createElement("div");
+                    doodle.className = "doodle";
+                    container.appendChild(doodle);
+                }
+
+                // Initialize page effects
+                setTimeout(() => {
+                    addCoffeeStains();
+                    addDoodles();
+                }, 100);
+            });
+
+            // Add smooth scroll for footnotes
+            document.addEventListener("click", (e) => {
+                if (e.target.matches('a[href^="#fn"]')) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        e.target.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+            });
+        </script>
     </head>
     <body>
-        <h1 id="chemical-reactions">chemical-reactions</h1>
-        <ul>
-        <li><a href="type-of-bond.html">type-of-bond</a></li>
-        </ul>
+        <div class="container">
+            <!-- Paper clip decoration -->
+            <div class="paper-clip"></div>
+
+            <!-- Grid background -->
+            <div class="grid-paper"></div>
+
+            <!-- Main content -->
+            <main>
+                                <h1 class="handwritten">chemical-reactions</h1>
+                  <h1 id="chemical-reactions">chemical-reactions</h1>
+<ul>
+<li><a href="type-of-bond.html">type-of-bond</a></li>
+</ul>
+            </main>
+
+            <!-- Page corner fold -->
+            <div class="page-fold"></div>
+        </div>
     </body>
 </html>

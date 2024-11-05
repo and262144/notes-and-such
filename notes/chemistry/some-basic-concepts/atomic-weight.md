@@ -160,11 +160,9 @@ main = do
     -- Calculate and display the atomic mass
     let atomicMass = calculateAtomicMass isotopeData
     printf "The atomic mass of %s is approximately: %.5f amu\n" element atomicMass
-
-
 ```
 
-Install the [mendeleev]([mendeleev · PyPI](https://pypi.org/project/mendeleev/)) package using ``pip install mendeleev`` to use the following code to calculate the Atomic weight automatically
+Install the [mendeleev](https://pypi.org/project/mendeleev/) package using ``pip install mendeleev`` to use the following code to calculate the Atomic weight automatically
 
 ```python
 from mendeleev import element
@@ -215,9 +213,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
-
-
-
-
