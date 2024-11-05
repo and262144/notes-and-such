@@ -152,11 +152,11 @@ generate_html() {
     if needs_update "$index_md" "$index_html"; then
         echo "Converting $index_md to HTML"
         pandoc "$index_md" \
-            --from gfm \
+            --from gfm+yaml_metadata_block+implicit_figures+bracketed_spans+fenced_divs \
             --to html5 \
             --template "$TEMPLATE" \
             --mathjax \
-            --metadata title="$(basename "$input_dir")" \
+            --quiet \
             -o "$index_html"
         update_timestamp "$index_md"
     else
@@ -172,12 +172,11 @@ generate_html() {
             if needs_update "$md_file" "$html_file"; then
                 echo "Converting $md_file to HTML"
                 pandoc "$md_file" \
-                    --from gfm \
+                    --from gfm+yaml_metadata_block+implicit_figures+bracketed_spans+fenced_divs \
                     --to html5 \
                     --template "$TEMPLATE" \
                     --mathjax \
-                    --metadata title="$name" \
-                    --metadata backlink="[Back to index](index.html)" \
+                    --quiet\
                     -o "$html_file"
                 update_timestamp "$md_file"
             else

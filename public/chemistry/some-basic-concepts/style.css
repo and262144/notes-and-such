@@ -1,15 +1,28 @@
 :root {
-    --page-bg: #f6f5b2;
-    --text-primary: #3e5915;
-    --text-secondary: #005599;
-    --accent-color: #2c009f;
-    --highlight-color: #e60415;
+    /* School theme colors from highlight.js */
+    --school-yellow: #f3db2e;
+    --school-blue: #236bb2;
+    --school-red: #d33682;
+    --school-green: #859900;
+    --school-gray: #586e75;
+
+    /* Notebook theme colors */
+    --page-bg: #ffffff;
+    --grid-color: rgba(35, 107, 178, 0.1);
+    --margin-color: rgba(211, 54, 130, 0.2);
+    --grid-size: 25px;
+    --text-primary: #073642;
+    --text-secondary: #236bb2;
+    --accent-color: #d33682;
+    --highlight-color: #f3db2e;
+    --pencil-color: #073642;
+    --sticky-note-color: #fdf6e3;
 }
 
 /* Base styles */
 body {
-    background: #f0f0f0;
-    font-family: "Kalam", cursive;
+    background: #eee8d5;
+    font-family: "Source Sans Pro", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 2rem;
@@ -19,17 +32,18 @@ body {
 .container {
     background: var(--page-bg);
     max-width: 100%;
+    min-height: 100%;
     margin: 0 auto;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 3rem 4rem;
+    border-radius: 2px;
     box-shadow:
-        0 0 10px rgba(0, 0, 0, 0.1),
-        2px 3px 20px rgba(0, 0, 0, 0.2);
+        0 0 10px rgba(7, 54, 66, 0.1),
+        2px 3px 20px rgba(7, 54, 66, 0.15);
     position: relative;
     overflow: hidden;
 }
 
-/* Paper effects */
+/* Enhanced Grid Paper Effect */
 .container::before {
     content: "";
     position: absolute;
@@ -37,173 +51,236 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-            45deg,
-            transparent 48%,
-            rgba(0, 0, 0, 0.02) 49%,
-            rgba(0, 0, 0, 0.02) 51%,
-            transparent 52%
+    background-image: linear-gradient(
+            to right,
+            var(--margin-color) 1px,
+            transparent 1px
         ),
-        linear-gradient(
-            -45deg,
-            transparent 48%,
-            rgba(0, 0, 0, 0.02) 49%,
-            rgba(0, 0, 0, 0.02) 51%,
-            transparent 52%
-        );
-    background-size: 6px 6px;
+        linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+    background-size: var(--grid-size) var(--grid-size);
+    background-position: var(--grid-size) 0;
     pointer-events: none;
+    z-index: 1;
 }
 
-/* Typography */
+/* School-themed margin line */
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    bottom: 0;
+    width: 1px;
+    background: var(--margin-color);
+    z-index: 2;
+}
+
+/* Typography with school theme */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Architects Daughter", cursive;
-    color: var(--text-secondary);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    font-family: "Source Serif Pro", serif;
+    color: var(--school-blue);
+    line-height: calc(var(--grid-size) * 2);
+    margin-top: calc(var(--grid-size) * 2);
+    margin-bottom: var(--grid-size);
+    position: relative;
+    z-index: 3;
 }
 
 .title {
     font-size: 2.5em;
     text-align: center;
-    margin-bottom: 2rem;
-    color: var(--accent-color);
+    margin-bottom: calc(var(--grid-size) * 2);
+    color: var(--school-blue);
+    border-bottom: 3px double var(--school-red);
+    padding-bottom: var(--grid-size);
 }
 
-/* Links */
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.3s ease;
-}
-
-a:hover {
-    border-bottom-color: var(--accent-color);
-}
-
-.backlink {
-    margin: 2rem 0;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--text-secondary);
-}
-
-/* Code blocks */
+/* Code blocks with school theme */
 pre,
 code {
     font-family: "Fira Code", monospace;
-    background: rgba(255, 255, 255, 0.5);
+    line-height: var(--grid-size);
+    background: #fdf6e3;
+    border-radius: 4px;
+    border: 1px solid var(--school-gray);
+    position: relative;
+    z-index: 3;
+    padding: 1rem;
+}
+
+/* Sticky notes with school theme */
+.sticky-note {
+    background: var(--sticky-note-color);
+    padding: calc(var(--grid-size) * 1.5);
+    margin: var(--grid-size) 0;
+    transform: rotate(-1deg);
+    box-shadow: 3px 3px 8px rgba(7, 54, 66, 0.1);
+    border-radius: 2px;
+    position: relative;
+    z-index: 4;
+    border: 1px solid var(--school-yellow);
+}
+
+.sticky-note::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 20px 20px 0;
+    border-style: solid;
+    border-color: var(--school-yellow) transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+.handwritten {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.8em;
+    color: #2f4f4f;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #2f4f4f;
+    max-width: fit-content;
+    width: 0;
+    animation:
+        typing 4s steps(30, end) forwards,
+        blink 0.5s step-end infinite,
+        hideCursor 0s 4s forwards; /* New animation to hide cursor after typing */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes hideCursor {
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Highlight text with school theme */
+.highlight {
+    background: linear-gradient(
+        120deg,
+        var(--school-yellow) 0%,
+        var(--school-yellow) 100%
+    );
+    padding: 0.2em 0.4em;
     border-radius: 3px;
 }
 
-code {
-    padding: 0.2em 0.4em;
-    font-size: 0.9em;
-}
-
-pre {
+/* Todo list with school theme */
+.todo-list {
+    background: #fdf6e3;
     padding: 1rem;
-    overflow-x: auto;
-    border-left: 4px solid var(--accent-color);
-    background: rgba(255, 255, 255, 0.7);
-}
-
-pre code {
-    padding: 0;
-    background: transparent;
-}
-
-/* Math display */
-.math {
-    overflow-x: auto;
-    padding: 1rem 0;
-}
-
-.mjx-chtml {
-    margin: 1rem 0 !important;
-}
-
-.mjx-math {
-    padding: 0.5rem 0;
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-    background: rgba(255, 255, 255, 0.3);
-}
-
-th,
-td {
-    border: 1px solid var(--text-secondary);
-    padding: 0.5rem;
-    text-align: left;
-}
-
-th {
-    background: rgba(0, 0, 0, 0.05);
-}
-
-/* Lists */
-ul,
-ol {
-    padding-left: 2rem;
-}
-
-li {
-    margin: 0.5rem 0;
-}
-
-/* Blockquotes */
-blockquote {
-    margin: 1rem 0;
-    padding: 0.5rem 1rem;
-    border-left: 4px solid var(--text-secondary);
-    background: rgba(255, 255, 255, 0.3);
-    font-style: italic;
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-    margin: 1rem 0;
     border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid var(--school-blue);
 }
 
-/* Decorative elements */
+.todo-list input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--school-blue);
+}
+
+/* Tags with school theme */
+.tag {
+    display: inline-block;
+    background: var(--school-blue);
+    color: #fdf6e3;
+    padding: 0.2em 0.6em;
+    border-radius: 12px;
+    font-size: 0.9em;
+    margin: 0.2em;
+}
+
+/* Doodle section with school theme */
+.doodle-section {
+    border: 2px dashed var(--school-blue);
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgba(253, 246, 227, 0.5);
+    border-radius: 4px;
+}
+
+/* Torn quote with school theme */
+.torn-quote {
+    position: relative;
+    background: #fdf6e3;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    border: 1px solid var(--school-gray);
+}
+
+/* Pencil line with school theme */
+.pencil-line {
+    border: none; /* Remove default border */
+    height: 2px; /* Height of the line */
+    background: repeating-linear-gradient(
+        90deg,
+        var(--school-blue),
+        /* Use your defined school blue color */ var(--school-blue) 6px,
+        /* Color fills for 6px */ transparent 6px,
+        /* Starts transparent after 6px */ transparent 12px
+            /* Transparent continues for another 6px */
+    );
+    margin: 2rem 0; /* Margin above and below the line */
+    opacity: 0.8; /* Add slight opacity for a softer look */
+    position: relative; /* Positioning context for pseudo-elements */
+}
+
+/* Add a sketchy effect using pseudo-elements */
+.pencil-line::before {
+    content: "";
+    position: absolute;
+    left: -5px; /* Slightly off to the left */
+    top: 50%; /* Center vertically */
+    width: 10px; /* Width of the sketched effect */
+    height: 10px; /* Height of the sketched effect */
+    background: #8b4513; /* Brownish color for a pencil effect */
+    border-radius: 50%; /* Rounded for a doodle effect */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+.pencil-line::after {
+    content: "";
+    position: absolute;
+    right: -5px; /* Slightly off to the right */
+    top: 50%; /* Center vertically */
+    width: 10px; /* Width of the sketched effect */
+    height: 10px; /* Height of the sketched effect */
+    background: #8b4513; /* Brownish color for a pencil effect */
+    border-radius: 50%; /* Rounded for a doodle effect */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+/* Paper clip with school theme */
 .paper-clip {
     position: absolute;
     top: -10px;
     left: 20px;
     width: 30px;
     height: 60px;
-    background: linear-gradient(45deg, #c0c0c0, #e0e0e0);
+    background: linear-gradient(45deg, var(--school-gray), #93a1a1);
     border-radius: 5px 5px 0 0;
     transform: rotate(45deg);
-    z-index: 2;
-}
-
-.grid-paper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(var(--text-primary) 1px, transparent 1px),
-        linear-gradient(90deg, var(--text-primary) 1px, transparent 1px);
-    background-size: 20px 20px;
-    opacity: 0.1;
-    pointer-events: none;
+    z-index: 5;
 }
 
 /* Mobile responsiveness */
@@ -213,14 +290,112 @@ img {
     }
 
     .container {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
-    pre {
-        padding: 0.5rem;
+    .sticky-note {
+        margin: 1rem -0.5rem;
     }
 
     .title {
         font-size: 2em;
     }
+}
+
+/* Image Styling */
+.image-overlay {
+    position: relative; /* Position relative for stacking context */
+    z-index: 10; /* Ensure the image is on top */
+    border: 5px solid var(--school-blue); /* Add a border around the image */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Ensure no overflow beyond the border */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* Animation for hover effect */
+}
+
+.image-overlay img {
+    display: block; /* Remove inline spacing */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Image hover effect */
+.image-overlay:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove double borders */
+    margin: 1rem 0; /* Margin above and below */
+    transition: box-shadow 0.3s ease; /* Animation for hover effect */
+}
+
+th,
+td {
+    padding: 10px; /* Spacing inside cells */
+    border: 2px solid var(--school-blue); /* Border around cells */
+    text-align: left; /* Left-aligned text */
+}
+
+th {
+    background-color: var(--school-blue); /* Background for header */
+    color: white; /* Text color for header */
+}
+
+/* Table hover effect */
+table:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* List Styling */
+ul,
+ol {
+    padding-left: 20px; /* Indentation */
+    margin: 1rem 0; /* Margin above and below */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+li {
+    margin-bottom: 5px; /* Space between list items */
+    position: relative; /* Position for pseudo-elements */
+}
+
+/* Add a subtle animation to list items */
+li::before {
+    content: "";
+    position: absolute;
+    left: -15px; /* Position the dot outside the list */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to center */
+    width: 8px; /* Dot size */
+    height: 8px; /* Dot size */
+    background-color: var(--school-blue); /* Dot color */
+    border-radius: 50%; /* Circle shape */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease; /* Fade in on hover */
+}
+
+/* List item hover effect */
+li:hover::before {
+    opacity: 1; /* Show dot on hover */
+}
+
+/* Centering the image */
+img {
+    display: block; /* Change from inline to block for centering */
+    margin-left: auto; /* Automatic left margin */
+    margin-right: auto; /* Automatic right margin */
+    opacity: 0.8; /* Set opacity (0 is fully transparent, 1 is fully opaque) */
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Optional: Image hover effect to increase opacity */
+img:hover {
+    opacity: 1; /* Fully opaque on hover */
 }

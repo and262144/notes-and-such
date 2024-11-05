@@ -1,4 +1,9 @@
-# Atomic Weight
+---
+title: Atomic Weight
+author: Satvik Anand
+date: 2024-11-05
+---
+
 
 Weighted average of Atomic masses of different isotopes of any element .
 
@@ -72,7 +77,9 @@ $≈ 12.01$
 |                    | ²⁰⁷Pb   | 22.1        | 206.9759          |                                                                                                                     |
 |                    | ²⁰⁸Pb   | 52.4        | 207.9766          |                                                                                                                     |
 
-```julia
+## Code to compute such automatically
+
+```{.code-block}
 using Printf
 
 # Function to calculate the atomic mass based on isotope data
@@ -125,7 +132,9 @@ end
 main()
 ```
 
-```haskell
+This is the same code in haskell
+
+```{.code-block}
 import Control.Monad (when)
 import Text.Printf (printf)
 
@@ -164,7 +173,7 @@ main = do
 
 Install the [mendeleev](https://pypi.org/project/mendeleev/) package using ``pip install mendeleev`` to use the following code to calculate the Atomic weight automatically
 
-```python
+```{.code-block}
 from mendeleev import element
 import pandas as pd
 

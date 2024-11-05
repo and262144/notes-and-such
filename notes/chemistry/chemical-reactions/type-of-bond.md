@@ -1,25 +1,25 @@
-# Types of Chemical Bonds
-
-
+---
+title: Type of Bonds
+author: Satvik Anand
+date: 2024-11-05
+---
 
 ## Metals
 
-- Shiny 
+- Shiny
 
-- Dense 
+- Dense
 
 - Solid at **STP**
 
-- Malleable 
+- Malleable
 
 - Ductile
 
-- Conductor of heat 
+- Conductor of heat
 
 - and electricity
-  
-  - Because they share electricity amongst each other 
 
-- 
+  - Because they share electricity amongst each other
 
-
+-
