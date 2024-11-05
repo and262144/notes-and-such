@@ -1,4 +1,8 @@
-# Main Index
+---
+title: Main Index
+author: Satvik Anand
+date: 2024-11-05
+---
 
 - [artificial-intelligence](artificial-intelligence/index.html)
 
@@ -14,4 +18,8 @@
 
 - [physics](physics/index.html)
 
-- [thought-posts](thought-posts/index.html)  
+- [thought-posts](thought-posts/index.html)
+
+---
+
+## Recent updates
