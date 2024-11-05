@@ -4,7 +4,6 @@ author: Satvik Anand
 date: 2024-11-05
 ---
 
-
 Weighted average of Atomic masses of different isotopes of any element .
 
 $\text{Atomic Mass} = ( \text{Abundance of Isotope 1} \times \text{Atomic Mass of Isotope 1}) + ( \text{Abundance of Isotope 2} \times \text{Atomic Mass of Isotope 2}) + \dots$
@@ -79,7 +78,7 @@ $≈ 12.01$
 
 ## Code to compute such automatically
 
-```{.code-block}
+```julia
 using Printf
 
 # Function to calculate the atomic mass based on isotope data
@@ -134,7 +133,9 @@ main()
 
 This is the same code in haskell
 
-```{.code-block}
+
+
+```haskell
 import Control.Monad (when)
 import Text.Printf (printf)
 
@@ -173,7 +174,7 @@ main = do
 
 Install the [mendeleev](https://pypi.org/project/mendeleev/) package using ``pip install mendeleev`` to use the following code to calculate the Atomic weight automatically
 
-```{.code-block}
+```py
 from mendeleev import element
 import pandas as pd
 

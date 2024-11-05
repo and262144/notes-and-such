@@ -4,10 +4,6 @@ author: Satvik Anand
 date: 2024-11-05
 ---
 
-
-
-
-
 ## This document provides an overview of the features and snippets included in the Vim configuration tailored for scientific writing.
 
 ## 1. Installation Instructions
