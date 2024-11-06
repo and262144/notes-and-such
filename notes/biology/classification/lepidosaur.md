@@ -7,10 +7,10 @@ date: 2024-11-05
 
 | Kingdom:    | [Animalia](https://simple.wikipedia.org/wiki/Animal "Animalia")                               |
 |-------------|-----------------------------------------------------------------------------------------------|
-| Phylum:     | [Chordata]                         |
-| Class:      | [Sauropsida]                       |
-| Subclass:   | [Diapsida]                         |
-| Infraclass: | [Lepidosauromorpha]                |
+| Phylum:     | **Chordata**                         |
+| Class:      | **Sauropsida**                       |
+| Subclass:   | **Diapsida**                         |
+| Infraclass: | **Lepidosauromorpha**                |
 | Superorder: | **Lepidosauria**                   |
 
 - Lepidosauria are tetrapod vertebrate
