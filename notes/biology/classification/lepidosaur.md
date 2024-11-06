@@ -5,13 +5,14 @@ date: 2024-11-05
 ---
 ## aka reptiles!
 
-| Kingdom:    | [Animalia](https://simple.wikipedia.org/wiki/Animal "Animalia")                               |
-|-------------|-----------------------------------------------------------------------------------------------|
+| Taxon       | Name                                 |
+|-------------|--------------------------------------|
+| Kingdom:    | **Animalia**                         |
 | Phylum:     | **Chordata**                         |
 | Class:      | **Sauropsida**                       |
 | Subclass:   | **Diapsida**                         |
 | Infraclass: | **Lepidosauromorpha**                |
-| Superorder: | **Lepidosauria**                   |
+| Superorder: | **Lepidosauria**                     |
 
 - Lepidosauria are tetrapod vertebrate
 - 12,000 known species
