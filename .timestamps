@@ -4,7 +4,6 @@
 ./notes/artificial-intelligence//introduction//what-is-ai.md:1730983027
 ./notes/biology//index.md:1730983028
 ./notes/biology//classification//index.md:1730983028
-./notes/biology//classification//lepidosaur.md:1730983028
 ./notes/biology//introduction//index.md:1730983029
 ./notes/biology//introduction//what-is-living.md:1730983029
 ./notes/chemistry//index.md:1730983030
@@ -14,10 +13,8 @@
 ./notes/chemistry//some-basic-concepts//atomic-weight.md:1730983031
 ./notes/chemistry//some-basic-concepts//avogadro-mole.md:1730983032
 ./notes/chemistry//states-of-matter//index.md:1730983032
-./notes/chemistry//states-of-matter//gas.md:1730983032
 ./notes/chemistry//states-of-matter//liquid.md:1730983033
 ./notes/chemistry//states-of-matter//plasma.md:1730983033
-./notes/chemistry//states-of-matter//solid.md:1730983034
 ./notes/english//index.md:1730983034
 ./notes/mathematics//index.md:1730983034
 ./notes/meetings//index.md:1730983035
@@ -27,3 +24,7 @@
 ./notes/thought-posts//index.md:1730983036
 ./notes/thought-posts//how-to-use-nvim.md:1730983037
 ./notes/thought-posts//testing-some-features.md:1730983038
+./notes/biology//classification//lepidosaur.md:1730984617
+./notes/chemistry//states-of-matter//bose-einstein-condensate.md:1730984617
+./notes/chemistry//states-of-matter//gas.md:1730985185
+./notes/chemistry//states-of-matter//solid.md:1730989769

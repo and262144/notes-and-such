@@ -10,9 +10,20 @@ date: 2024-07-21
    - **Key Characteristics**: Solids are highly ordered, maintain a definite shape and volume, and are generally incompressible. They resist deformation and exhibit strong intermolecular or ionic forces.
    - **Atomic/Molecular Structure**: Particles in solids are arranged in a highly ordered, fixed lattice structure. Bonding varies by solid type, such as metallic bonding in metals, covalent bonding in diamond, and ionic bonding in salts like NaCl. The arrangement leads to minimal freedom for particle movement, resulting in rigidity.
 
-   **Suggested Media Attachment**:
-   - **Image**: Visualize crystal lattice structures (cubic, hexagonal, tetragonal) to illustrate how particles are arranged in solids.
-   - **Video**: Animated model of particle arrangement and vibration in a solid lattice, showing restricted particle motion compared to gases and liquids.
+|![Crystal Lattice Structures unit cells](https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_16.gif)|
+|:--:|
+|*Types of unit lattice structures*|
+
+|![Some example lattice structures](https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_17.gif)|
+|:---:|
+|Some example lattice structures|
+
+
+|![Eg salts](https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_19.gif)|
+|:---:|
+|*Example salts*|
+
+[Video on rod expanding on heating](https://www.youtube.com/watch?v=sNvMfuOvHwg)
 
 ---
 
@@ -23,9 +34,6 @@ date: 2024-07-21
    - **Compressibility**: Solids are almost incompressible. The closely packed particles don’t allow much compression, making them retain their volume under pressure.
    - **Thermal Expansion**: Solids expand slightly with temperature. As particles gain kinetic energy with heat, the lattice structure slightly loosens, causing minor expansion.
 
-   **Suggested Media Attachment**:
-   - **Image**: Diagram contrasting the compressibility and thermal expansion of solids, liquids, and gases.
-   - **Video**: Thermal expansion demonstration (e.g., metal rod expanding upon heating).
 
 ---
 
@@ -35,9 +43,7 @@ date: 2024-07-21
    - **Bond Strength and Distance**: Bonds in solids are strong, with particles at relatively fixed, short distances. Ionic and covalent bonds are stronger than Van der Waals forces, making ionic and covalent solids generally harder and higher-melting.
    - **Role of Forces in Determining State**: The strong intermolecular forces in solids lock particles in place, leading to their rigidity and definite shape.
 
-   **Suggested Media Attachment**:
-   - **Image**: Different types of bonds in solids, such as ionic in salts, covalent in diamond, and metallic in metals.
-   - **Video**: Short explainer on intermolecular forces and their role in defining the solid state.
+[Video on Bonding in solids](https://www.youtube.com/watch?v=OUpj3A6-l5Y)
 
 ---
 
@@ -47,10 +53,6 @@ date: 2024-07-21
    - **Energy Changes**: Melting requires input of heat (latent heat of fusion) to overcome intermolecular forces. Sublimation, as seen in CO₂ (dry ice), also requires heat to bypass the liquid phase directly.
    - **Critical and Triple Points**: Solids don’t have a critical point but exist in phase diagrams with defined boundaries for solid, liquid, and gaseous states. The triple point represents equilibrium between all three phases.
 
-   **Suggested Media Attachment**:
-   - **Image**: Phase diagram showing the transition points for a typical substance.
-   - **Video**: Melting and sublimation demonstrations, showing transitions from solid to other states.
-
 ---
 
 ### 5. **Microscopic Properties**
@@ -58,8 +60,7 @@ date: 2024-07-21
    - **Particle Movement and Kinetic Energy**: In solids, particles vibrate around fixed positions. Kinetic energy is lower compared to liquids and gases, as particle motion is restricted by strong intermolecular forces.
    - **Quantum Mechanical Effects**: Quantum effects are generally negligible in classical solids but significant in specific cases like superconductors and Bose-Einstein condensates.
 
-   **Suggested Media Attachment**:
-   - **Video**: Microscopic simulation of vibrating particles within a solid lattice.
+[Video on Microscopic View of Vibrations in Solids ](https://www.youtube.com/watch?v=M78OvUppih4)
 
 ---
 

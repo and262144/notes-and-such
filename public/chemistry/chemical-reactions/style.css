@@ -346,7 +346,7 @@ td {
 }
 
 th {
-    background-color: var(--school-blue); /* Background for header */
+    border-color: blueviolet; /* Background for header */
     color: white; /* Text color for header */
 }
 
