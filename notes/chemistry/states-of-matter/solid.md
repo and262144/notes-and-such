@@ -71,9 +71,9 @@ date: 2024-07-21
    - **Optical Properties**: Solids vary widely. Some are transparent (glass), some opaque (metals), and others reflective. Crystal structure affects refraction and birefringence.
    - **Mechanical Properties**: Solids show elasticity (e.g., rubber), hardness (e.g., diamond), and tensile strength, depending on bonding and structure.
 
-   **Suggested Media Attachment**:
-   - **Image**: Diagrams of properties (conductivity, magnetic responses) for various types of solids.
-   - **Video**: Conductivity test in solids, e.g., comparing metal and ionic compounds.
+[Conductivity of ionic solid](https://www.youtube.com/watch?v=tsJxRUSKPIk)
+[Electical Conductivity of metals](https://www.youtube.com/watch?v=B54eB3xgyHA)
+[Some properties to remember](https://s3.eu-central-1.amazonaws.com/studysmarter-mediafiles/media/1865576/summary_images/propertiesdiagram.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4OLDUDE42UZHAIET%2F20241104%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241104T052617Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=baa311cd859e5e18de5320a7f566782e2b6a79b0c937f9c5c07e5f09d027a4ef)
 
 ---
 
@@ -83,9 +83,6 @@ date: 2024-07-21
    - **Natural Occurrences**: Solids are the predominant state of matter on Earth’s crust (minerals, metals).
    - **Future Potential**: Graphene and other carbon-based materials are being explored for electronics, energy storage, and nanotechnology applications.
 
-   **Suggested Media Attachment**:
-   - **Image**: Uses of solids like semiconductors, construction materials, and carbon nanotubes in industry.
-
 ---
 
 ### 8. **Experimental Observations and Techniques**
@@ -94,8 +91,7 @@ date: 2024-07-21
    - **Conditions for Formation**: Solids form at low temperatures or high pressures. Crystallization can occur by cooling a liquid or by depositing vapor.
    - **Challenges in Study**: High-melting-point materials require specialized equipment, while delicate crystalline structures can be challenging to maintain under high pressure or temperature.
 
-   **Suggested Media Attachment**:
-   - **Video**: Brief overview of XRD technique for observing crystal structures.
+[X ray Diffusion basics](https://www.youtube.com/watch?v=AqCz_b7VJK8)
 
 ---
 
@@ -105,8 +101,9 @@ date: 2024-07-21
    - **Thermodynamic Equations**: Heat capacity $( C = q/\Delta T )$, often crucial in studying heat-related properties.
    - **Quantum Models**: Quantum models apply in specialized solids like superconductors or quantum dots.
 
-   **Suggested Media Attachment**:
-   - **Image**: Equations and graphs illustrating Hooke’s Law and other relevant thermodynamic equations.
+|![Force vs extension](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiKsWPDHUGC1l68YwCzfE0WvJQJ_slT2qFw&s)|
+|:---:|
+|*Force vs Extensions*|
 
 ---
 
@@ -116,9 +113,6 @@ date: 2024-07-21
    - **Properties Unique to This State**: Rigidity, fixed shape, low kinetic energy, and high density.
    - **Boundary Conditions**: Solids exist at lower temperatures and moderate to high pressures in phase diagrams.
 
-   **Suggested Media Attachment**:
-   - **Image**: Diagram comparing solid, liquid, and gas properties side-by-side.
-
 ---
 
 ### 11. **Recent Research and Emerging Trends**
@@ -127,7 +121,6 @@ date: 2024-07-21
    - **Current Research Topics**: Superconductors, ferroelectric materials, and carbon nanostructures in materials science.
    - **Open Questions**: Unresolved areas include high-temperature superconductivity mechanisms and new potential solid forms.
 
-   **Suggested Media Attachment**:
-   - **Video**: Overview of graphene and its advanced material properties.
+[Graphene epic video](https://www.youtube.com/watch?v=IesIsKMjB4Y)
 
 ---
