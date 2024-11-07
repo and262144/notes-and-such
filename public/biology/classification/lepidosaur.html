@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Author and Date Metadata -->
                 <meta name="author" content="Satvik Anand" />
                  <meta name="date" content="2024-11-05" />
-                <title>Lepidosauria</title>
+        
+        <title>Lepidosauria</title>
 
         <!-- Fonts -->
         <link
@@ -28,7 +31,19 @@
             });
         </script>
         
-        <!-- MathJax Configuration for GFM -->
+        <!-- Mermaid.js for Diagrams -->
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+            document.addEventListener("DOMContentLoaded", () => {
+                mermaid.initialize({ startOnLoad: false });
+                const mermaidElements = document.querySelectorAll(".mermaid");
+                mermaidElements.forEach((element) => {
+                    mermaid.init({ startOnLoad: true }, element);
+                });
+            });
+        </script>
+
+        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
@@ -52,13 +67,11 @@
                     ignoreHtmlClass: "tex2jax_ignore",
                     processHtmlClass: "tex2jax_process",
                 },
-                loader: {
-                    load: ["[tex]/mhchem"],
-                },
+                loader: { load: ["[tex]/mhchem"] },
                 startup: {
                     pageReady: () => {
                         return MathJax.startup.defaultPageReady().then(() => {
-                            // Any post-processing after MathJax loads
+                            // Custom post-processing after MathJax loads, if needed
                         });
                     },
                 },
@@ -73,13 +86,13 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
 
-         
-    </head>
+            </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
+                <!-- Title, Date, and Backlink -->
                                 <h1 class="title">Lepidosauria</h1>
                                  <p class="date">2024-11-05</p>
                   <h2 id="aka-reptiles">aka reptiles!</h2>
@@ -136,6 +149,16 @@ title="Brookesia micra" alt="nano-chameleon" />
 <figcaption aria-hidden="true">nano-chameleon</figcaption>
 </figure>
 <p>"Nano-Chamaleon - Smallest lizard"</p>
+<p><a
+href="https://mermaid.live/edit#pako:eNp1ksFqwzAMQH8l-Nz-QAaDQGEMWijLBjvkImwtFnUsz7EPpfTf5zjJmnbZzfJ7lmVZFyFZoShF68Hp4n331Nii2KMjxT1ET1Bst89F_R2hgwCr8E2frdQs0WkwlJzBmk9kYw8SfaAMH1CN3qEN2I_Hbmamr20EO56alnm7kp4V2_AHHA3GBVrJ-IKnE08PuSe1JCu5Y5-ekctcxAuBFK7jMd0vX7mhsm2k2wWLMOMdOcOt4b5fxUcD4Wxz7fn-uXFTbWxQstOkpibf4cpg0GQX_H4nSwdIbe0Dzx-9onxiCtEEUoD_KB9-YQzOw3iM5TqdMg3_NFQjNqJD3wGpNIiX3DwRNHbYiDItPQbPjWjsNYkQA9cpoSiDj7gRnmOrRfkFpk9RdAoC7gjSOHezgooC-8M453ncrz-ZYgWQ"><img
+src="https://mermaid.ink/img/pako:eNp1ksFqwzAMQH8l-Nz-QAaDQGEMWijLBjvkImwtFnUsz7EPpfTf5zjJmnbZzfJ7lmVZFyFZoShF68Hp4n331Nii2KMjxT1ET1Bst89F_R2hgwCr8E2frdQs0WkwlJzBmk9kYw8SfaAMH1CN3qEN2I_Hbmamr20EO56alnm7kp4V2_AHHA3GBVrJ-IKnE08PuSe1JCu5Y5-ekctcxAuBFK7jMd0vX7mhsm2k2wWLMOMdOcOt4b5fxUcD4Wxz7fn-uXFTbWxQstOkpibf4cpg0GQX_H4nSwdIbe0Dzx-9onxiCtEEUoD_KB9-YQzOw3iM5TqdMg3_NFQjNqJD3wGpNIiX3DwRNHbYiDItPQbPjWjsNYkQA9cpoSiDj7gRnmOrRfkFpk9RdAoC7gjSOHezgooC-8M453ncrz-ZYgWQ?type=png" /></a></p>
+<div class="mermaid">
+<p>graph TD; Lepidosauria --&gt; Squamata Lepidosauria --&gt;
+Rhynchocephalia</p>
+</div>
+<div class="mermaid">
+<p>graph TD; Squamata --&gt; Lacertilia Squamata --&gt; Serpentes</p>
+</div>
             </main>
         </div>
     </body>

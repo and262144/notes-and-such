@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                 <title>index</title>
+
+        <!-- Author and Date Metadata -->
+         
+        <title>index</title>
 
         <!-- Fonts -->
         <link
@@ -26,7 +29,19 @@
             });
         </script>
         
-        <!-- MathJax Configuration for GFM -->
+        <!-- Mermaid.js for Diagrams -->
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+            document.addEventListener("DOMContentLoaded", () => {
+                mermaid.initialize({ startOnLoad: false });
+                const mermaidElements = document.querySelectorAll(".mermaid");
+                mermaidElements.forEach((element) => {
+                    mermaid.init({ startOnLoad: true }, element);
+                });
+            });
+        </script>
+
+        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
@@ -50,13 +65,11 @@
                     ignoreHtmlClass: "tex2jax_ignore",
                     processHtmlClass: "tex2jax_process",
                 },
-                loader: {
-                    load: ["[tex]/mhchem"],
-                },
+                loader: { load: ["[tex]/mhchem"] },
                 startup: {
                     pageReady: () => {
                         return MathJax.startup.defaultPageReady().then(() => {
-                            // Any post-processing after MathJax loads
+                            // Custom post-processing after MathJax loads, if needed
                         });
                     },
                 },
@@ -71,13 +84,13 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
 
-         
-    </head>
+            </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
+                <!-- Title, Date, and Backlink -->
                    <h1 id="physics">physics</h1>
 <p>-<a href="hc-verma/index.html">HC-Verma-Solutions</a></p>
             </main>
