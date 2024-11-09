@@ -10,7 +10,7 @@ date: 2024-07-21
    - **Key Characteristics**: Liquids exhibit fluidity, a moderate level of intermolecular attraction, and lack the rigid structure of solids. They are generally incompressible and can diffuse and flow.
    - **Atomic/Molecular Structure**: Particles in a liquid are close together but not as fixed as in a solid. They can slide past one another, which allows for fluid motion. Bonding varies; in water, hydrogen bonds create a cohesive network, while in organic solvents, Van der Waals forces are more dominant.
 
-![Video on Particle Motion in Liquids](https://www.youtube.com/watch?v=52uo-uMniTk)
+[Video on Particle Motion in Liquids](https://www.youtube.com/watch?v=52uo-uMniTk)
 
 ---
 
@@ -24,6 +24,8 @@ date: 2024-07-21
    **Suggested Media Attachment**:
    - **Image**: Diagram comparing the density and compressibility of solids, liquids, and gases.
    - **Video**: Demonstration of thermal expansion in a liquid (e.g., thermometer rising with heat). (Attachment: Thermal Expansion in Liquids Demonstration)
+
+![liquid-density-compressibility](https://user-images.githubusercontent.com/92667164/184542085-d8a6e0e7-c1c0-4f3f-b9f1-e2c3c2d6f2f7.png)
 
 ---
 
