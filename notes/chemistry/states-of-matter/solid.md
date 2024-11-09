@@ -39,7 +39,7 @@ date: 2024-07-21
 
 ### 3. **Intermolecular Forces and Bonding**
 
-   - **Types of Intermolecular Forces**: Solids may have various bonding forces—ionic (e.g., NaCl), covalent (e.g., diamond), metallic (e.g., iron), or Van der Waals forces in molecular solids (e.g., dry ice, CO₂).
+   - **Types of Intermolecular Forces**: Solids may have various bonding forces—ionic (e.g., $\ce{NaCl}$), covalent (e.g., diamond), metallic (e.g., iron $\ce{Fe}$), or Van der Waals forces in molecular solids (e.g., dry ice, $\ce{CO2}$).
    - **Bond Strength and Distance**: Bonds in solids are strong, with particles at relatively fixed, short distances. Ionic and covalent bonds are stronger than Van der Waals forces, making ionic and covalent solids generally harder and higher-melting.
    - **Role of Forces in Determining State**: The strong intermolecular forces in solids lock particles in place, leading to their rigidity and definite shape.
 
@@ -50,7 +50,7 @@ date: 2024-07-21
 ### 4. **Phase Transitions**
 
    - **Transition Processes**: Solids transition to liquids (melting) or gases (sublimation) upon heating. Melting involves breaking intermolecular forces, allowing particles to move more freely.
-   - **Energy Changes**: Melting requires input of heat (latent heat of fusion) to overcome intermolecular forces. Sublimation, as seen in CO₂ (dry ice), also requires heat to bypass the liquid phase directly.
+   - **Energy Changes**: Melting requires input of heat (latent heat of fusion) to overcome intermolecular forces. Sublimation, as seen in $\ce{CO2}$ (dry ice), also requires heat to bypass the liquid phase directly.
    - **Critical and Triple Points**: Solids don’t have a critical point but exist in phase diagrams with defined boundaries for solid, liquid, and gaseous states. The triple point represents equilibrium between all three phases.
 
 ---
@@ -97,7 +97,7 @@ date: 2024-07-21
 
 ### 9. **Mathematical Models and Equations**
 
-   - **Equations of State**: Hooke’s Law for elasticity: $ F = -kx $, where $ k $ is the spring constant, and $ x $ is the deformation.
+   - **Equations of State**: Hooke’s Law for elasticity: $F = -kx$, where $k$ is the spring constant, and $x$ is the deformation.
    - **Thermodynamic Equations**: Heat capacity $( C = q/\Delta T )$, often crucial in studying heat-related properties.
    - **Quantum Models**: Quantum models apply in specialized solids like superconductors or quantum dots.
 
