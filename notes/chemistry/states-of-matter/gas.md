@@ -84,8 +84,8 @@ date: 2024-07-21
 
 ### 9. **Mathematical Models and Equations**
 
-   - **Equations of State**: The Ideal Gas Law $( PV = nRT )$ is central for describing gas behavior under ideal conditions, where $ P $ is pressure, $ V $ is volume, $ n $ is moles, $ R $ is the gas constant, and $ T $ is temperature.
-   - **Thermodynamic Equations**: The kinetic energy of gas particles relates to temperature: $ KE = \frac{3}{2} kT $, where $ k $ is Boltzmann’s constant.
+   - **Equations of State**: The Ideal Gas Law $( PV = nRT )$ is central for describing gas behavior under ideal conditions, where $P$ is pressure, $V$ is volume, $n$ is moles, $R$ is the gas constant, and $T$ is temperature.
+   - **Thermodynamic Equations**: The kinetic energy of gas particles relates to temperature: $KE = \frac{3}{2} kT$, where $k$ is Boltzmann’s constant.
    - **Quantum Models**: For gases under extreme conditions (e.g., Bose-Einstein condensates), quantum models like wave functions describe particle states.
 
    **Suggested Media Attachment**:
