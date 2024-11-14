@@ -10,9 +10,17 @@ date: 2024-07-21
    - **Key Characteristics**: Plasmas are electrically conductive, respond to magnetic fields, and emit light. Unlike other states, they consist of ionized particles, making them electrically neutral on a large scale but with distinct charged regions.
    - **Atomic/Molecular Structure**: Particles in plasma are widely separated like in gases but exist as ions and electrons rather than neutral atoms or molecules. The high-energy collisions continuously create and recombine ions and electrons.
 
-   **Suggested Media Attachment**:
-   - **Image**: Diagram illustrating the ionized particle structure of plasma, showing separated ions and electrons.
-   - **Video**: Animated model of gas transitioning to plasma upon ionization, showing how energy breaks apart atoms into ions and electrons. (Attachment: Plasma Ionization Process)
+|![Gas vs Plasma](https://www.researchgate.net/publication/236143825/figure/fig1/AS:299427316158479@1448400443865/An-example-of-a-plasma-right-after-heated-significantly-enough-to-become-ionized-and.png)|
+|:--:|
+|**GAS vs PLASMA**|
+
+|![Gas to plasma](https://astrocamp.org/app/uploads/2016/03/PlasmaBall.gif)|
+|:--:|
+|**Gas Transistioning to plasma**|
+
+|![Magnetic fields](https://static.wixstatic.com/media/c78e7e_9a8cecf911c64cdc8fcceee014f9aed0~mv2_d_2000_1534_s_2.png/v1/fill/w_980,h_752,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c78e7e_9a8cecf911c64cdc8fcceee014f9aed0~mv2_d_2000_1534_s_2.png)|
+|:--:|
+|*Magnetic Field*|
 
 ---
 
@@ -23,10 +31,6 @@ date: 2024-07-21
    - **Compressibility**: Plasmas are compressible like gases but can be significantly affected by magnetic fields, allowing confinement in reactors or by natural phenomena.
    - **Thermal Expansion**: Plasma expands significantly with temperature as high kinetic energy spreads particles further apart, enhancing its gaseous behavior.
 
-   **Suggested Media Attachment**:
-   - **Image**: Comparison of compressibility and expansion for solids, liquids, gases, and plasma.
-   - **Video**: Demonstration of plasma expansion with increased energy (e.g., glow discharge increasing in size as voltage is raised). (Attachment: Thermal Expansion in Plasma)
-
 ---
 
 ### 3. **Intermolecular Forces and Bonding**
@@ -35,9 +39,9 @@ date: 2024-07-21
    - **Bond Strength and Distance**: In plasma, charged particles are continuously moving and recombining. This state lacks the stable bonding found in solids and liquids; particle separation is similar to gases.
    - **Role of Forces in Determining State**: The unique electromagnetic forces enable plasmas to interact with magnetic fields and sustain energy, leading to behaviors like confinement in magnetic fields or generation of plasma arcs.
 
-   **Suggested Media Attachment**:
-   - **Image**: Visual of charged particle movement in plasma, emphasizing electromagnetic interactions.
-   - **Video**: Visualizing magnetic field interactions with plasma, showing how it can be confined by magnetic fields in labs or natural settings. (Attachment: Magnetic Confinement of Plasma)
+|![Visualizing magnetic field interactions with plasma](https://www.researchgate.net/publication/46423787/figure/fig4/AS:668402880372736@1536371073145/color-The-RT-1-magnetospheric-plasma-system-a-A-dipole-magnetic-field-is-produced.png)|
+|:--:|
+|*Visualizing magnetic field interactions with plasma*|
 
 ---
 
@@ -47,9 +51,9 @@ date: 2024-07-21
    - **Energy Changes**: Ionization requires significant energy to remove electrons from atoms (ionization energy). Recombination releases energy as ions and electrons return to neutral atoms.
    - **Critical and Triple Points**: Plasma doesn’t follow traditional phase diagrams but can exist at a broad range of temperatures and pressures, particularly in stars and fusion reactors.
 
-   **Suggested Media Attachment**:
-   - **Image**: Phase transition diagram showing gas-to-plasma transition via ionization.
-   - **Video**: Demonstration of ionization and recombination using a plasma ball, where ionized particles emit light as they recombine. (Attachment: Plasma Ionization and Recombination Demonstration)
+|![Phase transition diagram showing gas-to-plasma transition via ionization](https://i.sstatic.net/ykJKNY70.png)|
+|:--:|
+|*Phase transition diagram showing gas-to-plasma transition via ionization*|
 
 ---
 
@@ -57,10 +61,6 @@ date: 2024-07-21
 
    - **Particle Movement and Kinetic Energy**: Plasma particles have extremely high kinetic energy, with ions and electrons moving independently at high speeds. This high energy allows constant ionization and recombination.
    - **Quantum Mechanical Effects**: In some plasmas, especially in low-density or astrophysical contexts, quantum effects such as tunneling and quantum states can be significant, impacting particle behavior at micro-scales.
-
-   **Suggested Media Attachment**:
-   - **Video**: Microscopic simulation of particle movement in plasma, highlighting the independent movement of ions and electrons. (Attachment: Microscopic Particle Dynamics in Plasma)
-
 ---
 
 ### 6. **Macroscopic Properties**
@@ -70,10 +70,6 @@ date: 2024-07-21
    - **Optical Properties**: Plasmas emit light when ions recombine with electrons, producing phenomena like neon signs or auroras. The light's color depends on the gas type and energy level.
    - **Mechanical Properties**: Plasma has a low viscosity similar to gases but can show rigidity in response to magnetic fields, forming filamentary or arc-like structures.
 
-   **Suggested Media Attachment**:
-   - **Image**: Diagram illustrating plasma conductivity and magnetic response.
-   - **Video**: Experiment showing plasma's conductive properties (e.g., arc welding or plasma cutting). (Attachment: Conductivity and Magnetic Response in Plasma)
-
 ---
 
 ### 7. **Applications and Uses**
@@ -82,9 +78,9 @@ date: 2024-07-21
    - **Natural Occurrences**: Plasmas naturally occur in the sun and stars, lightning, auroras, and in Earth's ionosphere.
    - **Future Potential**: Plasma-based fusion energy is a promising area of research, with ongoing advancements in magnetic confinement and inertial confinement techniques.
 
-   **Suggested Media Attachment**:
-   - **Image**: Various applications of plasma (e.g., plasma screens, fusion reactors, welding).
-   - **Video**: Overview of natural and technological uses of plasma, including its role in fusion research. (Attachment: Plasma Applications and Uses)
+|![Plasma Confinment](https://ars.els-cdn.com/content/image/3-s2.0-B9780128095973003308-f0300330-18-9780128095973.jpg)|
+|:--:|
+|*Plasma Confinment*|
 
 ---
 
@@ -94,8 +90,7 @@ date: 2024-07-21
    - **Conditions for Formation**: Plasmas require high energy inputs, such as temperatures above thousands of Kelvin or strong electromagnetic fields, to maintain ionization.
    - **Challenges in Study**: Plasmas are difficult to confine due to high energy and magnetic sensitivity, requiring specialized reactors or vacuum chambers.
 
-   **Suggested Media Attachment**:
-   - **Video**: Demonstration of spectroscopy for studying plasma emissions. (Attachment: Spectroscopy in Plasma Studies)
+[Inductively coupled plasma emission spectroscopy](https://www.youtube.com/watch?v=qrFub0xTlZo)
 
 ---
 
@@ -105,13 +100,15 @@ date: 2024-07-21
      $$
      \frac{n_i n_e}{n_0} = \frac{2 g_i g_e}{g_0} \left( \frac{2 \pi m_e k T}{h^2} \right)^{3/2} e^{-\frac{E_{\text{ion}}}{kT}}
      $$
-     where $ n_i $, $ n_e $, and $ n_0 $ are ion, electron, and neutral atom densities, respectively.
-   - **Thermodynamic Equations**: The Debye length, $ \lambda_D = \sqrt{\frac{\epsilon_0 k T}{n_e e^2}} $, characterizes the plasma’s ability to screen electric fields over short distances.
+     where $n_i$, $n_e$, and $n_0$ are ion, electron, and neutral atom densities, respectively.
+   - **Thermodynamic Equations**: The Debye length, $\lambda_D = \sqrt{\frac{\epsilon_0 k T}{n_e e^2}}$, characterizes the plasma’s ability to screen electric fields over short distances.
    - **Quantum Models**: In extreme cases, quantum mechanics applies, especially in dense astrophysical plasmas or at ultralow temperatures.
 
-   **Suggested Media Attachment**:
-   - **Image**: Graphs and diagrams illustrating Saha equilibrium and Debye length in plasma.
-   - **Video**: Explanation of mathematical models used in plasma physics, with applications to fusion research. (Attachment: Plasma Mathematical Models Overview)
+
+|![Graphs and diagrams illustrating Saha equilibrium and Debye length in plasma](https://www.researchgate.net/publication/234994920/figure/fig1/AS:508708783431680@1498297033566/The-dependence-of-the-Debye-length-D-in-a-plasma-of-temperature-k-B-T100-eV-and-density.png)|
+|:--:|
+|![Saha-Boltzmann equation](https://www.researchgate.net/publication/239610388/figure/fig7/AS:405420196810755@1473671115246/Determination-of-plasma-parameters-using-the-Saha-Boltzmann-equation-and-Stark-width-of.png)|
+|**Graphs and diagrams illustrating Saha equilibrium and Debye length in plasma**|
 
 ---
 
@@ -125,17 +122,16 @@ date: 2024-07-21
    - **Image**: Comparison table showing unique properties of plasma vs. solids, liquids, and gases.
    - **Video**: Summary of plasma’s unique properties and comparison to other states. (Attachment: Unique Properties of Plasma)
 
+|![Table showing unique properties of plasma vs. solids, liquids, and gases](https://www.researchgate.net/publication/315729780/figure/tbl1/AS:652204549603351@1532509090532/Comparison-between-plasma-regimes-and-the-other-three-states-of-matter.png)|
+|:--:|
+|*table showing unique properties of plasma vs. solids, liquids, and gases*|
+
 ---
 
 ### 11. **Recent Research and Emerging Trends**
 
-   - **New Discoveries**: Recent breakthroughs in magnetic confinement (e.g., ITER project) and controlled
-
- fusion continue to push plasma research forward.
+   - **New Discoveries**: Recent breakthroughs in magnetic confinement (e.g., [ITER project](https://www.iter.org/)) and controlled fusion continue to push plasma research forward.
    - **Current Research Topics**: Key areas include plasma fusion energy, plasma-based propulsion, and applications in electronics for ionized materials.
    - **Open Questions**: Questions include how to achieve sustainable plasma confinement for fusion and understanding cosmic plasmas’ role in space phenomena.
-
-   **Suggested Media Attachment**:
-   - **Video**: Overview of recent advances in plasma fusion technology, including ITER and magnetic confinement approaches. (Attachment: Plasma Fusion Research Overview)
 
 ---
