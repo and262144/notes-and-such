@@ -105,16 +105,14 @@ pre,
 sourceCode {
     font-family: "Fira Code", monospace;
     line-height: var(--grid-size);
-    background: #d3d3d3;
+    background: var(--school-yellow);
     border-radius: 1px;
     border: 1px solid var(--school-gray);
     position: relative;
     z-index: 3;
-    width: 100%;
     white-space: pre-wrap; /* Allow text to wrap */
     overflow-wrap: break-word; /* Break long words if necessary */
-    max-width: fit-content; /* Adjusts width according to the container */
-    padding: 1% 1% 1% 1%;
+    padding: 1% 1% 1% 10%;
 }
 
 /* Sticky notes with school theme */

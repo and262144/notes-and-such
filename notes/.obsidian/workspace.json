@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "0c6049ce5961f92e",
+    "type": "split",
+    "children": [
+      {
+        "id": "85eb2b4a09b0fa54",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f3948cfe0f488de3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "biology/biochemistry/Biomolecules.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Biomolecules"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5877d644ad9c6f48",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea528bdc5b135609",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "07771f608e69bf92",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b91c3818d83fd684",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5c7634dbf04c128f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4431307308c71b4d",
+    "type": "split",
+    "children": [
+      {
+        "id": "dcd9b269edc60d26",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2e0004848599836",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "fb4de776852afb7d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "baf2a6d283bddc2c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7dab8db02788f997",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f3948cfe0f488de3",
+  "lastOpenFiles": [
+    "thought-posts/testing-some-features.md",
+    "biology/biochemistry/Biomolecules.md",
+    "chemistry/some-basic-concepts/MassSpectrometry.md",
+    "biology/biochemistry/resources",
+    "biology/biochemistry/index.md",
+    "biology/classification/lepidosaur.md",
+    "biology/biochemistry",
+    "chemistry/index.html.md",
+    "chemistry/states-of-matter/plasma.md",
+    "chemistry/states-of-matter/solid.md",
+    "chemistry/states-of-matter/gas.md",
+    "chemistry/states-of-matter/index.md",
+    "artificial-intelligence/introduction/what-is-ai.md"
+  ]
+}

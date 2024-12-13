@@ -18,6 +18,7 @@ date: 2024-11-05
 - Email professor
   :::
 
+
 :::{.handwritten}
 
 ## Topics Covered
