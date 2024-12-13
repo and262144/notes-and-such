@@ -96,7 +96,10 @@
                                 <h1 class="title">Basics of
 Biochemistry</h1>
                                  <p class="date">2023-12-13</p>
-                  <pre class="{.code-block}"><code>def ChemicalAnalysis(type,tissue){
+                  <div class="handwritten">
+<p>Chemical Analysis</p>
+</div>
+<pre class="{.code-block}"><code>def ChemicalAnalysis(type,tissue){
 
     if (type==&#39;Basic Chemical Method&#39;){
     
@@ -126,6 +129,63 @@ Biochemistry</h1>
 <p>There are many ways for analysis of tissues. This is the basic in
 NCERT books</p>
 </div>
+<div class="handwritten">
+<p>Amino Acids</p>
+</div>
+<pre class="{.code-block}"><code>def AminoAcids(Ligand,size,nature){
+
+    extends Compounds()
+
+    def1 = contain.AmineGroup() --&gt; C1
+
+    def2 = contain.CarboxylAcid() --&gt; C1
+
+    C1 = α carbon = attach point for everything
+
+    C1.ValancePosition(){
+        - Hydrogen() --&gt; H
+        - AmineGroup() --&gt; NH₂
+        - VariableGroup() --&gt; R
+        - CarboxylGroup() --&gt; COOH
+    }
+    
+    __self__.depends(R)
+}</code></pre>
+<p><code>AminoAcids.display()</code></p>
+<figure>
+<img src="./resources/amino-acid.jpg"
+alt="Amino Acid basic Structure" />
+<figcaption aria-hidden="true">Amino Acid basic Structure</figcaption>
+</figure>
+<p><code>AmineGroup.display()</code></p>
+<figure>
+<img src="./resources/amines.jpg" alt="Amine Group" />
+<figcaption aria-hidden="true">Amine Group</figcaption>
+</figure>
+<p><code>CarboxylAcid.display()</code></p>
+<figure>
+<img src="./resources/carboxyl-group.png" alt="Carboxyl Group" />
+<figcaption aria-hidden="true">Carboxyl Group</figcaption>
+</figure>
+<div class="handwritten">
+<p>Types of Amino Acids</p>
+</div>
+<pre class="{.code-block}"><code>def TypesOfAminoAcids(AminoAcids(),R){
+
+    if(Body.produce=True){
+    
+        AminoAcid.type = Non-Essential Amino Acid
+        
+    }
+    
+    else if(Body.produce=False){
+    
+        AminoAcid.type = Essential Amino Acid
+    
+    }
+}
+
+TypesOfAminoAcids.addContext(&#39;In Human Body&#39;)</code></pre>
             </main>
         </div>
     </body>
