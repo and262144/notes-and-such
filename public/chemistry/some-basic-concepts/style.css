@@ -345,7 +345,7 @@ td {
 
 th {
     border-color: blueviolet; /* Background for header */
-    color: white; /* Text color for header */
+    color: darkblue; /* Text color for header */
 }
 
 /* Table hover effect */
@@ -402,3 +402,51 @@ img {
 img:hover {
     opacity: 1; /* Fully opaque on hover */
 }
+
+/* Sources section with school theme */
+.sources {
+    background: rgba(253, 246, 227, 0.7); /* Light background with transparency */
+    border: 2px solid var(--school-blue); /* Border using school blue */
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+}
+
+.sources h3 {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+    color: var(--school-blue);
+}
+
+.sources ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.sources li {
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Add a pencil line before sources list */
+.sources::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    width: 40px;
+    height: 2px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--school-blue),
+                                          var(--school-blue) 6px,
+                                          transparent 6px,
+                                          transparent 12px
+    );
+    opacity: 0.8;
+}
+
