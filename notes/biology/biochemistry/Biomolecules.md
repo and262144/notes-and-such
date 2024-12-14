@@ -107,11 +107,17 @@ def TypesOfAminoAcids(AminoAcids(),R){
 		if(R=='heterocyclic'){
 			- Histidine(His)
 				R group: CH₂-imidazole (aromatic ring with nitrogen)
+				Nature : Basic ; (+) charge ; aromatic 
+				Function :  Found in high concentrations in hemoglobin. Treats anemia, has been used to treat rheumatoid arthritis.
+				IUPAC : (2S)-2-Amino-3-(3H-imidazol-4-yl)propanoic acid
 		}
 		
 		if(R=='Basic'){
 			- Arginine(Arg)
 				R group: CH₂CH₂CH₂NHC(NH₂)₂ (guanidino group)
+				Nature : Basic ; (+) charge ; aromatic 
+				Function : Tissue repair 
+				IUPAC :  (2S)-2-Amino-5-(diaminomethylideneamino)pentanoic acid
 		}
 	
 	}
@@ -119,6 +125,15 @@ def TypesOfAminoAcids(AminoAcids(),R){
 
 TypesOfAminoAcids.addContext('In Human Body')
 ```
+
+``Histidine.display()``
+
+![Histidine](./resources/histidine.mp4)
+
+``Arginine.display()``
+
+![Arginine](./resources/arginine.mp4)
+
 
 ### Essential Amino Acids  
 | **Amino Acid**    | **3-Letter Code** | **R Group**                                   | **Diagram**                                                    |

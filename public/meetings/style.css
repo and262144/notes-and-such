@@ -450,3 +450,16 @@ img:hover {
     opacity: 0.8;
 }
 
+.video-container {
+    text-align: center;
+    margin: 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display:block;
+    margin: 0 auto;
+}
