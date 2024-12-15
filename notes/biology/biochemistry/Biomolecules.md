@@ -98,6 +98,32 @@ def TypesOfAminoAcids(AminoAcids(),R){
 	
 	else if(Body.produce=False){
 		AminoAcid.type = Essential Amino Acid
+		
+		if(R=='-CH(CH₃)₂'){
+			-Isoleucine(lle)
+				R group : Isopropyl Group
+				Nature :  a non-polar, uncharged (at physiological pH), branched-chain, aliphatic
+				Function : Necessary for the synthesis of hemoglobin. Related to insulin resistence ,boosting up energy level
+				IUPAC : (2S,3S)-2-Amino-3-methylpentanoic acid
+		}
+		
+		if(R=='−C4H9'){
+			- Leucine(Leu)
+				R group : Isobutyl Group
+				Nature : a non-polar, uncharged (at physiological pH), branched-chain, aliphatic 
+				Function : Regulates Blood sugar , promotes growth and repair , production of growth hormone 
+				IUPAC : (2S)-2-Amino-4-methylpentanoic acid
+		}
+		
+		if(R=='(CH2)4NH2'){
+			-Lysine 
+				R group : 1-aminobutane or butylamine 
+				Nature : basic aliphatic.
+				Function : calcium absorbtion , recovery from surgery , muscle protein
+				IUPAC : (2S)-2,6-DSiaminohexanoic acid
+		}
+		
+		if(R=='')
 	
 	}
 	
@@ -125,6 +151,18 @@ def TypesOfAminoAcids(AminoAcids(),R){
 
 TypesOfAminoAcids.addContext('In Human Body')
 ```
+
+``Isoleucine.display``
+
+![Isoleucine](./resources/isoleucine.mp4)
+
+``Leucine.display``
+
+![Leucine](./resources/leucine.mp4)
+
+``Lycine.display``
+
+![Lycine](./resources/lycine.mp4)
 
 ``Histidine.display()``
 
