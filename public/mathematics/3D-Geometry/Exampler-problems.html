@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Author and Date Metadata -->
+                <meta name="author" content="Satvik Anand" />
+                 <meta name="date" content="2024-11-05" />
+        
+        <title>Introduction to 3D Geometry</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Syntax Highlighting -->
+                <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+            defer
+        ></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                hljs.highlightAll();
+            });
+        </script>
+        
+        <!-- Mermaid.js for Diagrams -->
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+            document.addEventListener("DOMContentLoaded", () => {
+                mermaid.initialize({ startOnLoad: false });
+                const mermaidElements = document.querySelectorAll(".mermaid");
+                mermaidElements.forEach((element) => {
+                    mermaid.init({ startOnLoad: true }, element);
+                });
+            });
+        </script>
+
+        <!-- MathJax Configuration -->
+                <script>
+            window.MathJax = {
+                tex: {
+                    processEscapes: true,
+                    packages: [
+                        "base",
+                        "ams",
+                        "noerrors",
+                        "noundefined",
+                        "mhchem",
+                    ],
+                },
+                options: {
+                    skipHtmlTags: [
+                        "script",
+                        "noscript",
+                        "style",
+                        "textarea",
+                        "pre",
+                    ],
+                    ignoreHtmlClass: "tex2jax_ignore",
+                    processHtmlClass: "tex2jax_process",
+                },
+                loader: { load: ["[tex]/mhchem"] },
+                startup: {
+                    pageReady: () => {
+                        return MathJax.startup.defaultPageReady().then(() => {
+                            // Custom post-processing after MathJax loads, if needed
+                        });
+                    },
+                },
+            };
+        </script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
+        ></script>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+            </head>
+    <body>
+        <div class="container">
+            <div class="paper-clip"></div>
+            <div class="grid-paper"></div>
+            <main>
+                <!-- Title, Date, and Backlink -->
+                                <h1 class="title">Introduction to 3D
+Geometry</h1>
+                                 <p class="date">2024-11-05</p>
+                  <h2 id="exampler-problems-123">Exampler Problems
+12.3</h2>
+<h3 id="short-answer-">Short Answer :</h3>
+<p><strong>1</strong></p>
+<p>(i)</p>
+<figure>
+<img src="./resources/1(i).gif" alt="Graph(1(i))" />
+<figcaption aria-hidden="true">Graph(1(i))</figcaption>
+</figure>
+<p>(ii)</p>
+<figure>
+<img src="./resources/1(ii).gif" alt="Graph(1(ii))" />
+<figcaption aria-hidden="true">Graph(1(ii))</figcaption>
+</figure>
+<p>(iii)</p>
+<figure>
+<img src="./resources/1(iii).gif" alt="Graph(1(iii))" />
+<figcaption aria-hidden="true">Graph(1(iii))</figcaption>
+</figure>
+<p>(iv)</p>
+<figure>
+<img src="./resources/1(iv).gif" alt="Graph(iv)))" />
+<figcaption aria-hidden="true">Graph(iv)))</figcaption>
+</figure>
+<p><strong>2</strong></p>
+<p>(i) 0 : +++</p>
+<p>(ii) 3 : +-+</p>
+<p>(iii) 4 : +--</p>
+<p>(iv) 7 : ++-</p>
+<p>(v) 1 : -++</p>
+<p>(vi) 2 : +-+</p>
+<p>(vii) 4 : +--</p>
+<p>(viii) 6 : -+-</p>
+<p><strong>3</strong></p>
+<ul>
+<li><p>(i)(3,4,2) : x(3,0,0) ; y(0,4,0) ; z(0,0,2) ;</p></li>
+<li><p>(ii)(-5,3,7) : x(-5,0,0) ; y(0,3,0) ; z(0,0,7) ;</p></li>
+<li><p>(iii)(4,-3,5) : x(4,0,0) ; y(0,-3,0) ; z(0,0,5) ;</p></li>
+</ul>
+<p><strong>4</strong></p>
+<ul>
+<li><p>(i) (3,4,5) : xy(3,4,0); yz(0,4,5); zx(3,0,5);</p></li>
+<li><p>(ii) (-5,3,7) : xy(-5,3,0); yz(-5,0,7); zx(0,5,7);</p></li>
+<li><p>(iii) (4,-3,-5) : xy(4,-3,0); yz(4,0,-5); zx(0,-3,-5);</p></li>
+</ul>
+            </main>
+        </div>
+    </body>
+</html>
