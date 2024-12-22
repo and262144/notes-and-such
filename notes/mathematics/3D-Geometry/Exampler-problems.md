@@ -66,27 +66,40 @@ Let the points be A(2,0,0) and B(-3,0,0)
 
 Distance<sub>$(A \to B):$</sub>
 
-$ \sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2} $
+$\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$
 
-$ \implies \sqrt{(-3-2)^2} $
+$\implies \sqrt{(-3-2)^2}$
 
-$ \implies \sqrt{25} $
+$\implies \sqrt{25}$
 
-$ \implies 5 $
+$\implies 5$
 
 <strong>6</strong>
 
 Distance<sub>$(origin \to P):$</sub> 
 
-$ \sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2} $
+$\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$
 
-$ \implies \sqrt{(6-0)^2+(6-0)^2+(7-0)^2} $
+$\implies \sqrt{(6-0)^2+(6-0)^2+(7-0)^2}$
 
-$ \implies \sqrt{6^2+6^2+7^2} $
+$\implies \sqrt{6^2+6^2+7^2}$
 
-$ \implies 11 $
+$\implies 11$
 
 <strong>7</strong>
 
 Given $x^2+y^2=1$ and $P(x,y,\sqrt{1-x^2-y^2})$
+
 Distance<sub>$P \to origin$</sub>:
+
+$\implies \sqrt{x^2+y^2+(\sqrt{1-x^2-y^2})^2}$
+
+$\implies \sqrt{x^2+y^2+1-x^2-y^2}$
+
+(subtracting)
+
+$\implies \sqrt{1}$
+
+$\implies 1$
+
+<strong>8</strong>
