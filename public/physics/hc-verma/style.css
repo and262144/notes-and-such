@@ -212,22 +212,104 @@ sourceCode {
 }
 
 /* Doodle section with school theme */
-.doodle-section {
+.note {
     border: 2px dashed var(--school-blue);
     padding: 1rem;
     margin: 1rem 0;
-    background: rgba(253, 246, 227, 0.5);
+    background: #fdf6e380;
     border-radius: 4px;
 }
 
-/* Torn quote with school theme */
 .torn-quote {
     position: relative;
-    background: #fdf6e3;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 4px;
-    border: 1px solid var(--school-gray);
+    background: var(--sticky-note-color);
+    padding: 2.5rem 2rem;
+    margin: 3rem 1rem;
+    transform: rotate(-1deg);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Chaotic torn edges using multiple gradients */
+    background-image: 
+        /* Wild top edge */
+        radial-gradient(circle at 10% -5%, transparent 20px, var(--sticky-note-color) 21px),
+        radial-gradient(ellipse at 25% -15%, transparent 25px, var(--sticky-note-color) 26px),
+        radial-gradient(circle at 45% -10%, transparent 15px, var(--sticky-note-color) 16px),
+        radial-gradient(ellipse at 65% -20%, transparent 30px, var(--sticky-note-color) 31px),
+        radial-gradient(circle at 85% -8%, transparent 22px, var(--sticky-note-color) 23px),
+        /* Chaotic bottom edge */
+        radial-gradient(ellipse at 5% 105%, transparent 28px, var(--sticky-note-color) 29px),
+        radial-gradient(circle at 30% 110%, transparent 20px, var(--sticky-note-color) 21px),
+        radial-gradient(ellipse at 50% 108%, transparent 25px, var(--sticky-note-color) 26px),
+        radial-gradient(circle at 75% 115%, transparent 30px, var(--sticky-note-color) 31px),
+        radial-gradient(ellipse at 95% 105%, transparent 22px, var(--sticky-note-color) 23px),
+        /* Side tears */
+        radial-gradient(circle at -15px 20%, transparent 25px, var(--sticky-note-color) 26px),
+        radial-gradient(circle at -10px 70%, transparent 20px, var(--sticky-note-color) 21px),
+        radial-gradient(circle at calc(100% + 15px) 30%, transparent 28px, var(--sticky-note-color) 29px),
+        radial-gradient(circle at calc(100% + 10px) 80%, transparent 22px, var(--sticky-note-color) 23px),
+        /* Notebook lines with varying opacity */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent calc(var(--grid-size) - 1px),
+            var(--grid-color) var(--grid-size)
+        );
+}
+
+.torn-quote::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 10%;
+    right: 10%;
+    height: 40px;
+    background: var(--school-yellow);
+    opacity: 0.3;
+    transform: rotate(1deg) skew(-5deg);
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.torn-quote::after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--margin-color);
+    transform: rotate(0.5deg);
+}
+
+/* Dynamic hover effects */
+.torn-quote:hover {
+    transform: rotate(1deg) translateY(-5px);
+    box-shadow: 
+        -5px 5px 15px rgba(var(--school-blue), 0.1),
+        5px 5px 15px rgba(var(--school-red), 0.1),
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.torn-quote:hover::before {
+    transform: rotate(-1deg) skew(-8deg);
+    opacity: 0.4;
+}
+
+/* Additional texture */
+.torn-quote {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Paper texture overlay */
+.torn-quote::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23paper)' opacity='0.08'/%3E%3C/svg%3E");
+    opacity: 0.1;
+    pointer-events: none;
+    mix-blend-mode: multiply;
 }
 
 /* Pencil line with school theme */
@@ -391,17 +473,13 @@ img {
     display: block; /* Change from inline to block for centering */
     margin-left: auto; /* Automatic left margin */
     margin-right: auto; /* Automatic right margin */
-    opacity: 0.8; /* Set opacity (0 is fully transparent, 1 is fully opaque) */
+    opacity: 1; /* Set opacity (0 is fully transparent, 1 is fully opaque) */
     max-width: 100%; /* Ensure the image is responsive */
     height: auto; /* Maintain aspect ratio */
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
-    z-index: 10;
+    z-index: 999;
 }
 
-/* Optional: Image hover effect to increase opacity */
-img:hover {
-    opacity: 1; /* Fully opaque on hover */
-}
 
 /* Sources section with school theme */
 .sources {
@@ -462,4 +540,86 @@ video {
     border-radius: 5px;
     display:block;
     margin: 0 auto;
+}
+
+.change-page {
+    position: relative;
+    margin: 2rem 0;
+    transform: rotate(-1deg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.change-page a {
+    display: block;
+    padding: 1.2rem 2rem;
+    background: var(--page-bg);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    border-left: 3px solid var(--school-blue);
+    background-image: 
+        /* Diagonal lines texture */
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            var(--grid-color) 10px,
+            var(--grid-color) 11px
+        );
+}
+
+/* Paper fold effect */
+.change-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(
+        135deg,
+        transparent 50%,
+        rgba(0, 0, 0, 0.05) 50%
+    );
+    transition: all 0.3s ease;
+}
+
+/* Arrow indicator */
+.change-page a::after {
+    content: '→';
+    position: absolute;
+    right: 2rem;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    color: var(--school-blue);
+}
+
+/* Hover effects */
+.change-page:hover {
+    transform: rotate(0deg) translateY(-3px);
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(var(--school-blue), 0.1);
+}
+
+.change-page:hover a {
+    background-color: rgba(var(--school-yellow), 0.05);
+    padding-right: 3.5rem;
+}
+
+.change-page:hover a::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.change-page:hover::before {
+    width: 40px;
+    height: 40px;
+}
+
+/* Active state */
+.change-page:active {
+    transform: rotate(0deg) translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }

@@ -42,16 +42,12 @@ function helloWorld() {
 }
 ```
 
-::: {.grid-paper}
-Here's my detailed notes with grid background...
-:::
-
 > This is an important quote that will have the torn paper effect
 > {.torn-quote}
 
 [Tag 1]{.tag} [Tag 2]{.tag} [Tag 3]{.tag}
 
-::: {.doodle-section}
+::: {.note}
 Some rough work and sketches go here...
 :::
 

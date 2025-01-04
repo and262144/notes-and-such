@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Author and Date Metadata -->
+                <meta name="author" content="Satvik Anand" />
+                 <meta name="date" content="2024-11-05" />
+        
+        <title>Thermodynamics</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Syntax Highlighting -->
+                <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+            defer
+        ></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                hljs.highlightAll();
+            });
+        </script>
+        
+        <!-- Mermaid.js for Diagrams -->
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+            document.addEventListener("DOMContentLoaded", () => {
+                mermaid.initialize({ startOnLoad: false });
+                const mermaidElements = document.querySelectorAll(".mermaid");
+                mermaidElements.forEach((element) => {
+                    mermaid.init({ startOnLoad: true }, element);
+                });
+            });
+        </script>
+
+        <!-- MathJax Configuration -->
+                <script>
+            window.MathJax = {
+                tex: {
+                    processEscapes: true,
+                    packages: [
+                        "base",
+                        "ams",
+                        "noerrors",
+                        "noundefined",
+                        "mhchem",
+                    ],
+                },
+                options: {
+                    skipHtmlTags: [
+                        "script",
+                        "noscript",
+                        "style",
+                        "textarea",
+                        "pre",
+                    ],
+                    ignoreHtmlClass: "tex2jax_ignore",
+                    processHtmlClass: "tex2jax_process",
+                },
+                loader: { load: ["[tex]/mhchem"] },
+                startup: {
+                    pageReady: () => {
+                        return MathJax.startup.defaultPageReady().then(() => {
+                            // Custom post-processing after MathJax loads, if needed
+                        });
+                    },
+                },
+            };
+        </script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
+        ></script>
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+            </head>
+    <body>
+        <div class="container">
+            <div class="paper-clip"></div>
+            <div class="grid-paper"></div>
+            <main>
+                <!-- Title, Date, and Backlink -->
+                                <h1 class="title">Thermodynamics</h1>
+                                 <p class="date">2024-11-05</p>
+                  <h2 id="macro-states-and-micro-states">Macro-states
+and Micro-states</h2>
+<p><strong>Macro-states:</strong> State of a system as a whole , which
+can be described by a few macroscopic variables like temperature,
+volume, pressure, etc.</p>
+<p><strong>Micro-states:</strong> State of every individual
+atom/particle of system , which can be described by their position,
+velocity, momentum, etc.</p>
+<div class="note">
+<p>Thermodynamics is concerned with macro-states and processes which
+bring a change in such states , despite the fact that such changes are
+direct consequence of the change in microstates , it is illogical to
+measure all of these changes , rather the sum total of the changes ,
+i.e. the change is macro-state is considered.</p>
+</div>
+<h2 id="when-work-is-done-">When work is done :</h2>
+<p>on or by a system;</p>
+<ul>
+<li>there is a change in the
+<ul>
+<li>physical</li>
+<li>chemical state of the system.</li>
+</ul></li>
+<li>This change causes various aspects about the macroscopic properties
+to change</li>
+<li>Our goal is to calculate such changes and categorize them</li>
+<li>why they occur</li>
+<li>their results on the system</li>
+<li>and then make predictions on what will happen if we change the
+conditions of a system</li>
+<li>and finally use that knowledge to understand physical and chemical
+processes and solve problems and get good marks and stuff</li>
+</ul>
+<p>One such tool we use for this is the Ideal Gas Law , or derivatives
+of it :- <span class="math display">\[\rho V= n_aRT\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\rho\)</span> is the density of the
+gas</li>
+<li><span class="math inline">\(V\)</span> is the Volume of the gas</li>
+<li><span class="math inline">\(n_a\)</span> is the number of moles of
+the gas</li>
+<li><span class="math inline">\(R\)</span> is the Universal Gas Constant
+, i.e.</li>
+<li><span class="math inline">\(T\)</span> is the temperature</li>
+</ul>
+<p>(never learnt this )</p>
+<ul>
+<li>We can observe the relationship between the said variables which
+affect the macro-state of a system . When at a point of no change is
+called equilibrium .</li>
+<li>Such an equilibrium is stable if the system is in a state of minimum
+energy .</li>
+<li>Equilibrium is disrupted when there is a change in the macroscopic
+variables of the system , which is called a process .</li>
+<li>This can be represented by a <span
+class="math inline">\(P-V\)</span> aka pressure volume graph.</li>
+</ul>
+<div class="note">
+<p>Macro variables are defined only at equilibrium , hence may be easily
+plotted on a <span class="math inline">\(P-V\)</span> graph . When not
+in such a state a graph may or may not be plotted depending on some
+other factors</p>
+</div>
+<p><strong>Quasi-static Process:</strong> A process in which the system
+is always almost in a state of equilibrium . This is a very idealized
+process and is never actually observed in nature .</p>
+<ul>
+<li>Gives us an idea of the change in macroscopic variables of the
+system and makes graphing the process possible.</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>We are going to study quasi-static processes as they make
+understandable graphs for exams , and definitely not to be
+scientific</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Infinitely Close to eq</li>
+<li>Can observe previous state of the system</li>
+<li>And can therefore be reversible(not always)</li>
+</ul>
+<div class="torn-quote">
+<p>Time for the infamous laws of Thermodynamics which make you sound
+cooler than you really are ; or maybe hotter , it's all relative, iykwim
+:)</p>
+</div>
+<div class="change-page">
+<p><a href="./first-law-thermo.html">First Law of thermodynamics</a></p>
+</div>
+            </main>
+        </div>
+    </body>
+</html>
