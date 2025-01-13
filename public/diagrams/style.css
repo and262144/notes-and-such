@@ -114,20 +114,30 @@ sourceCode {
     overflow-wrap: break-word; /* Break long words if necessary */
     padding: 1% 1% 1% 10%;
 }
+/* Sticky notes container for layout management */
+.sticky-note-container {
+    display: flex;
+    flex-direction: column; /* Align notes vertically */
+    gap: var(--grid-size); /* Add space between sticky notes */
+}
 
-/* Sticky notes with school theme */
+/* Individual sticky note styles */
 .sticky-note {
     background: var(--sticky-note-color);
     padding: calc(var(--grid-size) * 1.5);
-    margin: var(--grid-size) 0;
+    margin: 0; /* Margin handled by the container's gap */
     transform: rotate(-1deg);
     box-shadow: 3px 3px 8px rgba(7, 54, 66, 0.1);
     border-radius: 2px;
     position: relative;
     z-index: 4;
     border: 1px solid var(--school-yellow);
+    display: block; /* Ensure it's a block-level element */
+    width: 100%; /* Use full width of the container */
+    box-sizing: border-box;
 }
 
+/* Add folded corner effect */
 .sticky-note::before {
     content: "";
     position: absolute;
@@ -622,4 +632,11 @@ video {
 .change-page:active {
     transform: rotate(0deg) translateY(-1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.define {
+    color: var(--school-blue);
+    font-weight: 700;
+    border-bottom: 3px solid var(--school-yellow);
+    padding: 0 0.2em;
+    margin: 0 0.1em;
 }

@@ -4,337 +4,577 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Author and Date Metadata -->
                 <meta name="author" content="Satvik Anand" />
-                 <meta name="date" content="2024-07-21" />
+                        <meta name="date" content="2024-07-21" />
         
         <title>Solid State</title>
 
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- Syntax Highlighting -->
-                <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
-            defer
-        ></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                hljs.highlightAll();
-            });
+            document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
         </script>
         
-        <!-- Mermaid.js for Diagrams -->
         <script type="module">
             import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
             document.addEventListener("DOMContentLoaded", () => {
-                mermaid.initialize({ startOnLoad: false });
-                const mermaidElements = document.querySelectorAll(".mermaid");
-                mermaidElements.forEach((element) => {
-                    mermaid.init({ startOnLoad: true }, element);
-                });
+                mermaid.initialize({ startOnLoad: true });
+                document.querySelectorAll(".mermaid").forEach(element => 
+                    mermaid.init(undefined, element)
+                );
             });
         </script>
 
-        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
                     processEscapes: true,
-                    packages: [
-                        "base",
-                        "ams",
-                        "noerrors",
-                        "noundefined",
-                        "mhchem",
-                    ],
+                    packages: ["base", "ams", "noerrors", "noundefined", "mhchem"],
                 },
                 options: {
-                    skipHtmlTags: [
-                        "script",
-                        "noscript",
-                        "style",
-                        "textarea",
-                        "pre",
-                    ],
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
                     ignoreHtmlClass: "tex2jax_ignore",
-                    processHtmlClass: "tex2jax_process",
+                    processHtmlClass: "tex2jax_process"
                 },
-                loader: { load: ["[tex]/mhchem"] },
-                startup: {
-                    pageReady: () => {
-                        return MathJax.startup.defaultPageReady().then(() => {
-                            // Custom post-processing after MathJax loads, if needed
-                        });
-                    },
-                },
+                loader: { load: ["[tex]/mhchem"] }
             };
         </script>
-        <script
-            id="MathJax-script"
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
-        ></script>
+        <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
         
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-
             </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
-                <!-- Title, Date, and Backlink -->
                                 <h1 class="title">Solid State</h1>
-                                 <p class="date">2024-07-21</p>
-                  <h3 id="1-definition-and-basic-characteristics">1.
-<strong>Definition and Basic Characteristics</strong></h3>
-<ul>
-<li><strong>Definition</strong>: The solid state is a phase of matter
-characterized by structural rigidity and resistance to changes in shape
-and volume. Unlike other states, solids have fixed shapes and volumes
-due to the closely packed arrangement of particles.</li>
-<li><strong>Key Characteristics</strong>: Solids are highly ordered,
-maintain a definite shape and volume, and are generally incompressible.
-They resist deformation and exhibit strong intermolecular or ionic
-forces.</li>
-<li><strong>Atomic/Molecular Structure</strong>: Particles in solids are
-arranged in a highly ordered, fixed lattice structure. Bonding varies by
-solid type, such as metallic bonding in metals, covalent bonding in
-diamond, and ionic bonding in salts like NaCl. The arrangement leads to
-minimal freedom for particle movement, resulting in rigidity.</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_16.gif"
-alt="Crystal Lattice Structures unit cells" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>Types of unit lattice
-structures</em></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_17.gif"
-alt="Some example lattice structures" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Some example lattice structures</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_19.gif"
-alt="Eg salts" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>Example salts</em></td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://www.youtube.com/watch?v=sNvMfuOvHwg">Video on rod
-expanding on heating</a></p>
-<hr />
-<h3 id="2-thermodynamic-properties">2. <strong>Thermodynamic
-Properties</strong></h3>
-<ul>
-<li><strong>Density</strong>: Solids generally have high densities due
-to the closely packed particles. Density varies among solids based on
-atomic/molecular mass and the strength of intermolecular forces (e.g.,
-metals are denser than many organic solids).</li>
-<li><strong>Volume and Shape</strong>: Solids have definite shapes and
-volumes. They don’t conform to container shapes, unlike liquids and
-gases.</li>
-<li><strong>Compressibility</strong>: Solids are almost incompressible.
-The closely packed particles don’t allow much compression, making them
-retain their volume under pressure.</li>
-<li><strong>Thermal Expansion</strong>: Solids expand slightly with
-temperature. As particles gain kinetic energy with heat, the lattice
-structure slightly loosens, causing minor expansion.</li>
-</ul>
-<hr />
-<h3 id="3-intermolecular-forces-and-bonding">3. <strong>Intermolecular
-Forces and Bonding</strong></h3>
-<ul>
-<li><strong>Types of Intermolecular Forces</strong>: Solids may have
-various bonding forces—ionic (e.g., <span
-class="math inline">\(\ce{NaCl}\)</span>), covalent (e.g., diamond),
-metallic (e.g., iron <span class="math inline">\(\ce{Fe}\)</span>), or
-Van der Waals forces in molecular solids (e.g., dry ice, <span
-class="math inline">\(\ce{CO2}\)</span>).</li>
-<li><strong>Bond Strength and Distance</strong>: Bonds in solids are
-strong, with particles at relatively fixed, short distances. Ionic and
-covalent bonds are stronger than Van der Waals forces, making ionic and
-covalent solids generally harder and higher-melting.</li>
-<li><strong>Role of Forces in Determining State</strong>: The strong
-intermolecular forces in solids lock particles in place, leading to
-their rigidity and definite shape.</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=OUpj3A6-l5Y">Video on
-Bonding in solids</a></p>
-<hr />
-<h3 id="4-phase-transitions">4. <strong>Phase Transitions</strong></h3>
-<ul>
-<li><strong>Transition Processes</strong>: Solids transition to liquids
-(melting) or gases (sublimation) upon heating. Melting involves breaking
-intermolecular forces, allowing particles to move more freely.</li>
-<li><strong>Energy Changes</strong>: Melting requires input of heat
-(latent heat of fusion) to overcome intermolecular forces. Sublimation,
-as seen in <span class="math inline">\(\ce{CO2}\)</span> (dry ice), also
-requires heat to bypass the liquid phase directly.</li>
-<li><strong>Critical and Triple Points</strong>: Solids don’t have a
-critical point but exist in phase diagrams with defined boundaries for
-solid, liquid, and gaseous states. The triple point represents
-equilibrium between all three phases.</li>
-</ul>
-<hr />
-<h3 id="5-microscopic-properties">5. <strong>Microscopic
-Properties</strong></h3>
-<ul>
-<li><strong>Particle Movement and Kinetic Energy</strong>: In solids,
-particles vibrate around fixed positions. Kinetic energy is lower
-compared to liquids and gases, as particle motion is restricted by
-strong intermolecular forces.</li>
-<li><strong>Quantum Mechanical Effects</strong>: Quantum effects are
-generally negligible in classical solids but significant in specific
-cases like superconductors and Bose-Einstein condensates.</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=M78OvUppih4">Video on
-Microscopic View of Vibrations in Solids </a></p>
-<hr />
-<h3 id="6-macroscopic-properties">6. <strong>Macroscopic
-Properties</strong></h3>
-<ul>
-<li><strong>Electrical Conductivity</strong>: Depends on the solid type.
-Metals conduct due to delocalized electrons; ionic solids conduct when
-molten or dissolved; covalent and molecular solids are usually
-non-conductive.</li>
-<li><strong>Magnetic Properties</strong>: Varies by material.
-Ferromagnetic materials (e.g., iron) align with magnetic fields, while
-others (like diamagnetic substances) repel magnetic fields weakly.</li>
-<li><strong>Optical Properties</strong>: Solids vary widely. Some are
-transparent (glass), some opaque (metals), and others reflective.
-Crystal structure affects refraction and birefringence.</li>
-<li><strong>Mechanical Properties</strong>: Solids show elasticity
-(e.g., rubber), hardness (e.g., diamond), and tensile strength,
-depending on bonding and structure.</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=tsJxRUSKPIk">Conductivity of
-ionic solid</a> <a
-href="https://www.youtube.com/watch?v=B54eB3xgyHA">Electical
-Conductivity of metals</a> <a
-href="https://s3.eu-central-1.amazonaws.com/studysmarter-mediafiles/media/1865576/summary_images/propertiesdiagram.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4OLDUDE42UZHAIET%2F20241104%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241104T052617Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=baa311cd859e5e18de5320a7f566782e2b6a79b0c937f9c5c07e5f09d027a4ef">Some
-properties to remember</a></p>
-<hr />
-<h3 id="7-applications-and-uses">7. <strong>Applications and
-Uses</strong></h3>
-<ul>
-<li><strong>Technological Applications</strong>: Solids are used in
-building materials (cement, metals), electronics (silicon in
-semiconductors), and jewelry (diamond). Carbon allotropes (graphene,
-carbon nanotubes) have advanced applications.</li>
-<li><strong>Natural Occurrences</strong>: Solids are the predominant
-state of matter on Earth’s crust (minerals, metals).</li>
-<li><strong>Future Potential</strong>: Graphene and other carbon-based
-materials are being explored for electronics, energy storage, and
-nanotechnology applications.</li>
-</ul>
-<hr />
-<h3 id="8-experimental-observations-and-techniques">8.
-<strong>Experimental Observations and Techniques</strong></h3>
-<ul>
-<li><strong>Methods of Study</strong>: X-ray diffraction (XRD) to study
-crystal structure, calorimetry for thermal properties, and spectroscopy
-for bonding analysis.</li>
-<li><strong>Conditions for Formation</strong>: Solids form at low
-temperatures or high pressures. Crystallization can occur by cooling a
-liquid or by depositing vapor.</li>
-<li><strong>Challenges in Study</strong>: High-melting-point materials
-require specialized equipment, while delicate crystalline structures can
-be challenging to maintain under high pressure or temperature.</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=AqCz_b7VJK8">X ray Diffusion
-basics</a></p>
-<hr />
-<h3 id="9-mathematical-models-and-equations">9. <strong>Mathematical
-Models and Equations</strong></h3>
-<ul>
-<li><strong>Equations of State</strong>: Hooke’s Law for elasticity:
-<span class="math inline">\(F = -kx\)</span>, where <span
-class="math inline">\(k\)</span> is the spring constant, and <span
-class="math inline">\(x\)</span> is the deformation.</li>
-<li><strong>Thermodynamic Equations</strong>: Heat capacity <span
-class="math inline">\(( C = q/\Delta T )\)</span>, often crucial in
-studying heat-related properties.</li>
-<li><strong>Quantum Models</strong>: Quantum models apply in specialized
-solids like superconductors or quantum dots.</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiKsWPDHUGC1l68YwCzfE0WvJQJ_slT2qFw&amp;s"
-alt="Force vs extension" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>Force vs Extensions</em></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="10-comparison-with-other-states">10. <strong>Comparison with
-Other States</strong></h3>
-<ul>
-<li><strong>Contrast with Neighboring States</strong>: Unlike liquids,
-solids don’t flow and have fixed shapes. Unlike gases, solids have fixed
-volumes and minimal compressibility.</li>
-<li><strong>Properties Unique to This State</strong>: Rigidity, fixed
-shape, low kinetic energy, and high density.</li>
-<li><strong>Boundary Conditions</strong>: Solids exist at lower
-temperatures and moderate to high pressures in phase diagrams.</li>
-</ul>
-<hr />
-<h3 id="11-recent-research-and-emerging-trends">11. <strong>Recent
-Research and Emerging Trends</strong></h3>
-<ul>
-<li><strong>New Discoveries</strong>: Recent studies focus on materials
-like graphene for flexibility and conductivity, and nanostructures for
-improved properties.</li>
-<li><strong>Current Research Topics</strong>: Superconductors,
-ferroelectric materials, and carbon nanostructures in materials
-science.</li>
-<li><strong>Open Questions</strong>: Unresolved areas include
-high-temperature superconductivity mechanisms and new potential solid
-forms.</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=IesIsKMjB4Y">Graphene epic
-video</a></p>
-<hr />
+                                                <p class="date">2024-07-21</p>
+                                                <h3
+                                                id="1-definition-and-basic-characteristics">1.
+                                                <strong>Definition and
+                                                Basic
+                                                Characteristics</strong></h3>
+                                                <ul>
+                                                <li><strong>Definition</strong>:
+                                                The solid state is a
+                                                phase of matter
+                                                characterized by
+                                                structural rigidity and
+                                                resistance to changes in
+                                                shape and volume. Unlike
+                                                other states, solids
+                                                have fixed shapes and
+                                                volumes due to the
+                                                closely packed
+                                                arrangement of
+                                                particles.</li>
+                                                <li><strong>Key
+                                                Characteristics</strong>:
+                                                Solids are highly
+                                                ordered, maintain a
+                                                definite shape and
+                                                volume, and are
+                                                generally
+                                                incompressible. They
+                                                resist deformation and
+                                                exhibit strong
+                                                intermolecular or ionic
+                                                forces.</li>
+                                                <li><strong>Atomic/Molecular
+                                                Structure</strong>:
+                                                Particles in solids are
+                                                arranged in a highly
+                                                ordered, fixed lattice
+                                                structure. Bonding
+                                                varies by solid type,
+                                                such as metallic bonding
+                                                in metals, covalent
+                                                bonding in diamond, and
+                                                ionic bonding in salts
+                                                like NaCl. The
+                                                arrangement leads to
+                                                minimal freedom for
+                                                particle movement,
+                                                resulting in
+                                                rigidity.</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_16.gif"
+                                                alt="Crystal Lattice Structures unit cells" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>Types
+                                                of unit lattice
+                                                structures</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_17.gif"
+                                                alt="Some example lattice structures" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;">Some
+                                                example lattice
+                                                structures</td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://chemed.chem.purdue.edu/genchem/topicreview/bp/ch13/graphics/13_19.gif"
+                                                alt="Eg salts" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>Example
+                                                salts</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <p><a
+                                                href="https://www.youtube.com/watch?v=sNvMfuOvHwg">Video
+                                                on rod expanding on
+                                                heating</a></p>
+                                                <hr />
+                                                <h3
+                                                id="2-thermodynamic-properties">2.
+                                                <strong>Thermodynamic
+                                                Properties</strong></h3>
+                                                <ul>
+                                                <li><strong>Density</strong>:
+                                                Solids generally have
+                                                high densities due to
+                                                the closely packed
+                                                particles. Density
+                                                varies among solids
+                                                based on
+                                                atomic/molecular mass
+                                                and the strength of
+                                                intermolecular forces
+                                                (e.g., metals are denser
+                                                than many organic
+                                                solids).</li>
+                                                <li><strong>Volume and
+                                                Shape</strong>: Solids
+                                                have definite shapes and
+                                                volumes. They don’t
+                                                conform to container
+                                                shapes, unlike liquids
+                                                and gases.</li>
+                                                <li><strong>Compressibility</strong>:
+                                                Solids are almost
+                                                incompressible. The
+                                                closely packed particles
+                                                don’t allow much
+                                                compression, making them
+                                                retain their volume
+                                                under pressure.</li>
+                                                <li><strong>Thermal
+                                                Expansion</strong>:
+                                                Solids expand slightly
+                                                with temperature. As
+                                                particles gain kinetic
+                                                energy with heat, the
+                                                lattice structure
+                                                slightly loosens,
+                                                causing minor
+                                                expansion.</li>
+                                                </ul>
+                                                <hr />
+                                                <h3
+                                                id="3-intermolecular-forces-and-bonding">3.
+                                                <strong>Intermolecular
+                                                Forces and
+                                                Bonding</strong></h3>
+                                                <ul>
+                                                <li><strong>Types of
+                                                Intermolecular
+                                                Forces</strong>: Solids
+                                                may have various bonding
+                                                forces—ionic (e.g.,
+                                                <span
+                                                class="math inline">\(\ce{NaCl}\)</span>),
+                                                covalent (e.g.,
+                                                diamond), metallic
+                                                (e.g., iron <span
+                                                class="math inline">\(\ce{Fe}\)</span>),
+                                                or Van der Waals forces
+                                                in molecular solids
+                                                (e.g., dry ice, <span
+                                                class="math inline">\(\ce{CO2}\)</span>).</li>
+                                                <li><strong>Bond
+                                                Strength and
+                                                Distance</strong>: Bonds
+                                                in solids are strong,
+                                                with particles at
+                                                relatively fixed, short
+                                                distances. Ionic and
+                                                covalent bonds are
+                                                stronger than Van der
+                                                Waals forces, making
+                                                ionic and covalent
+                                                solids generally harder
+                                                and higher-melting.</li>
+                                                <li><strong>Role of
+                                                Forces in Determining
+                                                State</strong>: The
+                                                strong intermolecular
+                                                forces in solids lock
+                                                particles in place,
+                                                leading to their
+                                                rigidity and definite
+                                                shape.</li>
+                                                </ul>
+                                                <p><a
+                                                href="https://www.youtube.com/watch?v=OUpj3A6-l5Y">Video
+                                                on Bonding in
+                                                solids</a></p>
+                                                <hr />
+                                                <h3
+                                                id="4-phase-transitions">4.
+                                                <strong>Phase
+                                                Transitions</strong></h3>
+                                                <ul>
+                                                <li><strong>Transition
+                                                Processes</strong>:
+                                                Solids transition to
+                                                liquids (melting) or
+                                                gases (sublimation) upon
+                                                heating. Melting
+                                                involves breaking
+                                                intermolecular forces,
+                                                allowing particles to
+                                                move more freely.</li>
+                                                <li><strong>Energy
+                                                Changes</strong>:
+                                                Melting requires input
+                                                of heat (latent heat of
+                                                fusion) to overcome
+                                                intermolecular forces.
+                                                Sublimation, as seen in
+                                                <span
+                                                class="math inline">\(\ce{CO2}\)</span>
+                                                (dry ice), also requires
+                                                heat to bypass the
+                                                liquid phase
+                                                directly.</li>
+                                                <li><strong>Critical and
+                                                Triple Points</strong>:
+                                                Solids don’t have a
+                                                critical point but exist
+                                                in phase diagrams with
+                                                defined boundaries for
+                                                solid, liquid, and
+                                                gaseous states. The
+                                                triple point represents
+                                                equilibrium between all
+                                                three phases.</li>
+                                                </ul>
+                                                <hr />
+                                                <h3
+                                                id="5-microscopic-properties">5.
+                                                <strong>Microscopic
+                                                Properties</strong></h3>
+                                                <ul>
+                                                <li><strong>Particle
+                                                Movement and Kinetic
+                                                Energy</strong>: In
+                                                solids, particles
+                                                vibrate around fixed
+                                                positions. Kinetic
+                                                energy is lower compared
+                                                to liquids and gases, as
+                                                particle motion is
+                                                restricted by strong
+                                                intermolecular
+                                                forces.</li>
+                                                <li><strong>Quantum
+                                                Mechanical
+                                                Effects</strong>:
+                                                Quantum effects are
+                                                generally negligible in
+                                                classical solids but
+                                                significant in specific
+                                                cases like
+                                                superconductors and
+                                                Bose-Einstein
+                                                condensates.</li>
+                                                </ul>
+                                                <p><a
+                                                href="https://www.youtube.com/watch?v=M78OvUppih4">Video
+                                                on Microscopic View of
+                                                Vibrations in Solids
+                                                </a></p>
+                                                <hr />
+                                                <h3
+                                                id="6-macroscopic-properties">6.
+                                                <strong>Macroscopic
+                                                Properties</strong></h3>
+                                                <ul>
+                                                <li><strong>Electrical
+                                                Conductivity</strong>:
+                                                Depends on the solid
+                                                type. Metals conduct due
+                                                to delocalized
+                                                electrons; ionic solids
+                                                conduct when molten or
+                                                dissolved; covalent and
+                                                molecular solids are
+                                                usually
+                                                non-conductive.</li>
+                                                <li><strong>Magnetic
+                                                Properties</strong>:
+                                                Varies by material.
+                                                Ferromagnetic materials
+                                                (e.g., iron) align with
+                                                magnetic fields, while
+                                                others (like diamagnetic
+                                                substances) repel
+                                                magnetic fields
+                                                weakly.</li>
+                                                <li><strong>Optical
+                                                Properties</strong>:
+                                                Solids vary widely. Some
+                                                are transparent (glass),
+                                                some opaque (metals),
+                                                and others reflective.
+                                                Crystal structure
+                                                affects refraction and
+                                                birefringence.</li>
+                                                <li><strong>Mechanical
+                                                Properties</strong>:
+                                                Solids show elasticity
+                                                (e.g., rubber), hardness
+                                                (e.g., diamond), and
+                                                tensile strength,
+                                                depending on bonding and
+                                                structure.</li>
+                                                </ul>
+                                                <p><a
+                                                href="https://www.youtube.com/watch?v=tsJxRUSKPIk">Conductivity
+                                                of ionic solid</a> <a
+                                                href="https://www.youtube.com/watch?v=B54eB3xgyHA">Electical
+                                                Conductivity of
+                                                metals</a> <a
+                                                href="https://s3.eu-central-1.amazonaws.com/studysmarter-mediafiles/media/1865576/summary_images/propertiesdiagram.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4OLDUDE42UZHAIET%2F20241104%2Feu-central-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241104T052617Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=baa311cd859e5e18de5320a7f566782e2b6a79b0c937f9c5c07e5f09d027a4ef">Some
+                                                properties to
+                                                remember</a></p>
+                                                <hr />
+                                                <h3
+                                                id="7-applications-and-uses">7.
+                                                <strong>Applications and
+                                                Uses</strong></h3>
+                                                <ul>
+                                                <li><strong>Technological
+                                                Applications</strong>:
+                                                Solids are used in
+                                                building materials
+                                                (cement, metals),
+                                                electronics (silicon in
+                                                semiconductors), and
+                                                jewelry (diamond).
+                                                Carbon allotropes
+                                                (graphene, carbon
+                                                nanotubes) have advanced
+                                                applications.</li>
+                                                <li><strong>Natural
+                                                Occurrences</strong>:
+                                                Solids are the
+                                                predominant state of
+                                                matter on Earth’s crust
+                                                (minerals, metals).</li>
+                                                <li><strong>Future
+                                                Potential</strong>:
+                                                Graphene and other
+                                                carbon-based materials
+                                                are being explored for
+                                                electronics, energy
+                                                storage, and
+                                                nanotechnology
+                                                applications.</li>
+                                                </ul>
+                                                <hr />
+                                                <h3
+                                                id="8-experimental-observations-and-techniques">8.
+                                                <strong>Experimental
+                                                Observations and
+                                                Techniques</strong></h3>
+                                                <ul>
+                                                <li><strong>Methods of
+                                                Study</strong>: X-ray
+                                                diffraction (XRD) to
+                                                study crystal structure,
+                                                calorimetry for thermal
+                                                properties, and
+                                                spectroscopy for bonding
+                                                analysis.</li>
+                                                <li><strong>Conditions
+                                                for Formation</strong>:
+                                                Solids form at low
+                                                temperatures or high
+                                                pressures.
+                                                Crystallization can
+                                                occur by cooling a
+                                                liquid or by depositing
+                                                vapor.</li>
+                                                <li><strong>Challenges
+                                                in Study</strong>:
+                                                High-melting-point
+                                                materials require
+                                                specialized equipment,
+                                                while delicate
+                                                crystalline structures
+                                                can be challenging to
+                                                maintain under high
+                                                pressure or
+                                                temperature.</li>
+                                                </ul>
+                                                <p><a
+                                                href="https://www.youtube.com/watch?v=AqCz_b7VJK8">X
+                                                ray Diffusion
+                                                basics</a></p>
+                                                <hr />
+                                                <h3
+                                                id="9-mathematical-models-and-equations">9.
+                                                <strong>Mathematical
+                                                Models and
+                                                Equations</strong></h3>
+                                                <ul>
+                                                <li><strong>Equations of
+                                                State</strong>: Hooke’s
+                                                Law for elasticity:
+                                                <span
+                                                class="math inline">\(F
+                                                = -kx\)</span>, where
+                                                <span
+                                                class="math inline">\(k\)</span>
+                                                is the spring constant,
+                                                and <span
+                                                class="math inline">\(x\)</span>
+                                                is the deformation.</li>
+                                                <li><strong>Thermodynamic
+                                                Equations</strong>: Heat
+                                                capacity <span
+                                                class="math inline">\((
+                                                C = q/\Delta T
+                                                )\)</span>, often
+                                                crucial in studying
+                                                heat-related
+                                                properties.</li>
+                                                <li><strong>Quantum
+                                                Models</strong>: Quantum
+                                                models apply in
+                                                specialized solids like
+                                                superconductors or
+                                                quantum dots.</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiKsWPDHUGC1l68YwCzfE0WvJQJ_slT2qFw&amp;s"
+                                                alt="Force vs extension" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>Force
+                                                vs Extensions</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <hr />
+                                                <h3
+                                                id="10-comparison-with-other-states">10.
+                                                <strong>Comparison with
+                                                Other
+                                                States</strong></h3>
+                                                <ul>
+                                                <li><strong>Contrast
+                                                with Neighboring
+                                                States</strong>: Unlike
+                                                liquids, solids don’t
+                                                flow and have fixed
+                                                shapes. Unlike gases,
+                                                solids have fixed
+                                                volumes and minimal
+                                                compressibility.</li>
+                                                <li><strong>Properties
+                                                Unique to This
+                                                State</strong>:
+                                                Rigidity, fixed shape,
+                                                low kinetic energy, and
+                                                high density.</li>
+                                                <li><strong>Boundary
+                                                Conditions</strong>:
+                                                Solids exist at lower
+                                                temperatures and
+                                                moderate to high
+                                                pressures in phase
+                                                diagrams.</li>
+                                                </ul>
+                                                <hr />
+                                                <h3
+                                                id="11-recent-research-and-emerging-trends">11.
+                                                <strong>Recent Research
+                                                and Emerging
+                                                Trends</strong></h3>
+                                                <ul>
+                                                <li><strong>New
+                                                Discoveries</strong>:
+                                                Recent studies focus on
+                                                materials like graphene
+                                                for flexibility and
+                                                conductivity, and
+                                                nanostructures for
+                                                improved
+                                                properties.</li>
+                                                <li><strong>Current
+                                                Research
+                                                Topics</strong>:
+                                                Superconductors,
+                                                ferroelectric materials,
+                                                and carbon
+                                                nanostructures in
+                                                materials science.</li>
+                                                <li><strong>Open
+                                                Questions</strong>:
+                                                Unresolved areas include
+                                                high-temperature
+                                                superconductivity
+                                                mechanisms and new
+                                                potential solid
+                                                forms.</li>
+                                                </ul>
+                                                <p><a
+                                                href="https://www.youtube.com/watch?v=IesIsKMjB4Y">Graphene
+                                                epic video</a></p>
+                                                <hr />
             </main>
         </div>
     </body>

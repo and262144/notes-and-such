@@ -4,147 +4,300 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Author and Date Metadata -->
                 <meta name="author" content="Satvik Anand" />
-                 <meta name="date" content="2025-01-02" />
+                        <meta name="date" content="2025-01-02" />
         
-        <title>Carnot Engine and Carnot Cycle</title>
+        <title>Radiation(thermal)</title>
 
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- Syntax Highlighting -->
-                <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
-            defer
-        ></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                hljs.highlightAll();
-            });
+            document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
         </script>
         
-        <!-- Mermaid.js for Diagrams -->
         <script type="module">
             import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
             document.addEventListener("DOMContentLoaded", () => {
-                mermaid.initialize({ startOnLoad: false });
-                const mermaidElements = document.querySelectorAll(".mermaid");
-                mermaidElements.forEach((element) => {
-                    mermaid.init({ startOnLoad: true }, element);
-                });
+                mermaid.initialize({ startOnLoad: true });
+                document.querySelectorAll(".mermaid").forEach(element => 
+                    mermaid.init(undefined, element)
+                );
             });
         </script>
 
-        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
                     processEscapes: true,
-                    packages: [
-                        "base",
-                        "ams",
-                        "noerrors",
-                        "noundefined",
-                        "mhchem",
-                    ],
+                    packages: ["base", "ams", "noerrors", "noundefined", "mhchem"],
                 },
                 options: {
-                    skipHtmlTags: [
-                        "script",
-                        "noscript",
-                        "style",
-                        "textarea",
-                        "pre",
-                    ],
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
                     ignoreHtmlClass: "tex2jax_ignore",
-                    processHtmlClass: "tex2jax_process",
+                    processHtmlClass: "tex2jax_process"
                 },
-                loader: { load: ["[tex]/mhchem"] },
-                startup: {
-                    pageReady: () => {
-                        return MathJax.startup.defaultPageReady().then(() => {
-                            // Custom post-processing after MathJax loads, if needed
-                        });
-                    },
-                },
+                loader: { load: ["[tex]/mhchem"] }
             };
         </script>
-        <script
-            id="MathJax-script"
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
-        ></script>
+        <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
         
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-
             </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
-                <!-- Title, Date, and Backlink -->
-                                <h1 class="title">Carnot Engine and
-Carnot Cycle</h1>
-                                 <p class="date">2025-01-02</p>
-                  <h1 id="radiation">Radiation</h1>
-<p>The Thermal Radiation are those , which produce in us the sensation
-of warmth . They are emitted by a body on account of it's temperature.
-Every body whose temperature is above 0 K emits thermal radiation . The
-radiation emitted depends upon 2 factors :-</p>
-<ol type="1">
-<li>The temperature of the body</li>
-<li>The nature of the radiating surface of the body</li>
-</ol>
-<p>The wavelength of thermal radiations ranges from <span
-class="math inline">\(700 \mu m\)</span> to <span
-class="math inline">\(1 mm\)</span> ; they belong to the infra-red
-regions , <span class="math inline">\(∴\)</span> thermal radiations are
-also called infrared radiation .</p>
-<h2 id="basic-characteristics-of-thermal-radiations">Basic
-Characteristics of Thermal Radiations</h2>
-<p>(same as emv)</p>
-<ol type="1">
-<li>They travel with speed or light along straight line .</li>
-<li>They require no medium for their propagation , so they can travel
-through vacumn.</li>
-<li>They do not hit the intertwining medium through which they
-travel</li>
-<li>They obey the inverse square law.</li>
-</ol>
-<div class="note">
-<ol start="5" type="1">
-<li>They can be reflected and refracted according to laws of reflection
-and refraction of light.</li>
-</ol>
-</div>
-<ol start="6" type="1">
-<li>Inhibit the phenomenon of interference , diffraction and
-polarization.</li>
-</ol>
-<h2 id="reflectence-absorbtance--transmittence">Reflectence Absorbtance
-&amp; Transmittence</h2>
-<figure>
-<img src="./resources/02-01-2025-1.webp"
-alt="Diagram of thermal radiation hitting a surface" />
-<figcaption aria-hidden="true">Diagram of thermal radiation hitting a
-surface</figcaption>
-</figure>
-<div class="change-page">
-<p><a href="./03-01-2025.html">Next Day</a></p>
-</div>
-<div class="change-page">
-<p><a href="./01-01-2025.html">Previous Day</a></p>
-</div>
+                                <h1 class="title">Radiation(thermal)</h1>
+                                                <p class="date">2025-01-02</p>
+                                                <p>The Thermal Radiation
+                                                are those , which
+                                                produce in us the
+                                                sensation of warmth .
+                                                They are emitted by a
+                                                body on account of it's
+                                                temperature. Every body
+                                                whose temperature is
+                                                above 0 K emits thermal
+                                                radiation . The
+                                                radiation emitted
+                                                depends upon 2 factors
+                                                :-</p>
+                                                <ol type="1">
+                                                <li>The temperature of
+                                                the body.</li>
+                                                <li>The nature of the
+                                                radiating surface of the
+                                                body.</li>
+                                                </ol>
+                                                <p>The wavelength of
+                                                thermal radiations
+                                                ranges from <span
+                                                class="math inline">\(700
+                                                \mu m\)</span> to <span
+                                                class="math inline">\(1
+                                                mm\)</span> ; they
+                                                belong to the infra-red
+                                                regions , <span
+                                                class="math inline">\(∴\)</span>
+                                                thermal radiations are
+                                                also called infrared
+                                                radiation .</p>
+                                                <hr />
+                                                <h2
+                                                id="basic-characteristics-of-thermal-radiations">Basic
+                                                Characteristics of
+                                                Thermal Radiations</h2>
+                                                <p>(same as emv)</p>
+                                                <ol type="1">
+                                                <li>They travel with
+                                                speed or light along
+                                                straight line .</li>
+                                                <li>They require no
+                                                medium for their
+                                                propagation , so they
+                                                can travel through
+                                                vacumn.</li>
+                                                <li>They do not hit the
+                                                intertwining medium
+                                                through which they
+                                                travel</li>
+                                                <li>They obey the
+                                                inverse square law.</li>
+                                                <li><span
+                                                class="highlight">They
+                                                can be reflected and
+                                                refracted according to
+                                                laws of reflection and
+                                                refraction of
+                                                light.</span></li>
+                                                <li>Inhibit the
+                                                phenomenon of
+                                                interference ,
+                                                diffraction and
+                                                polarization.</li>
+                                                </ol>
+                                                <hr />
+                                                <h2
+                                                id="reflectence-absorbtance--transmittence">Reflectence
+                                                Absorbtance &amp;
+                                                Transmittence</h2>
+                                                <figure>
+                                                <img
+                                                src="./resources/02-01-2025-1.webp"
+                                                alt="Diagram of thermal radiation hitting a surface" />
+                                                <figcaption
+                                                aria-hidden="true">Diagram
+                                                of thermal radiation
+                                                hitting a
+                                                surface</figcaption>
+                                                </figure>
+                                                <p><span
+                                                class="math inline">\(Q
+                                                = R + A + T\)</span></p>
+                                                <p>(dividing throughout
+                                                by Q)</p>
+                                                <p><span
+                                                class="math inline">\(\frac{Q}{Q}=\frac{R}{Q}+\frac{A}{Q}+\frac{T}{Q}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                1=r+a+t\)</span></p>
+                                                <p>Here :</p>
+                                                <ul>
+                                                <li><span
+                                                class="math inline">\(Q:\)</span>
+                                                Amount of thermal
+                                                radiation incident on a
+                                                body at a given
+                                                time.</li>
+                                                <li><span
+                                                class="math inline">\(R=\)</span>
+                                                Amount of thermal
+                                                radiation reflected by
+                                                the body in the same
+                                                time.</li>
+                                                <li><span
+                                                class="math inline">\(A=\)</span>
+                                                Amount of thermal
+                                                radiation absorbed by
+                                                the body in the same
+                                                time.</li>
+                                                <li><span
+                                                class="math inline">\(T=\)</span>
+                                                Amount of thermal
+                                                radiation transmitted by
+                                                the body in the same
+                                                time.</li>
+                                                <li><span
+                                                class="math inline">\(r=\)</span>
+                                                Reflectance/Reflective
+                                                power of the body.</li>
+                                                <li><span
+                                                class="math inline">\(a=\)</span>
+                                                Absorbance/Absorbing
+                                                power of the body.</li>
+                                                <li><span
+                                                class="math inline">\(t=\)</span>
+                                                Transmittance/Transmitting
+                                                power of the body.</li>
+                                                </ul>
+                                                <hr />
+                                                <section id="discussion"
+                                                class="note">
+                                                <h2>Discussion</h2>
+                                                <p>We know that: <span
+                                                class="math display">\[r+a+t=1\]</span>
+                                                If the body does not
+                                                transmit any heat
+                                                radiation then , <span
+                                                class="math inline">\(t=0\)</span>
+                                                <span
+                                                class="math inline">\(∴r+a=1\)</span></p>
+                                                <p>If <span
+                                                class="math inline">\(r&gt;&gt;a\)</span>
+                                                &amp; vise versa , i.e.
+                                                a good reflector and a
+                                                bad absorber and vise
+                                                versa .</p>
+                                                <p>It is found that
+                                                <span
+                                                class="math inline">\(r,a,t\)</span>
+                                                of a body depends upon
+                                                two factors:-</p>
+                                                <ol type="1">
+                                                <li>The nature of the
+                                                surface of the body
+                                                .</li>
+                                                <li>Wavelength of the
+                                                incident radiation.</li>
+                                                </ol>
+                                                <p><span
+                                                class="sticky-note">They
+                                                do not depend upon
+                                                nature of the material
+                                                of the body</span></p>
+                                                </section>
+                                                <hr />
+                                                <p><span
+                                                class="tag">Monochromatic
+                                                Emittance:</span>
+                                                Monochromatic emittance
+                                                of a body corresponding
+                                                to a particular
+                                                wavelength λ at a
+                                                particular temperature
+                                                is defined as the
+                                                radiant energy emitted
+                                                per unit time per unit
+                                                surface area of the body
+                                                within unit wavelength
+                                                interval around λ ,
+                                                i.e.</p>
+                                                <p><span
+                                                class="math display">\[(λ-\frac{1}{2})\leftarrow
+                                                λ \rightarrow
+                                                (λ+\frac{1}{2})\]</span></p>
+                                                <p>Represented by <span
+                                                class="math inline">\((e_λ)\)</span></p>
+                                                <hr />
+                                                <h3
+                                                id="emissive-power--total-emittance">Emissive
+                                                Power / Total
+                                                emittance:</h3>
+                                                <p>The emissive power of
+                                                a body at a given
+                                                temperature is defined
+                                                as the total amount of
+                                                thermal energy emitted
+                                                per unit time ; per unit
+                                                area of the body for all
+                                                possible wavelengths
+                                                <span
+                                                class="math inline">\((700
+                                                μm → 1 mm)\)</span>,
+                                                represented by <span
+                                                class="math inline">\(e\)</span>
+                                                :-</p>
+                                                <p><span
+                                                class="math display">\[e=\int_{λ=0}^{λ=∞}
+                                                = e_λ \cdot
+                                                d_λ\]</span></p>
+                                                <p>SI unit is <span
+                                                class="math inline">\(=
+                                                \frac{J}{s \cdot
+                                                m^2}\)</span> <span
+                                                class="math inline">\(=\frac{W}{m^2}\)</span></p>
+                                                <hr />
+                                                <h3
+                                                id="emissivityϵ-">Emissivity(ϵ):-</h3>
+                                                <p>The emissivity of a
+                                                body is defined as the
+                                                ratio of total emissive
+                                                power of a body <span
+                                                class="math inline">\((e)\)</span>
+                                                to the total emissive
+                                                power of a perfectly
+                                                black body <span
+                                                class="math inline">\((E)\)</span>
+                                                at that temperature
+                                                .</p>
+                                                <p><span
+                                                class="math display">\[[ϵ=\frac{e}{E}]  [\text{Unit-less}]\]</span></p>
+                                                <hr />
+                                                <div
+                                                class="change-page">
+                                                <p><a
+                                                href="./03-01-2025.html">Next
+                                                Day</a></p>
+                                                </div>
+                                                <div
+                                                class="change-page">
+                                                <p><a
+                                                href="./01-01-2025.html">Previous
+                                                Day</a></p>
+                                                </div>
             </main>
         </div>
     </body>

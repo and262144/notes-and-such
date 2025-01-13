@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+                <meta name="author" content="Satvik Anand" />
+                        <meta name="date" content="2025-01-03" />
+        
+        <title>Radiation(thermal)(continued)</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
+        </script>
+        
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+            document.addEventListener("DOMContentLoaded", () => {
+                mermaid.initialize({ startOnLoad: true });
+                document.querySelectorAll(".mermaid").forEach(element => 
+                    mermaid.init(undefined, element)
+                );
+            });
+        </script>
+
+                <script>
+            window.MathJax = {
+                tex: {
+                    processEscapes: true,
+                    packages: ["base", "ams", "noerrors", "noundefined", "mhchem"],
+                },
+                options: {
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
+                    ignoreHtmlClass: "tex2jax_ignore",
+                    processHtmlClass: "tex2jax_process"
+                },
+                loader: { load: ["[tex]/mhchem"] }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+        
+        <link rel="stylesheet" href="style.css" />
+            </head>
+    <body>
+        <div class="container">
+            <div class="paper-clip"></div>
+            <div class="grid-paper"></div>
+            <main>
+                                <h1 class="title">Radiation(thermal)(continued)</h1>
+                                                <p class="date">2025-01-03</p>
+                                                <p><span
+                                                class="tag">Monochromatic
+                                                absorptance</span>(aka
+                                                spectral absorptance
+                                                power)[<span
+                                                class="math inline">\(a_λ\)</span>]</p>
+                                                <p>Monochromatic
+                                                emittance of a body
+                                                corresponding to a
+                                                particular wavelength λ
+                                                is defined as the ratio
+                                                of amount of heat energy
+                                                incident upon it in the
+                                                same time both in the
+                                                unit wavelength interval
+                                                around the wavelength λ
+                                                , i.e. <span
+                                                class="math inline">\((λ-1/2)→(λ+1/2)\)</span>.</p>
+                                                <hr />
+                                                <h3
+                                                id="black-body">Black
+                                                body</h3>
+                                                <p>If the body neither
+                                                reflects nor transmits
+                                                the incident heat
+                                                radiation , i.e. <span
+                                                class="math inline">\(r=0,t=0,a=1\)</span>
+                                                ,the body will absorb
+                                                the entire heat
+                                                radiation that s
+                                                incident on it and
+                                                appears black ; known as
+                                                perfect black body .</p>
+                                                <hr />
+                                                <h2
+                                                id="kirchoffs-law">Kirchoff's
+                                                Law</h2>
+                                                <p>According to
+                                                Kirchoff's law ,, the
+                                                ratio of emissive power
+                                                to the absorptive power
+                                                corresponding to a
+                                                particular wavelength
+                                                and at any given
+                                                temperature is always
+                                                constant for all bodies
+                                                ; and this constant is
+                                                equal to the emissive
+                                                power of a perfect black
+                                                body at the same
+                                                temperature &amp;
+                                                corresponding to the
+                                                same wavelength.</p>
+                                                <p><span
+                                                class="math display">\[
+                                                \frac{e_λ}{a_λ}=\text{const}=\frac{E_λ}{1}=E_λ\]</span></p>
+                                                <hr />
+                                                <h2
+                                                id="stefans-law">Stefan's
+                                                Law</h2>
+            </main>
+        </div>
+    </body>
+</html>

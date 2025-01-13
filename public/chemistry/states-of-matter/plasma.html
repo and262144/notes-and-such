@@ -4,407 +4,670 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Author and Date Metadata -->
                 <meta name="author" content="Satvik Anand" />
-                 <meta name="date" content="2024-07-21" />
+                        <meta name="date" content="2024-07-21" />
         
         <title>Plasma State</title>
 
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- Syntax Highlighting -->
-                <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
-            defer
-        ></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                hljs.highlightAll();
-            });
+            document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
         </script>
         
-        <!-- Mermaid.js for Diagrams -->
         <script type="module">
             import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
             document.addEventListener("DOMContentLoaded", () => {
-                mermaid.initialize({ startOnLoad: false });
-                const mermaidElements = document.querySelectorAll(".mermaid");
-                mermaidElements.forEach((element) => {
-                    mermaid.init({ startOnLoad: true }, element);
-                });
+                mermaid.initialize({ startOnLoad: true });
+                document.querySelectorAll(".mermaid").forEach(element => 
+                    mermaid.init(undefined, element)
+                );
             });
         </script>
 
-        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
                     processEscapes: true,
-                    packages: [
-                        "base",
-                        "ams",
-                        "noerrors",
-                        "noundefined",
-                        "mhchem",
-                    ],
+                    packages: ["base", "ams", "noerrors", "noundefined", "mhchem"],
                 },
                 options: {
-                    skipHtmlTags: [
-                        "script",
-                        "noscript",
-                        "style",
-                        "textarea",
-                        "pre",
-                    ],
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
                     ignoreHtmlClass: "tex2jax_ignore",
-                    processHtmlClass: "tex2jax_process",
+                    processHtmlClass: "tex2jax_process"
                 },
-                loader: { load: ["[tex]/mhchem"] },
-                startup: {
-                    pageReady: () => {
-                        return MathJax.startup.defaultPageReady().then(() => {
-                            // Custom post-processing after MathJax loads, if needed
-                        });
-                    },
-                },
+                loader: { load: ["[tex]/mhchem"] }
             };
         </script>
-        <script
-            id="MathJax-script"
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
-        ></script>
+        <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
         
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-
             </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
-                <!-- Title, Date, and Backlink -->
                                 <h1 class="title">Plasma State</h1>
-                                 <p class="date">2024-07-21</p>
-                  <h3 id="1-definition-and-basic-characteristics">1.
-<strong>Definition and Basic Characteristics</strong></h3>
-<ul>
-<li><strong>Definition</strong>: Plasma is a highly energized state of
-matter composed of ions and free electrons. It is often called the
-"fourth state of matter" and occurs when a gas is energized enough for
-electrons to be stripped from atoms, resulting in a mixture of charged
-particles.</li>
-<li><strong>Key Characteristics</strong>: Plasmas are electrically
-conductive, respond to magnetic fields, and emit light. Unlike other
-states, they consist of ionized particles, making them electrically
-neutral on a large scale but with distinct charged regions.</li>
-<li><strong>Atomic/Molecular Structure</strong>: Particles in plasma are
-widely separated like in gases but exist as ions and electrons rather
-than neutral atoms or molecules. The high-energy collisions continuously
-create and recombine ions and electrons.</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://www.researchgate.net/publication/236143825/figure/fig1/AS:299427316158479@1448400443865/An-example-of-a-plasma-right-after-heated-significantly-enough-to-become-ionized-and.png"
-alt="Gas vs Plasma" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>GAS vs PLASMA</strong></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://astrocamp.org/app/uploads/2016/03/PlasmaBall.gif"
-alt="Gas to plasma" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>Gas Transistioning to
-plasma</strong></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://static.wixstatic.com/media/c78e7e_9a8cecf911c64cdc8fcceee014f9aed0~mv2_d_2000_1534_s_2.png/v1/fill/w_980,h_752,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c78e7e_9a8cecf911c64cdc8fcceee014f9aed0~mv2_d_2000_1534_s_2.png"
-alt="Magnetic fields" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>Magnetic Field</em></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="2-thermodynamic-properties">2. <strong>Thermodynamic
-Properties</strong></h3>
-<ul>
-<li><strong>Density</strong>: Plasmas can have a very low density,
-similar to gases, but this varies. For instance, the sun’s plasma has
-high density, whereas auroras have extremely low density.</li>
-<li><strong>Volume and Shape</strong>: Plasma, like a gas, has no
-definite shape or volume and will expand to fill its container. However,
-magnetic and electric fields can confine and shape plasma.</li>
-<li><strong>Compressibility</strong>: Plasmas are compressible like
-gases but can be significantly affected by magnetic fields, allowing
-confinement in reactors or by natural phenomena.</li>
-<li><strong>Thermal Expansion</strong>: Plasma expands significantly
-with temperature as high kinetic energy spreads particles further apart,
-enhancing its gaseous behavior.</li>
-</ul>
-<hr />
-<h3 id="3-intermolecular-forces-and-bonding">3. <strong>Intermolecular
-Forces and Bonding</strong></h3>
-<ul>
-<li><strong>Types of Intermolecular Forces</strong>: Plasmas don’t
-exhibit typical intermolecular forces seen in other states. Instead,
-they are governed by electromagnetic interactions due to the presence of
-charged particles.</li>
-<li><strong>Bond Strength and Distance</strong>: In plasma, charged
-particles are continuously moving and recombining. This state lacks the
-stable bonding found in solids and liquids; particle separation is
-similar to gases.</li>
-<li><strong>Role of Forces in Determining State</strong>: The unique
-electromagnetic forces enable plasmas to interact with magnetic fields
-and sustain energy, leading to behaviors like confinement in magnetic
-fields or generation of plasma arcs.</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://www.researchgate.net/publication/46423787/figure/fig4/AS:668402880372736@1536371073145/color-The-RT-1-magnetospheric-plasma-system-a-A-dipole-magnetic-field-is-produced.png"
-alt="Visualizing magnetic field interactions with plasma" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>Visualizing magnetic field
-interactions with plasma</em></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="4-phase-transitions">4. <strong>Phase Transitions</strong></h3>
-<ul>
-<li><strong>Transition Processes</strong>: Plasmas are formed from gases
-through ionization, requiring high temperatures or electromagnetic
-fields. Plasmas can recombine into gases when cooled, as ions and
-electrons recombine into neutral atoms.</li>
-<li><strong>Energy Changes</strong>: Ionization requires significant
-energy to remove electrons from atoms (ionization energy). Recombination
-releases energy as ions and electrons return to neutral atoms.</li>
-<li><strong>Critical and Triple Points</strong>: Plasma doesn’t follow
-traditional phase diagrams but can exist at a broad range of
-temperatures and pressures, particularly in stars and fusion
-reactors.</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://i.sstatic.net/ykJKNY70.png"
-alt="Phase transition diagram showing gas-to-plasma transition via ionization" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>Phase transition diagram showing
-gas-to-plasma transition via ionization</em></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="5-microscopic-properties">5. <strong>Microscopic
-Properties</strong></h3>
-<ul>
-<li><strong>Particle Movement and Kinetic Energy</strong>: Plasma
-particles have extremely high kinetic energy, with ions and electrons
-moving independently at high speeds. This high energy allows constant
-ionization and recombination.</li>
-<li><strong>Quantum Mechanical Effects</strong>: In some plasmas,
-especially in low-density or astrophysical contexts, quantum effects
-such as tunneling and quantum states can be significant, impacting
-particle behavior at micro-scales.</li>
-</ul>
-<hr />
-<h3 id="6-macroscopic-properties">6. <strong>Macroscopic
-Properties</strong></h3>
-<ul>
-<li><strong>Electrical Conductivity</strong>: Plasma is highly
-conductive due to the presence of free-moving electrons and ions. This
-makes it responsive to electric currents, often resulting in visible
-arcs or glow.</li>
-<li><strong>Magnetic Properties</strong>: Plasmas respond strongly to
-magnetic fields and can even be confined by them. This property is
-critical in fusion research (e.g., in tokamaks).</li>
-<li><strong>Optical Properties</strong>: Plasmas emit light when ions
-recombine with electrons, producing phenomena like neon signs or
-auroras. The light's color depends on the gas type and energy
-level.</li>
-<li><strong>Mechanical Properties</strong>: Plasma has a low viscosity
-similar to gases but can show rigidity in response to magnetic fields,
-forming filamentary or arc-like structures.</li>
-</ul>
-<hr />
-<h3 id="7-applications-and-uses">7. <strong>Applications and
-Uses</strong></h3>
-<ul>
-<li><strong>Technological Applications</strong>: Plasmas are used in
-fluorescent lights, plasma screens, and plasma cutting tools. In fusion
-research, plasmas are vital for potential energy production.</li>
-<li><strong>Natural Occurrences</strong>: Plasmas naturally occur in the
-sun and stars, lightning, auroras, and in Earth's ionosphere.</li>
-<li><strong>Future Potential</strong>: Plasma-based fusion energy is a
-promising area of research, with ongoing advancements in magnetic
-confinement and inertial confinement techniques.</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128095973003308-f0300330-18-9780128095973.jpg"
-alt="Plasma Confinment" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>Plasma Confinment</em></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="8-experimental-observations-and-techniques">8.
-<strong>Experimental Observations and Techniques</strong></h3>
-<ul>
-<li><strong>Methods of Study</strong>: Spectroscopy is key for studying
-plasma composition and energy levels, while Langmuir probes measure
-plasma density and temperature. Magnetic confinement and laser-induced
-plasma generation are also studied.</li>
-<li><strong>Conditions for Formation</strong>: Plasmas require high
-energy inputs, such as temperatures above thousands of Kelvin or strong
-electromagnetic fields, to maintain ionization.</li>
-<li><strong>Challenges in Study</strong>: Plasmas are difficult to
-confine due to high energy and magnetic sensitivity, requiring
-specialized reactors or vacuum chambers.</li>
-</ul>
-<p><a href="https://www.youtube.com/watch?v=qrFub0xTlZo">Inductively
-coupled plasma emission spectroscopy</a></p>
-<hr />
-<h3 id="9-mathematical-models-and-equations">9. <strong>Mathematical
-Models and Equations</strong></h3>
-<ul>
-<li><strong>Equations of State</strong>: Plasma often follows ideal
-gas-like behavior but is modeled with additional parameters for
-ionization and magnetic fields, such as the Saha equation for ionization
-balance: <span class="math display">\[
-\frac{n_i n_e}{n_0} = \frac{2 g_i g_e}{g_0} \left( \frac{2 \pi m_e k
-T}{h^2} \right)^{3/2} e^{-\frac{E_{\text{ion}}}{kT}}
-\]</span> where <span class="math inline">\(n_i\)</span>, <span
-class="math inline">\(n_e\)</span>, and <span
-class="math inline">\(n_0\)</span> are ion, electron, and neutral atom
-densities, respectively.</li>
-<li><strong>Thermodynamic Equations</strong>: The Debye length, <span
-class="math inline">\(\lambda_D = \sqrt{\frac{\epsilon_0 k T}{n_e
-e^2}}\)</span>, characterizes the plasma’s ability to screen electric
-fields over short distances.</li>
-<li><strong>Quantum Models</strong>: In extreme cases, quantum mechanics
-applies, especially in dense astrophysical plasmas or at ultralow
-temperatures.</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://www.researchgate.net/publication/234994920/figure/fig1/AS:508708783431680@1498297033566/The-dependence-of-the-Debye-length-D-in-a-plasma-of-temperature-k-B-T100-eV-and-density.png"
-alt="Graphs and diagrams illustrating Saha equilibrium and Debye length in plasma" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><img
-src="https://www.researchgate.net/publication/239610388/figure/fig7/AS:405420196810755@1473671115246/Determination-of-plasma-parameters-using-the-Saha-Boltzmann-equation-and-Stark-width-of.png"
-alt="Saha-Boltzmann equation" /></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>Graphs and diagrams illustrating
-Saha equilibrium and Debye length in plasma</strong></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="10-comparison-with-other-states">10. <strong>Comparison with
-Other States</strong></h3>
-<ul>
-<li><strong>Contrast with Neighboring States</strong>: Plasmas differ
-from gases due to ionization and electromagnetic behavior. Unlike other
-states, plasmas are conductive, emit light, and are influenced by
-magnetic fields.</li>
-<li><strong>Properties Unique to This State</strong>: Plasma is unique
-in its electromagnetic response, ionization, and visible glow. It’s the
-only state with charged particles freely coexisting.</li>
-<li><strong>Boundary Conditions</strong>: Plasmas exist under extreme
-temperatures or electromagnetic fields, found naturally in stars and
-created in laboratory conditions like fusion reactors.</li>
-</ul>
-<p><strong>Suggested Media Attachment</strong>:</p>
-<ul>
-<li><strong>Image</strong>: Comparison table showing unique properties
-of plasma vs. solids, liquids, and gases.</li>
-<li><strong>Video</strong>: Summary of plasma’s unique properties and
-comparison to other states. (Attachment: Unique Properties of
-Plasma)</li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;"><img
-src="https://www.researchgate.net/publication/315729780/figure/tbl1/AS:652204549603351@1532509090532/Comparison-between-plasma-regimes-and-the-other-three-states-of-matter.png"
-alt="Table showing unique properties of plasma vs. solids, liquids, and gases" /></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><em>table showing unique properties of
-plasma vs. solids, liquids, and gases</em></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="11-recent-research-and-emerging-trends">11. <strong>Recent
-Research and Emerging Trends</strong></h3>
-<ul>
-<li><strong>New Discoveries</strong>: Recent breakthroughs in magnetic
-confinement (e.g., <a href="https://www.iter.org/">ITER project</a>) and
-controlled fusion continue to push plasma research forward.</li>
-<li><strong>Current Research Topics</strong>: Key areas include plasma
-fusion energy, plasma-based propulsion, and applications in electronics
-for ionized materials.</li>
-<li><strong>Open Questions</strong>: Questions include how to achieve
-sustainable plasma confinement for fusion and understanding cosmic
-plasmas’ role in space phenomena.</li>
-</ul>
-<hr />
+                                                <p class="date">2024-07-21</p>
+                                                <h3
+                                                id="1-definition-and-basic-characteristics">1.
+                                                <strong>Definition and
+                                                Basic
+                                                Characteristics</strong></h3>
+                                                <ul>
+                                                <li><strong>Definition</strong>:
+                                                Plasma is a highly
+                                                energized state of
+                                                matter composed of ions
+                                                and free electrons. It
+                                                is often called the
+                                                "fourth state of matter"
+                                                and occurs when a gas is
+                                                energized enough for
+                                                electrons to be stripped
+                                                from atoms, resulting in
+                                                a mixture of charged
+                                                particles.</li>
+                                                <li><strong>Key
+                                                Characteristics</strong>:
+                                                Plasmas are electrically
+                                                conductive, respond to
+                                                magnetic fields, and
+                                                emit light. Unlike other
+                                                states, they consist of
+                                                ionized particles,
+                                                making them electrically
+                                                neutral on a large scale
+                                                but with distinct
+                                                charged regions.</li>
+                                                <li><strong>Atomic/Molecular
+                                                Structure</strong>:
+                                                Particles in plasma are
+                                                widely separated like in
+                                                gases but exist as ions
+                                                and electrons rather
+                                                than neutral atoms or
+                                                molecules. The
+                                                high-energy collisions
+                                                continuously create and
+                                                recombine ions and
+                                                electrons.</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://www.researchgate.net/publication/236143825/figure/fig1/AS:299427316158479@1448400443865/An-example-of-a-plasma-right-after-heated-significantly-enough-to-become-ionized-and.png"
+                                                alt="Gas vs Plasma" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><strong>GAS
+                                                vs PLASMA</strong></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://astrocamp.org/app/uploads/2016/03/PlasmaBall.gif"
+                                                alt="Gas to plasma" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><strong>Gas
+                                                Transistioning to
+                                                plasma</strong></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://static.wixstatic.com/media/c78e7e_9a8cecf911c64cdc8fcceee014f9aed0~mv2_d_2000_1534_s_2.png/v1/fill/w_980,h_752,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c78e7e_9a8cecf911c64cdc8fcceee014f9aed0~mv2_d_2000_1534_s_2.png"
+                                                alt="Magnetic fields" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>Magnetic
+                                                Field</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <hr />
+                                                <h3
+                                                id="2-thermodynamic-properties">2.
+                                                <strong>Thermodynamic
+                                                Properties</strong></h3>
+                                                <ul>
+                                                <li><strong>Density</strong>:
+                                                Plasmas can have a very
+                                                low density, similar to
+                                                gases, but this varies.
+                                                For instance, the sun’s
+                                                plasma has high density,
+                                                whereas auroras have
+                                                extremely low
+                                                density.</li>
+                                                <li><strong>Volume and
+                                                Shape</strong>: Plasma,
+                                                like a gas, has no
+                                                definite shape or volume
+                                                and will expand to fill
+                                                its container. However,
+                                                magnetic and electric
+                                                fields can confine and
+                                                shape plasma.</li>
+                                                <li><strong>Compressibility</strong>:
+                                                Plasmas are compressible
+                                                like gases but can be
+                                                significantly affected
+                                                by magnetic fields,
+                                                allowing confinement in
+                                                reactors or by natural
+                                                phenomena.</li>
+                                                <li><strong>Thermal
+                                                Expansion</strong>:
+                                                Plasma expands
+                                                significantly with
+                                                temperature as high
+                                                kinetic energy spreads
+                                                particles further apart,
+                                                enhancing its gaseous
+                                                behavior.</li>
+                                                </ul>
+                                                <hr />
+                                                <h3
+                                                id="3-intermolecular-forces-and-bonding">3.
+                                                <strong>Intermolecular
+                                                Forces and
+                                                Bonding</strong></h3>
+                                                <ul>
+                                                <li><strong>Types of
+                                                Intermolecular
+                                                Forces</strong>: Plasmas
+                                                don’t exhibit typical
+                                                intermolecular forces
+                                                seen in other states.
+                                                Instead, they are
+                                                governed by
+                                                electromagnetic
+                                                interactions due to the
+                                                presence of charged
+                                                particles.</li>
+                                                <li><strong>Bond
+                                                Strength and
+                                                Distance</strong>: In
+                                                plasma, charged
+                                                particles are
+                                                continuously moving and
+                                                recombining. This state
+                                                lacks the stable bonding
+                                                found in solids and
+                                                liquids; particle
+                                                separation is similar to
+                                                gases.</li>
+                                                <li><strong>Role of
+                                                Forces in Determining
+                                                State</strong>: The
+                                                unique electromagnetic
+                                                forces enable plasmas to
+                                                interact with magnetic
+                                                fields and sustain
+                                                energy, leading to
+                                                behaviors like
+                                                confinement in magnetic
+                                                fields or generation of
+                                                plasma arcs.</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://www.researchgate.net/publication/46423787/figure/fig4/AS:668402880372736@1536371073145/color-The-RT-1-magnetospheric-plasma-system-a-A-dipole-magnetic-field-is-produced.png"
+                                                alt="Visualizing magnetic field interactions with plasma" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>Visualizing
+                                                magnetic field
+                                                interactions with
+                                                plasma</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <hr />
+                                                <h3
+                                                id="4-phase-transitions">4.
+                                                <strong>Phase
+                                                Transitions</strong></h3>
+                                                <ul>
+                                                <li><strong>Transition
+                                                Processes</strong>:
+                                                Plasmas are formed from
+                                                gases through
+                                                ionization, requiring
+                                                high temperatures or
+                                                electromagnetic fields.
+                                                Plasmas can recombine
+                                                into gases when cooled,
+                                                as ions and electrons
+                                                recombine into neutral
+                                                atoms.</li>
+                                                <li><strong>Energy
+                                                Changes</strong>:
+                                                Ionization requires
+                                                significant energy to
+                                                remove electrons from
+                                                atoms (ionization
+                                                energy). Recombination
+                                                releases energy as ions
+                                                and electrons return to
+                                                neutral atoms.</li>
+                                                <li><strong>Critical and
+                                                Triple Points</strong>:
+                                                Plasma doesn’t follow
+                                                traditional phase
+                                                diagrams but can exist
+                                                at a broad range of
+                                                temperatures and
+                                                pressures, particularly
+                                                in stars and fusion
+                                                reactors.</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://i.sstatic.net/ykJKNY70.png"
+                                                alt="Phase transition diagram showing gas-to-plasma transition via ionization" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>Phase
+                                                transition diagram
+                                                showing gas-to-plasma
+                                                transition via
+                                                ionization</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <hr />
+                                                <h3
+                                                id="5-microscopic-properties">5.
+                                                <strong>Microscopic
+                                                Properties</strong></h3>
+                                                <ul>
+                                                <li><strong>Particle
+                                                Movement and Kinetic
+                                                Energy</strong>: Plasma
+                                                particles have extremely
+                                                high kinetic energy,
+                                                with ions and electrons
+                                                moving independently at
+                                                high speeds. This high
+                                                energy allows constant
+                                                ionization and
+                                                recombination.</li>
+                                                <li><strong>Quantum
+                                                Mechanical
+                                                Effects</strong>: In
+                                                some plasmas, especially
+                                                in low-density or
+                                                astrophysical contexts,
+                                                quantum effects such as
+                                                tunneling and quantum
+                                                states can be
+                                                significant, impacting
+                                                particle behavior at
+                                                micro-scales.</li>
+                                                </ul>
+                                                <hr />
+                                                <h3
+                                                id="6-macroscopic-properties">6.
+                                                <strong>Macroscopic
+                                                Properties</strong></h3>
+                                                <ul>
+                                                <li><strong>Electrical
+                                                Conductivity</strong>:
+                                                Plasma is highly
+                                                conductive due to the
+                                                presence of free-moving
+                                                electrons and ions. This
+                                                makes it responsive to
+                                                electric currents, often
+                                                resulting in visible
+                                                arcs or glow.</li>
+                                                <li><strong>Magnetic
+                                                Properties</strong>:
+                                                Plasmas respond strongly
+                                                to magnetic fields and
+                                                can even be confined by
+                                                them. This property is
+                                                critical in fusion
+                                                research (e.g., in
+                                                tokamaks).</li>
+                                                <li><strong>Optical
+                                                Properties</strong>:
+                                                Plasmas emit light when
+                                                ions recombine with
+                                                electrons, producing
+                                                phenomena like neon
+                                                signs or auroras. The
+                                                light's color depends on
+                                                the gas type and energy
+                                                level.</li>
+                                                <li><strong>Mechanical
+                                                Properties</strong>:
+                                                Plasma has a low
+                                                viscosity similar to
+                                                gases but can show
+                                                rigidity in response to
+                                                magnetic fields, forming
+                                                filamentary or arc-like
+                                                structures.</li>
+                                                </ul>
+                                                <hr />
+                                                <h3
+                                                id="7-applications-and-uses">7.
+                                                <strong>Applications and
+                                                Uses</strong></h3>
+                                                <ul>
+                                                <li><strong>Technological
+                                                Applications</strong>:
+                                                Plasmas are used in
+                                                fluorescent lights,
+                                                plasma screens, and
+                                                plasma cutting tools. In
+                                                fusion research, plasmas
+                                                are vital for potential
+                                                energy production.</li>
+                                                <li><strong>Natural
+                                                Occurrences</strong>:
+                                                Plasmas naturally occur
+                                                in the sun and stars,
+                                                lightning, auroras, and
+                                                in Earth's
+                                                ionosphere.</li>
+                                                <li><strong>Future
+                                                Potential</strong>:
+                                                Plasma-based fusion
+                                                energy is a promising
+                                                area of research, with
+                                                ongoing advancements in
+                                                magnetic confinement and
+                                                inertial confinement
+                                                techniques.</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://ars.els-cdn.com/content/image/3-s2.0-B9780128095973003308-f0300330-18-9780128095973.jpg"
+                                                alt="Plasma Confinment" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>Plasma
+                                                Confinment</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <hr />
+                                                <h3
+                                                id="8-experimental-observations-and-techniques">8.
+                                                <strong>Experimental
+                                                Observations and
+                                                Techniques</strong></h3>
+                                                <ul>
+                                                <li><strong>Methods of
+                                                Study</strong>:
+                                                Spectroscopy is key for
+                                                studying plasma
+                                                composition and energy
+                                                levels, while Langmuir
+                                                probes measure plasma
+                                                density and temperature.
+                                                Magnetic confinement and
+                                                laser-induced plasma
+                                                generation are also
+                                                studied.</li>
+                                                <li><strong>Conditions
+                                                for Formation</strong>:
+                                                Plasmas require high
+                                                energy inputs, such as
+                                                temperatures above
+                                                thousands of Kelvin or
+                                                strong electromagnetic
+                                                fields, to maintain
+                                                ionization.</li>
+                                                <li><strong>Challenges
+                                                in Study</strong>:
+                                                Plasmas are difficult to
+                                                confine due to high
+                                                energy and magnetic
+                                                sensitivity, requiring
+                                                specialized reactors or
+                                                vacuum chambers.</li>
+                                                </ul>
+                                                <p><a
+                                                href="https://www.youtube.com/watch?v=qrFub0xTlZo">Inductively
+                                                coupled plasma emission
+                                                spectroscopy</a></p>
+                                                <hr />
+                                                <h3
+                                                id="9-mathematical-models-and-equations">9.
+                                                <strong>Mathematical
+                                                Models and
+                                                Equations</strong></h3>
+                                                <ul>
+                                                <li><strong>Equations of
+                                                State</strong>: Plasma
+                                                often follows ideal
+                                                gas-like behavior but is
+                                                modeled with additional
+                                                parameters for
+                                                ionization and magnetic
+                                                fields, such as the Saha
+                                                equation for ionization
+                                                balance: <span
+                                                class="math display">\[
+                                                \frac{n_i n_e}{n_0} =
+                                                \frac{2 g_i g_e}{g_0}
+                                                \left( \frac{2 \pi m_e k
+                                                T}{h^2} \right)^{3/2}
+                                                e^{-\frac{E_{\text{ion}}}{kT}}
+                                                \]</span> where <span
+                                                class="math inline">\(n_i\)</span>,
+                                                <span
+                                                class="math inline">\(n_e\)</span>,
+                                                and <span
+                                                class="math inline">\(n_0\)</span>
+                                                are ion, electron, and
+                                                neutral atom densities,
+                                                respectively.</li>
+                                                <li><strong>Thermodynamic
+                                                Equations</strong>: The
+                                                Debye length, <span
+                                                class="math inline">\(\lambda_D
+                                                = \sqrt{\frac{\epsilon_0
+                                                k T}{n_e e^2}}\)</span>,
+                                                characterizes the
+                                                plasma’s ability to
+                                                screen electric fields
+                                                over short
+                                                distances.</li>
+                                                <li><strong>Quantum
+                                                Models</strong>: In
+                                                extreme cases, quantum
+                                                mechanics applies,
+                                                especially in dense
+                                                astrophysical plasmas or
+                                                at ultralow
+                                                temperatures.</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://www.researchgate.net/publication/234994920/figure/fig1/AS:508708783431680@1498297033566/The-dependence-of-the-Debye-length-D-in-a-plasma-of-temperature-k-B-T100-eV-and-density.png"
+                                                alt="Graphs and diagrams illustrating Saha equilibrium and Debye length in plasma" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://www.researchgate.net/publication/239610388/figure/fig7/AS:405420196810755@1473671115246/Determination-of-plasma-parameters-using-the-Saha-Boltzmann-equation-and-Stark-width-of.png"
+                                                alt="Saha-Boltzmann equation" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td
+                                                style="text-align: center;"><strong>Graphs
+                                                and diagrams
+                                                illustrating Saha
+                                                equilibrium and Debye
+                                                length in
+                                                plasma</strong></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <hr />
+                                                <h3
+                                                id="10-comparison-with-other-states">10.
+                                                <strong>Comparison with
+                                                Other
+                                                States</strong></h3>
+                                                <ul>
+                                                <li><strong>Contrast
+                                                with Neighboring
+                                                States</strong>: Plasmas
+                                                differ from gases due to
+                                                ionization and
+                                                electromagnetic
+                                                behavior. Unlike other
+                                                states, plasmas are
+                                                conductive, emit light,
+                                                and are influenced by
+                                                magnetic fields.</li>
+                                                <li><strong>Properties
+                                                Unique to This
+                                                State</strong>: Plasma
+                                                is unique in its
+                                                electromagnetic
+                                                response, ionization,
+                                                and visible glow. It’s
+                                                the only state with
+                                                charged particles freely
+                                                coexisting.</li>
+                                                <li><strong>Boundary
+                                                Conditions</strong>:
+                                                Plasmas exist under
+                                                extreme temperatures or
+                                                electromagnetic fields,
+                                                found naturally in stars
+                                                and created in
+                                                laboratory conditions
+                                                like fusion
+                                                reactors.</li>
+                                                </ul>
+                                                <p><strong>Suggested
+                                                Media
+                                                Attachment</strong>:</p>
+                                                <ul>
+                                                <li><strong>Image</strong>:
+                                                Comparison table showing
+                                                unique properties of
+                                                plasma vs. solids,
+                                                liquids, and gases.</li>
+                                                <li><strong>Video</strong>:
+                                                Summary of plasma’s
+                                                unique properties and
+                                                comparison to other
+                                                states. (Attachment:
+                                                Unique Properties of
+                                                Plasma)</li>
+                                                </ul>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th
+                                                style="text-align: center;"><img
+                                                src="https://www.researchgate.net/publication/315729780/figure/tbl1/AS:652204549603351@1532509090532/Comparison-between-plasma-regimes-and-the-other-three-states-of-matter.png"
+                                                alt="Table showing unique properties of plasma vs. solids, liquids, and gases" /></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td
+                                                style="text-align: center;"><em>table
+                                                showing unique
+                                                properties of plasma vs.
+                                                solids, liquids, and
+                                                gases</em></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <hr />
+                                                <h3
+                                                id="11-recent-research-and-emerging-trends">11.
+                                                <strong>Recent Research
+                                                and Emerging
+                                                Trends</strong></h3>
+                                                <ul>
+                                                <li><strong>New
+                                                Discoveries</strong>:
+                                                Recent breakthroughs in
+                                                magnetic confinement
+                                                (e.g., <a
+                                                href="https://www.iter.org/">ITER
+                                                project</a>) and
+                                                controlled fusion
+                                                continue to push plasma
+                                                research forward.</li>
+                                                <li><strong>Current
+                                                Research
+                                                Topics</strong>: Key
+                                                areas include plasma
+                                                fusion energy,
+                                                plasma-based propulsion,
+                                                and applications in
+                                                electronics for ionized
+                                                materials.</li>
+                                                <li><strong>Open
+                                                Questions</strong>:
+                                                Questions include how to
+                                                achieve sustainable
+                                                plasma confinement for
+                                                fusion and understanding
+                                                cosmic plasmas’ role in
+                                                space phenomena.</li>
+                                                </ul>
+                                                <hr />
             </main>
         </div>
     </body>

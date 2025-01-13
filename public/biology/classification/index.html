@@ -4,97 +4,56 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Author and Date Metadata -->
-         
+                
         <title>index</title>
 
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- Syntax Highlighting -->
-                <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
-            defer
-        ></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                hljs.highlightAll();
-            });
+            document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
         </script>
         
-        <!-- Mermaid.js for Diagrams -->
         <script type="module">
             import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
             document.addEventListener("DOMContentLoaded", () => {
-                mermaid.initialize({ startOnLoad: false });
-                const mermaidElements = document.querySelectorAll(".mermaid");
-                mermaidElements.forEach((element) => {
-                    mermaid.init({ startOnLoad: true }, element);
-                });
+                mermaid.initialize({ startOnLoad: true });
+                document.querySelectorAll(".mermaid").forEach(element => 
+                    mermaid.init(undefined, element)
+                );
             });
         </script>
 
-        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
                     processEscapes: true,
-                    packages: [
-                        "base",
-                        "ams",
-                        "noerrors",
-                        "noundefined",
-                        "mhchem",
-                    ],
+                    packages: ["base", "ams", "noerrors", "noundefined", "mhchem"],
                 },
                 options: {
-                    skipHtmlTags: [
-                        "script",
-                        "noscript",
-                        "style",
-                        "textarea",
-                        "pre",
-                    ],
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
                     ignoreHtmlClass: "tex2jax_ignore",
-                    processHtmlClass: "tex2jax_process",
+                    processHtmlClass: "tex2jax_process"
                 },
-                loader: { load: ["[tex]/mhchem"] },
-                startup: {
-                    pageReady: () => {
-                        return MathJax.startup.defaultPageReady().then(() => {
-                            // Custom post-processing after MathJax loads, if needed
-                        });
-                    },
-                },
+                loader: { load: ["[tex]/mhchem"] }
             };
         </script>
-        <script
-            id="MathJax-script"
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
-        ></script>
+        <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
         
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-
             </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
-                <!-- Title, Date, and Backlink -->
-                   <h1 id="classification">classification</h1>
-<ul>
-<li><a href="lepidosaur.html">lepidosaur</a></li>
-</ul>
+                                                                <h1
+                                                                id="classification">classification</h1>
+                                                                <ul>
+                                                                <li><a
+                                                                href="lepidosaur.html">lepidosaur</a></li>
+                                                                </ul>
             </main>
         </div>
     </body>

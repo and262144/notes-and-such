@@ -4,102 +4,61 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Author and Date Metadata -->
                 <meta name="author" content="Satvik Anand" />
-                 <meta name="date" content="2023-12-13" />
+                        <meta name="date" content="2023-12-13" />
         
         <title>Basics of Biochemistry</title>
 
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- Syntax Highlighting -->
-                <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
-            defer
-        ></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                hljs.highlightAll();
-            });
+            document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
         </script>
         
-        <!-- Mermaid.js for Diagrams -->
         <script type="module">
             import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
             document.addEventListener("DOMContentLoaded", () => {
-                mermaid.initialize({ startOnLoad: false });
-                const mermaidElements = document.querySelectorAll(".mermaid");
-                mermaidElements.forEach((element) => {
-                    mermaid.init({ startOnLoad: true }, element);
-                });
+                mermaid.initialize({ startOnLoad: true });
+                document.querySelectorAll(".mermaid").forEach(element => 
+                    mermaid.init(undefined, element)
+                );
             });
         </script>
 
-        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
                     processEscapes: true,
-                    packages: [
-                        "base",
-                        "ams",
-                        "noerrors",
-                        "noundefined",
-                        "mhchem",
-                    ],
+                    packages: ["base", "ams", "noerrors", "noundefined", "mhchem"],
                 },
                 options: {
-                    skipHtmlTags: [
-                        "script",
-                        "noscript",
-                        "style",
-                        "textarea",
-                        "pre",
-                    ],
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
                     ignoreHtmlClass: "tex2jax_ignore",
-                    processHtmlClass: "tex2jax_process",
+                    processHtmlClass: "tex2jax_process"
                 },
-                loader: { load: ["[tex]/mhchem"] },
-                startup: {
-                    pageReady: () => {
-                        return MathJax.startup.defaultPageReady().then(() => {
-                            // Custom post-processing after MathJax loads, if needed
-                        });
-                    },
-                },
+                loader: { load: ["[tex]/mhchem"] }
             };
         </script>
-        <script
-            id="MathJax-script"
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
-        ></script>
+        <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
         
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-
             </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
-                <!-- Title, Date, and Backlink -->
                                 <h1 class="title">Basics of
 Biochemistry</h1>
-                                 <p class="date">2023-12-13</p>
-                  <div class="handwritten">
-<p>Chemical Analysis</p>
-</div>
-<pre class="{.code-block}"><code>def ChemicalAnalysis(type,tissue){
+                                                <p class="date">2023-12-13</p>
+                                                <div
+                                                class="handwritten">
+                                                <p>Chemical Analysis</p>
+                                                </div>
+                                                <pre
+                                                class="{.code-block}"><code>def ChemicalAnalysis(type,tissue){
 
     if (type==&#39;Basic Chemical Method&#39;){
     
@@ -128,14 +87,19 @@ Biochemistry</h1>
     }
 
 }</code></pre>
-<div class="sticky-note">
-<p>There are many ways for analysis of tissues. This is the basic in
-NCERT books</p>
-</div>
-<div class="handwritten">
-<p>Amino Acids</p>
-</div>
-<pre class="{.code-block}"><code>def AminoAcids(Ligand,size,nature){
+                                                <div
+                                                class="sticky-note">
+                                                <p>There are many ways
+                                                for analysis of tissues.
+                                                This is the basic in
+                                                NCERT books</p>
+                                                </div>
+                                                <div
+                                                class="handwritten">
+                                                <p>Amino Acids</p>
+                                                </div>
+                                                <pre
+                                                class="{.code-block}"><code>def AminoAcids(Ligand,size,nature){
 
     extends Compounds()
 
@@ -154,26 +118,41 @@ NCERT books</p>
     
     __self__.depends(R)
 }</code></pre>
-<p><code>AminoAcids.display()</code></p>
-<figure>
-<img src="./resources/amino-acid.jpg"
-alt="Amino Acid basic Structure" />
-<figcaption aria-hidden="true">Amino Acid basic Structure</figcaption>
-</figure>
-<p><code>AmineGroup.display()</code></p>
-<figure>
-<img src="./resources/amines.jpg" alt="Amine Group" />
-<figcaption aria-hidden="true">Amine Group</figcaption>
-</figure>
-<p><code>CarboxylAcid.display()</code></p>
-<figure>
-<img src="./resources/carboxyl-group.png" alt="Carboxyl Group" />
-<figcaption aria-hidden="true">Carboxyl Group</figcaption>
-</figure>
-<div class="handwritten">
-<p>Types of Amino Acids</p>
-</div>
-<pre class="{.code-block}"><code>def TypesOfAminoAcids(AminoAcids(),R){
+                                                <p><code>AminoAcids.display()</code></p>
+                                                <figure>
+                                                <img
+                                                src="./resources/amino-acid.jpg"
+                                                alt="Amino Acid basic Structure" />
+                                                <figcaption
+                                                aria-hidden="true">Amino
+                                                Acid basic
+                                                Structure</figcaption>
+                                                </figure>
+                                                <p><code>AmineGroup.display()</code></p>
+                                                <figure>
+                                                <img
+                                                src="./resources/amines.jpg"
+                                                alt="Amine Group" />
+                                                <figcaption
+                                                aria-hidden="true">Amine
+                                                Group</figcaption>
+                                                </figure>
+                                                <p><code>CarboxylAcid.display()</code></p>
+                                                <figure>
+                                                <img
+                                                src="./resources/carboxyl-group.png"
+                                                alt="Carboxyl Group" />
+                                                <figcaption
+                                                aria-hidden="true">Carboxyl
+                                                Group</figcaption>
+                                                </figure>
+                                                <div
+                                                class="handwritten">
+                                                <p>Types of Amino
+                                                Acids</p>
+                                                </div>
+                                                <pre
+                                                class="{.code-block}"><code>def TypesOfAminoAcids(AminoAcids(),R){
 
     if(Body.produce=True){
         AminoAcid.type = Non-Essential Amino Acid
@@ -236,239 +215,322 @@ alt="Amino Acid basic Structure" />
 }
 
 TypesOfAminoAcids.addContext(&#39;In Human Body&#39;)</code></pre>
-<p><code>Isoleucine.display</code></p>
-<figure>
-<video src="./resources/isoleucine.mp4" controls=""><a
-href="./resources/isoleucine.mp4">Isoleucine</a></video>
-<figcaption aria-hidden="true">Isoleucine</figcaption>
-</figure>
-<p><code>Leucine.display</code></p>
-<figure>
-<video src="./resources/leucine.mp4" controls=""><a
-href="./resources/leucine.mp4">Leucine</a></video>
-<figcaption aria-hidden="true">Leucine</figcaption>
-</figure>
-<p><code>Lycine.display</code></p>
-<figure>
-<video src="./resources/lycine.mp4" controls=""><a
-href="./resources/lycine.mp4">Lycine</a></video>
-<figcaption aria-hidden="true">Lycine</figcaption>
-</figure>
-<p><code>Histidine.display()</code></p>
-<figure>
-<video src="./resources/histidine.mp4" controls=""><a
-href="./resources/histidine.mp4">Histidine</a></video>
-<figcaption aria-hidden="true">Histidine</figcaption>
-</figure>
-<p><code>Arginine.display()</code></p>
-<figure>
-<video src="./resources/arginine.mp4" controls=""><a
-href="./resources/arginine.mp4">Arginine</a></video>
-<figcaption aria-hidden="true">Arginine</figcaption>
-</figure>
-<h3 id="essential-amino-acids">Essential Amino Acids</h3>
-<table>
-<thead>
-<tr class="header">
-<th><strong>Amino Acid</strong></th>
-<th><strong>3-Letter Code</strong></th>
-<th><strong>R Group</strong></th>
-<th style="text-align: center;"><strong>Diagram</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Isoleucine</td>
-<td>Ile</td>
-<td><span class="math display">\[CH(CH_3)(CH_2CH_3)\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/isoleucine.png"
-alt="Isoleucine" /></td>
-</tr>
-<tr class="even">
-<td>Leucine</td>
-<td>Leu</td>
-<td><span class="math display">\[CH_2CH(CH_3)_2\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/leucine.png"
-alt="Leucine" /></td>
-</tr>
-<tr class="odd">
-<td>Lysine</td>
-<td>Lys</td>
-<td><span class="math display">\[CH_2CH_2CH_2CH_2NH_2\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/lysine.png" alt="Lysine" /></td>
-</tr>
-<tr class="even">
-<td>Methionine</td>
-<td>Met</td>
-<td><span class="math display">\[CH_2CH_2SCH_3\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/methionine.png"
-alt="Methionine" /></td>
-</tr>
-<tr class="odd">
-<td>Phenylalanine</td>
-<td>Phe</td>
-<td><span class="math display">\[CH_2(C_6H_5)\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/phenylalanine.png"
-alt="Phenylalanine" /></td>
-</tr>
-<tr class="even">
-<td>Threonine</td>
-<td>Thr</td>
-<td><span class="math display">\[CH(OH)CH_3\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/threonine.png"
-alt="Threonine" /></td>
-</tr>
-<tr class="odd">
-<td>Tryptophan</td>
-<td>Trp</td>
-<td><span class="math display">\[CH_2-\text{indole ring}\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/tryptophan.png"
-alt="Tryptophan" /></td>
-</tr>
-<tr class="even">
-<td>Valine</td>
-<td>Val</td>
-<td><span class="math display">\[CH(CH_3)_2\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/valine.png" alt="Valine" /></td>
-</tr>
-</tbody>
-</table>
-<h3 id="non-essential-amino-acids">Non-Essential Amino Acids</h3>
-<table>
-<thead>
-<tr class="header">
-<th><strong>Amino Acid</strong></th>
-<th><strong>3-Letter Code</strong></th>
-<th><strong>R Group</strong></th>
-<th style="text-align: center;"><strong>Diagram</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alanine</td>
-<td>Ala</td>
-<td><span class="math display">\[CH_3\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/alanine.png"
-alt="Alanine" /></td>
-</tr>
-<tr class="even">
-<td>Asparagine</td>
-<td>Asn</td>
-<td><span class="math display">\[CH_2CONH_2\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/asparagine.png"
-alt="Asparagine" /></td>
-</tr>
-<tr class="odd">
-<td>Aspartic Acid</td>
-<td>Asp</td>
-<td><span class="math display">\[CH_2COOH\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/aspartic-acid.png"
-alt="Aspartic Acid" /></td>
-</tr>
-<tr class="even">
-<td>Glutamic Acid</td>
-<td>Glu</td>
-<td><span class="math display">\[CH_2CH_2COOH\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/glutamic-acid.png"
-alt="Glutamic Acid" /></td>
-</tr>
-<tr class="odd">
-<td>Serine</td>
-<td>Ser</td>
-<td><span class="math display">\[CH_2OH\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/serine.png" alt="Serine" /></td>
-</tr>
-<tr class="even">
-<td>Proline</td>
-<td>Pro</td>
-<td><span class="math display">\[CH_2CH_2CH_2\]</span> (cyclic, bound to
-amine)</td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/proline.png"
-alt="Proline" /></td>
-</tr>
-<tr class="odd">
-<td>Cysteine</td>
-<td>Cys</td>
-<td><span class="math display">\[CH_2SH\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/cysteine.png"
-alt="Cysteine" /></td>
-</tr>
-<tr class="even">
-<td>Glutamine</td>
-<td>Gln</td>
-<td><span class="math display">\[CH_2CH_2CONH_2\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/glutamine.png"
-alt="Glutamine" /></td>
-</tr>
-<tr class="odd">
-<td>Tyrosine</td>
-<td>Tyr</td>
-<td><span class="math display">\[CH_2(C_6H_4OH)\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/tyrosine.png"
-alt="Tyrosine" /></td>
-</tr>
-</tbody>
-</table>
-<h3 id="semi-essential-amino-acids">Semi-Essential Amino Acids</h3>
-<table>
-<thead>
-<tr class="header">
-<th><strong>Amino Acid</strong></th>
-<th><strong>3-Letter Code</strong></th>
-<th><strong>R Group</strong></th>
-<th style="text-align: center;"><strong>Diagram</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Arginine</td>
-<td>Arg</td>
-<td><span class="math display">\[CH_2CH_2CH_2NHC(NH_2)_2\]</span>
-(guanidino group)</td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/arginine.png"
-alt="Arginine" /></td>
-</tr>
-<tr class="even">
-<td>Histidine</td>
-<td>His</td>
-<td><span class="math display">\[CH_2-\text{imidazole
-ring}\]</span></td>
-<td style="text-align: center;"><img
-src="https://aminoacidsguide.com/images/histidine.png"
-alt="Histidine" /></td>
-</tr>
-</tbody>
-</table>
-<div class="pencil-line">
+                                                <p><code>Isoleucine.display</code></p>
+                                                <figure>
+                                                <video
+                                                src="./resources/isoleucine.mp4"
+                                                controls=""><a
+                                                href="./resources/isoleucine.mp4">Isoleucine</a></video>
+                                                <figcaption
+                                                aria-hidden="true">Isoleucine</figcaption>
+                                                </figure>
+                                                <p><code>Leucine.display</code></p>
+                                                <figure>
+                                                <video
+                                                src="./resources/leucine.mp4"
+                                                controls=""><a
+                                                href="./resources/leucine.mp4">Leucine</a></video>
+                                                <figcaption
+                                                aria-hidden="true">Leucine</figcaption>
+                                                </figure>
+                                                <p><code>Lycine.display</code></p>
+                                                <figure>
+                                                <video
+                                                src="./resources/lycine.mp4"
+                                                controls=""><a
+                                                href="./resources/lycine.mp4">Lycine</a></video>
+                                                <figcaption
+                                                aria-hidden="true">Lycine</figcaption>
+                                                </figure>
+                                                <p><code>Histidine.display()</code></p>
+                                                <figure>
+                                                <video
+                                                src="./resources/histidine.mp4"
+                                                controls=""><a
+                                                href="./resources/histidine.mp4">Histidine</a></video>
+                                                <figcaption
+                                                aria-hidden="true">Histidine</figcaption>
+                                                </figure>
+                                                <p><code>Arginine.display()</code></p>
+                                                <figure>
+                                                <video
+                                                src="./resources/arginine.mp4"
+                                                controls=""><a
+                                                href="./resources/arginine.mp4">Arginine</a></video>
+                                                <figcaption
+                                                aria-hidden="true">Arginine</figcaption>
+                                                </figure>
+                                                <h3
+                                                id="essential-amino-acids">Essential
+                                                Amino Acids</h3>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th><strong>Amino
+                                                Acid</strong></th>
+                                                <th><strong>3-Letter
+                                                Code</strong></th>
+                                                <th><strong>R
+                                                Group</strong></th>
+                                                <th
+                                                style="text-align: center;"><strong>Diagram</strong></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td>Isoleucine</td>
+                                                <td>Ile</td>
+                                                <td><span
+                                                class="math display">\[CH(CH_3)(CH_2CH_3)\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/isoleucine.png"
+                                                alt="Isoleucine" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Leucine</td>
+                                                <td>Leu</td>
+                                                <td><span
+                                                class="math display">\[CH_2CH(CH_3)_2\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/leucine.png"
+                                                alt="Leucine" /></td>
+                                                </tr>
+                                                <tr class="odd">
+                                                <td>Lysine</td>
+                                                <td>Lys</td>
+                                                <td><span
+                                                class="math display">\[CH_2CH_2CH_2CH_2NH_2\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/lysine.png"
+                                                alt="Lysine" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Methionine</td>
+                                                <td>Met</td>
+                                                <td><span
+                                                class="math display">\[CH_2CH_2SCH_3\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/methionine.png"
+                                                alt="Methionine" /></td>
+                                                </tr>
+                                                <tr class="odd">
+                                                <td>Phenylalanine</td>
+                                                <td>Phe</td>
+                                                <td><span
+                                                class="math display">\[CH_2(C_6H_5)\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/phenylalanine.png"
+                                                alt="Phenylalanine" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Threonine</td>
+                                                <td>Thr</td>
+                                                <td><span
+                                                class="math display">\[CH(OH)CH_3\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/threonine.png"
+                                                alt="Threonine" /></td>
+                                                </tr>
+                                                <tr class="odd">
+                                                <td>Tryptophan</td>
+                                                <td>Trp</td>
+                                                <td><span
+                                                class="math display">\[CH_2-\text{indole
+                                                ring}\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/tryptophan.png"
+                                                alt="Tryptophan" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Valine</td>
+                                                <td>Val</td>
+                                                <td><span
+                                                class="math display">\[CH(CH_3)_2\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/valine.png"
+                                                alt="Valine" /></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <h3
+                                                id="non-essential-amino-acids">Non-Essential
+                                                Amino Acids</h3>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th><strong>Amino
+                                                Acid</strong></th>
+                                                <th><strong>3-Letter
+                                                Code</strong></th>
+                                                <th><strong>R
+                                                Group</strong></th>
+                                                <th
+                                                style="text-align: center;"><strong>Diagram</strong></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td>Alanine</td>
+                                                <td>Ala</td>
+                                                <td><span
+                                                class="math display">\[CH_3\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/alanine.png"
+                                                alt="Alanine" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Asparagine</td>
+                                                <td>Asn</td>
+                                                <td><span
+                                                class="math display">\[CH_2CONH_2\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/asparagine.png"
+                                                alt="Asparagine" /></td>
+                                                </tr>
+                                                <tr class="odd">
+                                                <td>Aspartic Acid</td>
+                                                <td>Asp</td>
+                                                <td><span
+                                                class="math display">\[CH_2COOH\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/aspartic-acid.png"
+                                                alt="Aspartic Acid" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Glutamic Acid</td>
+                                                <td>Glu</td>
+                                                <td><span
+                                                class="math display">\[CH_2CH_2COOH\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/glutamic-acid.png"
+                                                alt="Glutamic Acid" /></td>
+                                                </tr>
+                                                <tr class="odd">
+                                                <td>Serine</td>
+                                                <td>Ser</td>
+                                                <td><span
+                                                class="math display">\[CH_2OH\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/serine.png"
+                                                alt="Serine" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Proline</td>
+                                                <td>Pro</td>
+                                                <td><span
+                                                class="math display">\[CH_2CH_2CH_2\]</span>
+                                                (cyclic, bound to
+                                                amine)</td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/proline.png"
+                                                alt="Proline" /></td>
+                                                </tr>
+                                                <tr class="odd">
+                                                <td>Cysteine</td>
+                                                <td>Cys</td>
+                                                <td><span
+                                                class="math display">\[CH_2SH\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/cysteine.png"
+                                                alt="Cysteine" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Glutamine</td>
+                                                <td>Gln</td>
+                                                <td><span
+                                                class="math display">\[CH_2CH_2CONH_2\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/glutamine.png"
+                                                alt="Glutamine" /></td>
+                                                </tr>
+                                                <tr class="odd">
+                                                <td>Tyrosine</td>
+                                                <td>Tyr</td>
+                                                <td><span
+                                                class="math display">\[CH_2(C_6H_4OH)\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/tyrosine.png"
+                                                alt="Tyrosine" /></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <h3
+                                                id="semi-essential-amino-acids">Semi-Essential
+                                                Amino Acids</h3>
+                                                <table>
+                                                <thead>
+                                                <tr class="header">
+                                                <th><strong>Amino
+                                                Acid</strong></th>
+                                                <th><strong>3-Letter
+                                                Code</strong></th>
+                                                <th><strong>R
+                                                Group</strong></th>
+                                                <th
+                                                style="text-align: center;"><strong>Diagram</strong></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr class="odd">
+                                                <td>Arginine</td>
+                                                <td>Arg</td>
+                                                <td><span
+                                                class="math display">\[CH_2CH_2CH_2NHC(NH_2)_2\]</span>
+                                                (guanidino group)</td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/arginine.png"
+                                                alt="Arginine" /></td>
+                                                </tr>
+                                                <tr class="even">
+                                                <td>Histidine</td>
+                                                <td>His</td>
+                                                <td><span
+                                                class="math display">\[CH_2-\text{imidazole
+                                                ring}\]</span></td>
+                                                <td
+                                                style="text-align: center;"><img
+                                                src="https://aminoacidsguide.com/images/histidine.png"
+                                                alt="Histidine" /></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                                <div
+                                                class="pencil-line">
 
-</div>
-<section id="sources" class="sources">
-<h3>Sources</h3>
-<ul>
-<li>Diagrams sourced from <a href="https://aminoacidsguide.com">Amino
-Acids Guide</a>.</li>
-<li>Information from NCERT Biology Grade 11 book</li>
-<li>Truman Elementary Biology</li>
-</ul>
-</section>
+                                                </div>
+                                                <section id="sources"
+                                                class="sources">
+                                                <h3>Sources</h3>
+                                                <ul>
+                                                <li>Diagrams sourced
+                                                from <a
+                                                href="https://aminoacidsguide.com">Amino
+                                                Acids Guide</a>.</li>
+                                                <li>Information from
+                                                NCERT Biology Grade 11
+                                                book</li>
+                                                <li>Truman Elementary
+                                                Biology</li>
+                                                </ul>
+                                                </section>
             </main>
         </div>
     </body>

@@ -4,180 +4,211 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Author and Date Metadata -->
                 <meta name="author" content="Satvik Anand" />
-                 <meta name="date" content="2024-11-05" />
+                        <meta name="date" content="2024-11-05" />
         
         <title>Introduction to 3D Geometry</title>
 
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-        <!-- Syntax Highlighting -->
-                <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
-            defer
-        ></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/school-book.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
         <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                hljs.highlightAll();
-            });
+            document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());
         </script>
         
-        <!-- Mermaid.js for Diagrams -->
         <script type="module">
             import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
             document.addEventListener("DOMContentLoaded", () => {
-                mermaid.initialize({ startOnLoad: false });
-                const mermaidElements = document.querySelectorAll(".mermaid");
-                mermaidElements.forEach((element) => {
-                    mermaid.init({ startOnLoad: true }, element);
-                });
+                mermaid.initialize({ startOnLoad: true });
+                document.querySelectorAll(".mermaid").forEach(element => 
+                    mermaid.init(undefined, element)
+                );
             });
         </script>
 
-        <!-- MathJax Configuration -->
                 <script>
             window.MathJax = {
                 tex: {
                     processEscapes: true,
-                    packages: [
-                        "base",
-                        "ams",
-                        "noerrors",
-                        "noundefined",
-                        "mhchem",
-                    ],
+                    packages: ["base", "ams", "noerrors", "noundefined", "mhchem"],
                 },
                 options: {
-                    skipHtmlTags: [
-                        "script",
-                        "noscript",
-                        "style",
-                        "textarea",
-                        "pre",
-                    ],
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
                     ignoreHtmlClass: "tex2jax_ignore",
-                    processHtmlClass: "tex2jax_process",
+                    processHtmlClass: "tex2jax_process"
                 },
-                loader: { load: ["[tex]/mhchem"] },
-                startup: {
-                    pageReady: () => {
-                        return MathJax.startup.defaultPageReady().then(() => {
-                            // Custom post-processing after MathJax loads, if needed
-                        });
-                    },
-                },
+                loader: { load: ["[tex]/mhchem"] }
             };
         </script>
-        <script
-            id="MathJax-script"
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"
-        ></script>
+        <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
         
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-
             </head>
     <body>
         <div class="container">
             <div class="paper-clip"></div>
             <div class="grid-paper"></div>
             <main>
-                <!-- Title, Date, and Backlink -->
                                 <h1 class="title">Introduction to 3D
 Geometry</h1>
-                                 <p class="date">2024-11-05</p>
-                  <h2 id="exampler-problems-123">Exampler Problems
-12.3</h2>
-<h3 id="short-answer-">Short Answer :</h3>
-<p><strong>1</strong></p>
-<p>(i)</p>
-<figure>
-<img src="./resources/1(i).gif" alt="Graph(1(i))" />
-<figcaption aria-hidden="true">Graph(1(i))</figcaption>
-</figure>
-<p>(ii)</p>
-<figure>
-<img src="./resources/1(ii).gif" alt="Graph(1(ii))" />
-<figcaption aria-hidden="true">Graph(1(ii))</figcaption>
-</figure>
-<p>(iii)</p>
-<figure>
-<img src="./resources/1(iii).gif" alt="Graph(1(iii))" />
-<figcaption aria-hidden="true">Graph(1(iii))</figcaption>
-</figure>
-<p>(iv)</p>
-<figure>
-<img src="./resources/1(iv).gif" alt="Graph(iv)))" />
-<figcaption aria-hidden="true">Graph(iv)))</figcaption>
-</figure>
-<p><strong>2</strong></p>
-<p>(i) <span class="math inline">\(0 : +++\)</span></p>
-<p>(ii) <span class="math inline">\(3 : +-+\)</span></p>
-<p>(iii) <span class="math inline">\(4 : +--\)</span></p>
-<p>(iv) <span class="math inline">\(7 : ++-\)</span></p>
-<p>(v) <span class="math inline">\(1 : -++\)</span></p>
-<p>(vi) <span class="math inline">\(2 : +-+\)</span></p>
-<p>(vii) <span class="math inline">\(4 : +--\)</span></p>
-<p>(viii) $6 : -+- $</p>
-<p><strong>3</strong></p>
-<ul>
-<li><p><span class="math inline">\((i)(3,4,2) : x(3,0,0) ; y(0,4,0) ;
-z(0,0,2) ;\)</span></p></li>
-<li><p><span class="math inline">\((ii)(-5,3,7) : x(-5,0,0) ; y(0,3,0) ;
-z(0,0,7) ;\)</span></p></li>
-<li><p><span class="math inline">\((iii)(4,-3,5) : x(4,0,0) ; y(0,-3,0)
-; z(0,0,5) ;\)</span></p></li>
-</ul>
-<p><strong>4</strong></p>
-<ul>
-<li><p><span class="math inline">\((i) (3,4,5) : xy(3,4,0); yz(0,4,5);
-zx(3,0,5);\)</span></p></li>
-<li><p><span class="math inline">\((ii) (-5,3,7) : xy(-5,3,0);
-yz(-5,0,7); zx(0,5,7);\)</span></p></li>
-<li><p><span class="math inline">\((iii) (4,-3,-5) : xy(4,-3,0);
-yz(4,0,-5); zx(0,-3,-5);\)</span></p></li>
-</ul>
-<p><strong>5</strong></p>
-<p>Let the points be A(2,0,0) and B(-3,0,0)</p>
-<p>Distance<sub><span class="math inline">\((A \to
-B):\)</span></sub></p>
-<p><span
-class="math inline">\(\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}\)</span></p>
-<p><span class="math inline">\(\implies \sqrt{(-3-2)^2}\)</span></p>
-<p><span class="math inline">\(\implies \sqrt{25}\)</span></p>
-<p><span class="math inline">\(\implies 5\)</span></p>
-<p><strong>6</strong></p>
-<p>Distance<sub><span class="math inline">\((origin \to
-P):\)</span></sub></p>
-<p><span
-class="math inline">\(\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}\)</span></p>
-<p><span class="math inline">\(\implies
-\sqrt{(6-0)^2+(6-0)^2+(7-0)^2}\)</span></p>
-<p><span class="math inline">\(\implies \sqrt{6^2+6^2+7^2}\)</span></p>
-<p><span class="math inline">\(\implies 11\)</span></p>
-<p><strong>7</strong></p>
-<p>Given <span class="math inline">\(x^2+y^2=1\)</span> and <span
-class="math inline">\(P(x,y,\sqrt{1-x^2-y^2})\)</span></p>
-<p>Distance<sub><span class="math inline">\(P \to
-origin\)</span></sub>:</p>
-<p><span class="math inline">\(\implies
-\sqrt{x^2+y^2+(\sqrt{1-x^2-y^2})^2}\)</span></p>
-<p><span class="math inline">\(\implies
-\sqrt{x^2+y^2+1-x^2-y^2}\)</span></p>
-<p>(subtracting)</p>
-<p><span class="math inline">\(\implies \sqrt{1}\)</span></p>
-<p><span class="math inline">\(\implies 1\)</span></p>
-<p><strong>8</strong></p>
+                                                <p class="date">2024-11-05</p>
+                                                <h2
+                                                id="exampler-problems-123">Exampler
+                                                Problems 12.3</h2>
+                                                <h3
+                                                id="short-answer-">Short
+                                                Answer :</h3>
+                                                <p><strong>1</strong></p>
+                                                <p>(i)</p>
+                                                <figure>
+                                                <img
+                                                src="./resources/1(i).gif"
+                                                alt="Graph(1(i))" />
+                                                <figcaption
+                                                aria-hidden="true">Graph(1(i))</figcaption>
+                                                </figure>
+                                                <p>(ii)</p>
+                                                <figure>
+                                                <img
+                                                src="./resources/1(ii).gif"
+                                                alt="Graph(1(ii))" />
+                                                <figcaption
+                                                aria-hidden="true">Graph(1(ii))</figcaption>
+                                                </figure>
+                                                <p>(iii)</p>
+                                                <figure>
+                                                <img
+                                                src="./resources/1(iii).gif"
+                                                alt="Graph(1(iii))" />
+                                                <figcaption
+                                                aria-hidden="true">Graph(1(iii))</figcaption>
+                                                </figure>
+                                                <p>(iv)</p>
+                                                <figure>
+                                                <img
+                                                src="./resources/1(iv).gif"
+                                                alt="Graph(iv)))" />
+                                                <figcaption
+                                                aria-hidden="true">Graph(iv)))</figcaption>
+                                                </figure>
+                                                <p><strong>2</strong></p>
+                                                <p>(i) <span
+                                                class="math inline">\(0
+                                                : +++\)</span></p>
+                                                <p>(ii) <span
+                                                class="math inline">\(3
+                                                : +-+\)</span></p>
+                                                <p>(iii) <span
+                                                class="math inline">\(4
+                                                : +--\)</span></p>
+                                                <p>(iv) <span
+                                                class="math inline">\(7
+                                                : ++-\)</span></p>
+                                                <p>(v) <span
+                                                class="math inline">\(1
+                                                : -++\)</span></p>
+                                                <p>(vi) <span
+                                                class="math inline">\(2
+                                                : +-+\)</span></p>
+                                                <p>(vii) <span
+                                                class="math inline">\(4
+                                                : +--\)</span></p>
+                                                <p>(viii) $6 : -+- $</p>
+                                                <p><strong>3</strong></p>
+                                                <ul>
+                                                <li><p><span
+                                                class="math inline">\((i)(3,4,2)
+                                                : x(3,0,0) ; y(0,4,0) ;
+                                                z(0,0,2)
+                                                ;\)</span></p></li>
+                                                <li><p><span
+                                                class="math inline">\((ii)(-5,3,7)
+                                                : x(-5,0,0) ; y(0,3,0) ;
+                                                z(0,0,7)
+                                                ;\)</span></p></li>
+                                                <li><p><span
+                                                class="math inline">\((iii)(4,-3,5)
+                                                : x(4,0,0) ; y(0,-3,0) ;
+                                                z(0,0,5)
+                                                ;\)</span></p></li>
+                                                </ul>
+                                                <p><strong>4</strong></p>
+                                                <ul>
+                                                <li><p><span
+                                                class="math inline">\((i)
+                                                (3,4,5) : xy(3,4,0);
+                                                yz(0,4,5);
+                                                zx(3,0,5);\)</span></p></li>
+                                                <li><p><span
+                                                class="math inline">\((ii)
+                                                (-5,3,7) : xy(-5,3,0);
+                                                yz(-5,0,7);
+                                                zx(0,5,7);\)</span></p></li>
+                                                <li><p><span
+                                                class="math inline">\((iii)
+                                                (4,-3,-5) : xy(4,-3,0);
+                                                yz(4,0,-5);
+                                                zx(0,-3,-5);\)</span></p></li>
+                                                </ul>
+                                                <p><strong>5</strong></p>
+                                                <p>Let the points be
+                                                A(2,0,0) and
+                                                B(-3,0,0)</p>
+                                                <p>Distance<sub><span
+                                                class="math inline">\((A
+                                                \to
+                                                B):\)</span></sub></p>
+                                                <p><span
+                                                class="math inline">\(\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                \sqrt{(-3-2)^2}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                \sqrt{25}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                5\)</span></p>
+                                                <p><strong>6</strong></p>
+                                                <p>Distance<sub><span
+                                                class="math inline">\((origin
+                                                \to
+                                                P):\)</span></sub></p>
+                                                <p><span
+                                                class="math inline">\(\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                \sqrt{(6-0)^2+(6-0)^2+(7-0)^2}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                \sqrt{6^2+6^2+7^2}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                11\)</span></p>
+                                                <p><strong>7</strong></p>
+                                                <p>Given <span
+                                                class="math inline">\(x^2+y^2=1\)</span>
+                                                and <span
+                                                class="math inline">\(P(x,y,\sqrt{1-x^2-y^2})\)</span></p>
+                                                <p>Distance<sub><span
+                                                class="math inline">\(P
+                                                \to
+                                                origin\)</span></sub>:</p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                \sqrt{x^2+y^2+(\sqrt{1-x^2-y^2})^2}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                \sqrt{x^2+y^2+1-x^2-y^2}\)</span></p>
+                                                <p>(subtracting)</p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                \sqrt{1}\)</span></p>
+                                                <p><span
+                                                class="math inline">\(\implies
+                                                1\)</span></p>
+                                                <p><strong>8</strong></p>
             </main>
         </div>
     </body>
