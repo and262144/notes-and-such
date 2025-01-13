@@ -29,12 +29,12 @@ Mechanism of Breathing vary among organisms and can be put into categories based
 
 **Lower Invertebrates:** (Eg:- Sponges , coelenterates , flatworms etc) [Simple Diffusion]{.highlight}.
 
-**Earthworm** ⟶ Moist cuticle
+**Earthworm** ⟶ [Moist cuticle]{.highlight}
 
-**Most Insects:** ⟶ Network of Tracheal Tubes.
+**Most Insects:** ⟶ [Network of Tracheal Tubes]{.highlight}
 
-**Aquatic Animals:**(arthropods,Molluscs,fishes) ⟶ Gills.
+**Aquatic Animals:**(arthropods,Molluscs,fishes) ⟶ [Gills]{.highlight}
 
-**Vertebrates:** ⟶ Lungs.
+**Vertebrates:** ⟶ [Lungs]{.highlight}
 
 [Frogs can respire through their moist skin also]{.note}
