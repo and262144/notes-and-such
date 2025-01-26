@@ -484,7 +484,7 @@ img {
     margin-left: auto; /* Automatic left margin */
     margin-right: auto; /* Automatic right margin */
     opacity: 1; /* Set opacity (0 is fully transparent, 1 is fully opaque) */
-    max-width: 100%; /* Ensure the image is responsive */
+    max-width: 25%; /* Ensure the image is responsive */
     height: auto; /* Maintain aspect ratio */
     transition: opacity 0.3s ease; /* Smooth transition for opacity */
     z-index: 999;

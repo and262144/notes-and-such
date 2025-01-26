@@ -12,7 +12,7 @@
         $endif$
 
         <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-
+        style
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
         $if(highlighting-css)$
@@ -53,7 +53,7 @@
         <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
         $endif$
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./notes-and-such/style.css" />
         $for(css)$
         <link rel="stylesheet" href="$css$" />
         $endfor$
