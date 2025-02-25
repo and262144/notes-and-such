@@ -7,7 +7,7 @@ OUTPUT_DIR="./public"            # Directory to output HTML files
 TEMPLATE="template.html"         # HTML template file
 RESOURCES_DIR_NAME="resources"   # Directory name to hold images
 TIMESTAMP_FILE=".timestamps"     # File to store modification timestamps
-FORCE_BUILD=${FORCE_BUILD:-false} # Environment variable to force build all files
+FORCE_BUILD=${FORCE_BUILD:-true} # Environment variable to force build all files
 
 # Initialize timestamp file if it doesn't exist
 if [ ! -f "$TIMESTAMP_FILE" ]; then

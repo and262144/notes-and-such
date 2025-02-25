@@ -1,2 +1,0 @@
-# biochemistry
-- [Biomolecules](Biomolecules.html)

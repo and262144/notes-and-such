@@ -1,11 +1,8 @@
 ./notes/physics//Thermodynamics//index.md:1734868771
 ./notes/physics//Thermodynamics//thermodynamics.md:1734870731
 ./notes/physics//thermodynamics//thermodynamics.md:1734870808
-./notes/index.md:1737878583
-./notes/artificial-intelligence//index.md:1737878583
 ./notes/artificial-intelligence//introduction//index.md:1737878584
 ./notes/artificial-intelligence//introduction//what-is-ai.md:1737878584
-./notes/biology//index.md:1737878584
 ./notes/biology//biochemistry//index.md:1737878585
 ./notes/biology//biochemistry//Biomolecules.md:1737878585
 ./notes/biology//botany//index.md:1737878586
@@ -16,7 +13,6 @@
 ./notes/biology//introduction//what-is-living.md:1737878588
 ./notes/biology//zoology//index.md:1737878588
 ./notes/biology//zoology//respratory-system.md:1737878588
-./notes/chemistry//index.md:1737878589
 ./notes/chemistry//index.html.md:1737878589
 ./notes/chemistry//chemical-reactions//index.md:1737878589
 ./notes/chemistry//chemical-reactions//type-of-bond.md:1737878590
@@ -34,27 +30,35 @@
 ./notes/chemistry//states-of-matter//liquid.md:1737878594
 ./notes/chemistry//states-of-matter//plasma.md:1737878595
 ./notes/chemistry//states-of-matter//solid.md:1737878595
-./notes/diagrams//index.md:1737878595
-./notes/english//index.md:1737878596
-./notes/mathematics//index.md:1737878596
 ./notes/mathematics//3D-Geometry//index.md:1737878596
 ./notes/mathematics//3D-Geometry//Exampler-problems.md:1737878597
 ./notes/mathematics//mathematical-induction//index.md:1737878597
 ./notes/mathematics//mathematical-induction//questions.md:1737878597
-./notes/meetings//index.md:1737878598
-./notes/physics//index.md:1737878598
-./notes/physics//hc-verma//index.md:1737878599
 ./notes/physics//hc-verma//ch2-phy-and-math.md:1737878599
 ./notes/physics//thermodynamics//index.md:1737878599
 ./notes/physics//thermodynamics//carnot-cycle-engine.md:1737878600
 ./notes/physics//thermodynamics//first-law-thermo.md:1737878600
 ./notes/physics//thermodynamics//thermodynamics-introduction.md:1737878600
-./notes/physics//tution//index.md:1737878601
-./notes/physics//tution//02-01-2025.md:1737878601
-./notes/physics//tution//03-01-2025.md:1737878601
-./notes/physics//tution//06-01-2025.md:1737878602
-./notes/thought-posts//index.md:1737878602
-./notes/thought-posts//competitions.md:1737878602
-./notes/thought-posts//game-plan.md:1737878603
-./notes/thought-posts//how-to-use-nvim.md:1737878603
-./notes/thought-posts//testing-some-features.md:1737878604
+./notes/physics//class 12//Electric Charges And Fields//index.md:1740491300
+./notes/index.md:1740526790
+./notes/artificial-intelligence//index.md:1740526790
+./notes/biology//index.md:1740526790
+./notes/chemistry//index.md:1740526790
+./notes/diagrams//index.md:1740526790
+./notes/english//index.md:1740526790
+./notes/mathematics//index.md:1740526790
+./notes/meetings//index.md:1740526791
+./notes/physics//index.md:1740526791
+./notes/physics//class 12//index.md:1740526791
+./notes/physics//class 12//electrostatics//index.md:1740526791
+./notes/physics//class 12//electrostatics//NCERT-Ch-1-Phy-Class-12.md:1740526791
+./notes/physics//hc-verma//index.md:1740526791
+./notes/physics//tution//index.md:1740526791
+./notes/physics//tution//02-01-2025.md:1740526791
+./notes/physics//tution//03-01-2025.md:1740526791
+./notes/physics//tution//06-01-2025.md:1740526791
+./notes/thought-posts//index.md:1740526791
+./notes/thought-posts//competitions.md:1740526791
+./notes/thought-posts//game-plan.md:1740526791
+./notes/thought-posts//how-to-use-nvim.md:1740526791
+./notes/thought-posts//testing-some-features.md:1740526792
